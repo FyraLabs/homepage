@@ -3,5 +3,11 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="owo.">
-	<h1 class="font-black text-5xl">owo</h1>
+	<canvas id="background" class="absolute -z-10 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
+	<!-- <canvas id="background"/> -->
+	<div class="p-5 min-h-screen flex items-end">
+		<h1 class="font-bold text-3xl">Welcome to Fyra.</h1>
+	</div>
 </Layout>
+
+<script src="../util/background.ts" />

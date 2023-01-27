@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/tailwind": "^3.0.0",
     "@fontsource/inter": "^4.5.15",
+    "@spissvinkel/simplex-noise": "^1.0.1",
     "astro": "^2.0.2",
     "tailwindcss": "^3.0.24"
   }
