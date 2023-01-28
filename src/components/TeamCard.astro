@@ -1,0 +1,39 @@
+---
+import { Icon } from 'astro-icon';
+
+interface Props {
+  name: string;
+  title: string;
+  username: string;
+  socials: {
+    icon: string;
+    link: string;
+  }[];
+}
+
+const { name, title, username, socials } = Astro.props;
+const splitName = name.split(' ');
+---
+
+<div class="flex flex-col bg-neutral-800 w-60 p-6 rounded-xl items-center gap-3 shadow-sm">
+  <img src={`/people/${username}.webp`} alt={name} class="rounded-full w-40 h-40 bg-zinc-700">
+
+  <div class="text-center">
+    <p class="font-semibold">{splitName[0]} <span class="font-extrabold">{splitName.slice(1).join(' ')}</span></p>
+    <p class="text-gray-300">{title}</p>
+  </div>
+
+  <a class="group text-gray-200 text-sm" href="mailto:lleyton@fyralabs.com">
+    {username}<span class="text-gray-400 group-hover:text-gray-200 transition-all">@fyralabs.com</span>
+  </a>
+
+  <div class="flex gap-3 [&_a:hover]:text-gray-400 [&_a]:transition-all">
+    {
+      socials.map(({icon, link}) => (
+        <a href={link}>
+          <Icon class="w-6" name={icon} />
+        </a>
+      ))
+    }
+  </div>
+</div>

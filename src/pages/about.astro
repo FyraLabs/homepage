@@ -1,6 +1,8 @@
 ---
 import Navbar from '../components/Navbar';
 import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon';
+import TeamCard from '../components/TeamCard.astro';
 ---
 
 <Layout title="About">
@@ -22,20 +24,69 @@ import Layout from '../layouts/Layout.astro';
     <h1 class="font-bold text-3xl mb-8">Our Principles</h1>
 
     <div class="grid grid-cols-3 gap-6">
-      <div class="p-4 bg-neutral-800 shadow-md rounded-2xl">
+      <div class="p-4 bg-neutral-800 shadow-sm rounded-2xl">
         <p class="font-semibold text-2xl mb-3">Open</p>
         <p>Fyra Labs believes in the power of open-source. Our code is open for anyone to access, examine, and improve. We believe that open-source leads to innovation and collaboration, which ultimately leads to better technology for everyone.</p>
       </div>
 
-      <div class="p-4 bg-neutral-800 shadow-md rounded-2xl">
+      <div class="p-4 bg-neutral-800 shadow-sm rounded-2xl">
         <p class="font-semibold text-2xl mb-3">Private</p>
         <p>At Fyra Labs, we understand that trust is built on user privacy. That's why we put privacy at the forefront of our product development and employ end-to-end encryption whenever possible to protect user data, even from Fyra.</p>
       </div>
 
-      <div class="p-4 bg-neutral-800 shadow-md rounded-2xl">
+      <div class="p-4 bg-neutral-800 shadow-sm rounded-2xl">
         <p class="font-semibold text-2xl mb-3">Human</p>
         <p>We believe that technology exists to serve humanity. That's why we design our products with respect for the user in mind. We strive to create technology that is inclusive, accessible, and user-centered, for the benefit of all.</p>
       </div>
     </div>
   </section>
+
+  <section class="mx-auto max-w-5xl mt-6">
+    <h1 class="font-bold text-3xl mb-8">Meet the Team</h1>
+
+    <div class="grid grid-cols-4 gap-6 place-items-center">
+      <TeamCard
+        name="Lleyton Gray"
+        username="lleyton"
+        title="CEO & Neko Overlord"
+        socials={[
+          { icon: "fa-brands:github", link: "https://github.com/lleyton" },
+          { icon: "fa-brands:twitter", link: "https://twitter.com/lleyton__" },
+          { icon: "fa-brands:mastodon", link: "https://ordinary.cafe/@lea" },
+        ]}
+      />
+      <TeamCard
+        name="Jaiden Riorden"
+        username="jade"
+        title="Chief Operating Officer"
+        socials={[
+          { icon: "fa-brands:github", link: "https://github.com/nothingneko" },
+          { icon: "fa-brands:twitter", link: "https://twitter.com/jaidens__" },
+          { icon: "fa-brands:mastodon", link: "https://ordinary.cafe/@jaiden" },
+        ]}
+      />
+      <TeamCard
+        name="Lains"
+        username="lains"
+        title="Chief Design Officer"
+        socials={[
+          { icon: "fa-brands:github", link: "https://github.com/lainsce" },
+          { icon: "fa-solid:globe", link: "https://lainsce.us" },
+          { icon: "fa-brands:mastodon", link: "https://fosstodon.org/@lainsdev" },
+        ]}
+      />
+      <TeamCard
+        name="Cappy Ishihara"
+        username="cappy"
+        title="Senior DevOps Engineer"
+        socials={[
+          { icon: "fa-brands:github", link: "https://github.com/korewaChino" },
+          { icon: "fa-solid:globe", link: "https://cappuchino.xyz/" },
+          { icon: "fa-brands:twitter", link: "https://twitter.com/CappyIshihara" },
+        ]}
+      />
+    </div>
+  </section>
+
+  <div class="my-7"></div>
 </Layout>
