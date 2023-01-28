@@ -1,4 +1,4 @@
-import { setupCanvas } from "./canvas";
+import { point, setupCanvas } from "./canvas";
 import { randomInt, TAU } from "./math";
 import { mkSimplexNoise } from "@spissvinkel/simplex-noise";
 
@@ -7,10 +7,7 @@ import { mkSimplexNoise } from "@spissvinkel/simplex-noise";
 const canvas = document.getElementById("background") as HTMLCanvasElement;
 const ctx = setupCanvas(canvas);
 
-// canvas.style.width = `200px`;
-// canvas.style.height = `200px`;
-
-const particles = Array(10000)
+const particles = Array(2000)
   .fill(0)
   .map(() => ({
     x: randomInt(canvas.width),
@@ -18,31 +15,24 @@ const particles = Array(10000)
   }));
 
 let noiseGenerator = mkSimplexNoise(Math.random);
-const noiseScale = 0.01 / 5;
+const noiseScale = 0.01 / 2;
 
 canvas.addEventListener("click", () => {
   noiseGenerator = mkSimplexNoise(Math.random);
 });
 
-const point = (
-  ctx: CanvasRenderingContext2D,
-  x: number,
-  y: number,
-  r: number
-) => {
-  ctx.beginPath();
-  ctx.arc(x, y, r, 0, TAU);
-  ctx.fill();
-};
+window.addEventListener("resize", () => {
+  setupCanvas(canvas);
+});
 
-let frame = 0;
-const draw = () => {
-  ctx.globalCompositeOperation = "destination-out";
-  ctx.fillStyle = "rgba(0, 0, 0, .05)";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-  ctx.globalCompositeOperation = "source-over";
+const draw = (frame: number) => {
+  if (frame % 4 == 0) {
+    ctx.globalAlpha = 0.1;
+    ctx.fillStyle = "#000";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  }
 
-  // dark futuristic blue
+  ctx.globalAlpha = 1;
   ctx.fillStyle = "#3b82f6";
 
   particles.forEach((p) => {
@@ -56,7 +46,6 @@ const draw = () => {
     p.y += Math.sin(a);
 
     // If particle is outside of canvas, randomize it's position
-
     if (p.x < 0 || p.x > canvas.width || p.y < 0 || p.y > canvas.height) {
       p.x = randomInt(canvas.width);
       p.y = randomInt(canvas.height);
@@ -65,8 +54,7 @@ const draw = () => {
     point(ctx, p.x, p.y, 1);
   });
 
-  frame++;
-  requestAnimationFrame(draw);
+  requestAnimationFrame(() => draw(frame + 1));
 };
 
-draw();
+draw(0);

@@ -3,11 +3,23 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="owo.">
-	<canvas id="background" class="absolute -z-10 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
+	<canvas id="background" class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
 	<!-- <canvas id="background"/> -->
-	<div class="p-5 min-h-screen flex items-end">
+	<div class="bg-gradient-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none" ></div>
+	<div class="p-7 flex flex-col absolute bottom-0">
 		<h1 class="font-bold text-3xl">Welcome to Fyra.</h1>
+		<div class="flex gap-3">
+			<a href="#">About</a>
+			<a href="#">Products</a>
+			<a href="#">Contact</a>
+		</div>
 	</div>
 </Layout>
+
+<style>
+	html {
+		@apply bg-black text-gray-50;
+	}
+</style>
 
 <script src="../util/background.ts" />
