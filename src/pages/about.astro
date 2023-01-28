@@ -44,6 +44,7 @@ import TeamCard from '../components/TeamCard.astro';
     <h1 class="font-bold text-3xl mb-8">Meet the Team</h1>
 
     <div class="grid grid-cols-4 gap-6 place-items-center">
+      <!-- idea... online status based on Discord -->
       <TeamCard
         name="Lleyton Gray"
         username="lleyton"
@@ -82,6 +83,33 @@ import TeamCard from '../components/TeamCard.astro';
           { icon: "fa-brands:github", link: "https://github.com/korewaChino" },
           { icon: "fa-solid:globe", link: "https://cappuchino.xyz/" },
           { icon: "fa-brands:twitter", link: "https://twitter.com/CappyIshihara" },
+        ]}
+      />
+      <TeamCard
+        name="windowsboy111"
+        username="windowsboy111"
+        title="DevOps Engineer"
+        socials={[
+          { icon: "fa-brands:github", link: "https://github.com/windowsboy111" },
+          { icon: "fa-brands:mastodon", link: "https://floss.social/@madomado" },
+        ]}
+      />
+      <TeamCard
+        name="Owen SZ"
+        username="owen"
+        title="Digital Media Consultant"
+        socials={[
+          { icon: "fa-brands:twitter", link: "https://twitter.com/owen_zimmerman" },
+          { icon: "fa-brands:mastodon", link: "https://ordinary.cafe/@owen" },
+        ]}
+      />
+      <TeamCard
+        name="Trobo"
+        username="trobo"
+        title="Web Developer"
+        socials={[
+          { icon: "fa-brands:github", link: "https://github.com/trobonox" },
+          { icon: "fa-solid:globe", link: "https://trobo.tech" },
         ]}
       />
     </div>
