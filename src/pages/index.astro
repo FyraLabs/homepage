@@ -1,18 +1,17 @@
 ---
+import Navbar from '../components/Navbar';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="owo.">
 	<canvas id="background" class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
-	<!-- <canvas id="background"/> -->
+
+	<Navbar pathname=""/>
+
 	<div class="bg-gradient-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none" ></div>
-	<div class="p-7 flex flex-col absolute bottom-0">
-		<h1 class="font-bold text-3xl">Welcome to Fyra.</h1>
-		<div class="flex gap-3">
-			<a href="/about">About</a>
-			<a href="#">Products</a>
-			<a href="#">Contact</a>
-		</div>
+	<div class="mb-14 ml-14 flex flex-col absolute bottom-0">
+		<h1 class="font-bold text-5xl">Welcome to Fyra Labs.</h1>
+		<h2 class="text-xl">Join us in creating a better future through cutting-edge, open-source technology</h2>
 	</div>
 </Layout>
 
