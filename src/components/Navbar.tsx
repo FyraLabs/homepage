@@ -11,7 +11,7 @@ const navigation = [
 
 const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
   return (
-    <Disclosure as="nav">
+    <Disclosure as="nav" className="mb-4">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
