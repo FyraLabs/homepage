@@ -1,5 +1,5 @@
 import { point, setupCanvas } from "./canvas";
-import { randomInt, TAU } from "./math";
+import { randomInt, TAU, randomElement } from "./math";
 import { mkSimplexNoise } from "@spissvinkel/simplex-noise";
 
 // Inspired by https://editor.p5js.org/BarneyCodes/sketches/2eES4fBEL
@@ -12,6 +12,13 @@ const particles = Array(2000)
   .map(() => ({
     x: randomInt(canvas.width),
     y: randomInt(canvas.height),
+    color: randomElement([
+      "#3b82f6",
+      "#8b5cf6",
+      "#a855f7",
+      "#d946ef",
+      "#ec4899",
+    ]),
   }));
 
 let noiseGenerator = mkSimplexNoise(Math.random);
@@ -33,9 +40,10 @@ const draw = (frame: number) => {
   }
 
   ctx.globalAlpha = 1;
-  ctx.fillStyle = "#3b82f6";
 
   particles.forEach((p) => {
+    ctx.fillStyle = p.color;
+
     const noise = noiseGenerator.noise3D(
       p.x * noiseScale,
       p.y * noiseScale,

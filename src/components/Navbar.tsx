@@ -28,13 +28,13 @@ const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+                <a className="flex flex-shrink-0 items-center" href="/">
                   <img
                     className="block h-8 w-auto"
                     src="/logo-transparent.svg"
                     alt="Fyra Labs"
                   />
-                </div>
+                </a>
                 <div className="hidden sm:block ml-auto">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (

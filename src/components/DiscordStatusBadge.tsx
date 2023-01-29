@@ -4,6 +4,7 @@ import { classNames } from "../util/ui";
 // thanks trobo :P https://github.com/trobonox/trobo.tech/blob/main/src/components/DiscordStatus.vue
 
 const DiscordStatusBadge: React.FC<{ discordID: string }> = ({ discordID }) => {
+  // TODO: real-time & batching
   const data = useLanyard(discordID as `${bigint}`);
   const status = data?.data?.discord_status ?? "Unknown";
 
