@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon';
 import DiscordStatusBadge from './DiscordStatusBadge';
+import { Image } from '@astrojs/image/components';
 
 interface Props {
   name: string;
@@ -19,7 +20,7 @@ const splitName = name.split(' ');
 
 <div class="flex flex-col bg-neutral-800 w-60 p-6 rounded-xl items-center gap-3 shadow-sm">
   <div class="relative">
-    <img src={`/people/${username}.webp`} alt={name} class="rounded-full w-40 h-40 bg-zinc-700">
+    <Image src={import(`../assets/people/${username}.webp`)} alt={name} class="rounded-full w-40 h-40 bg-zinc-700" />
     <DiscordStatusBadge discordID={discordID} client:load/>
   </div>
 
