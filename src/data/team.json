@@ -20,10 +20,11 @@
     ]
   },
   {
-    "name": "Jaiden Riorden",
+    "name": "Jaiden Riordan",
     "username": "jade",
     "title": "Chief Operating Officer",
     "discordID": "715268269170491443",
+    "dndIsOnline": true,
     "socials": [
       {
         "icon": "fa-brands:github",
@@ -136,6 +137,85 @@
       {
         "icon": "fa-brands:github",
         "link": "https://github.com/raboneko"
+      }
+    ]
+  },
+  {
+    "name": "Mo 森",
+    "username": "mo",
+    "title": "Kernel Developer",
+    "discordID": "476203781139202058",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/rmnscnce"
+      },
+      {
+        "icon": "fa-solid:globe",
+        "link": "https://me.pjm.my.id/"
+      }
+    ]
+  },
+  {
+    "name": "infinitebash",
+    "username": "infinitebash",
+    "title": "Chief Security Officer",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/rmnscnce"
+      },
+      {
+        "icon": "fa-solid:key",
+        "link": "https://fyralabs.com/pgp.asc"
+      }
+    ]
+  },
+  {
+    "name": "Aikoyori",
+    "username": "aikoyori",
+    "title": "Designer",
+    "discordID": "254214302653743104",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/Aikoyori"
+      },
+      {
+        "icon": "fa-brands:twitter",
+        "link": "https://twitter.com/Aikoyori"
+      },
+      {
+        "icon": "fa-solid:globe",
+        "link": "https://aikoyori.xyz/"
+      }
+    ]
+  },
+  {
+    "name": "Matteo",
+    "username": "matteo",
+    "title": "Developer",
+    "discordID": "933697808152801311",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/matteodev8"
+      },
+      {
+        "icon": "fa-brands:twitter",
+        "link": "https://twitter.com/_matteodev"
+      }
+    ]
+  },
+  {
+    "name": "Vidya",
+    "username": "vidya",
+    "title": "Go Developer",
+    "discordID": "219549133281820672",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/mitaka78"
       }
     ]
   }

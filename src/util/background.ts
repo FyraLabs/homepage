@@ -7,7 +7,7 @@ import { mkSimplexNoise } from "@spissvinkel/simplex-noise";
 const canvas = document.getElementById("background") as HTMLCanvasElement;
 const ctx = setupCanvas(canvas);
 
-const particles = Array(2000)
+const particles = Array(1000)
   .fill(0)
   .map(() => ({
     x: randomInt(canvas.width),
@@ -50,8 +50,8 @@ const draw = (frame: number) => {
       frame * noiseScale * noiseScale
     );
     const a = noise * TAU;
-    p.x += Math.cos(a);
-    p.y += Math.sin(a);
+    p.x += Math.cos(a) * 1.5;
+    p.y += Math.sin(a) * 1.5;
 
     // If particle is outside of canvas, randomize it's position
     if (p.x < 0 || p.x > canvas.width || p.y < 0 || p.y > canvas.height) {

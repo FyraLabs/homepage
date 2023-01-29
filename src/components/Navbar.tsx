@@ -4,9 +4,10 @@ import { classNames } from "../util/ui";
 
 const navigation = [
   { name: "About", href: "/about" },
+  { name: "Products", href: "/products" },
+  { name: "Consulting", href: "/consulting" },
   { name: "Blog", href: "https://blog.fyralabs.com" },
-  { name: "Nya", href: "#" },
-  { name: "Arigato", href: "#" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
