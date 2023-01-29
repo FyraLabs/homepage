@@ -15,6 +15,7 @@ specifiers:
   react: ^18.0.0
   react-dom: ^18.0.0
   tailwindcss: ^3.0.24
+  use-lanyard: ^1.4.0
 
 dependencies:
   '@astrojs/react': 2.0.1_fxtgt6bjwd6p4cwoordejim2zi
@@ -31,6 +32,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   tailwindcss: 3.2.4
+  use-lanyard: 1.4.0
 
 packages:
 
@@ -3334,6 +3336,11 @@ packages:
       browserslist: 4.21.4
       escalade: 3.1.1
       picocolors: 1.0.0
+    dev: false
+
+  /use-lanyard/1.4.0:
+    resolution: {integrity: sha512-bWwOvQT/ZgT1FRLlYwiZYaU4ECn9hwWtyhm7AORwFQ1jOsl0wjxkqQLqmdeWc4MlBwVsiEyskTBkb8B+fW425g==}
+    engines: {node: '>=14'}
     dev: false
 
   /util-deprecate/1.0.2:

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Lleyton Gray",
+    "username": "lleyton",
+    "title": "CEO & Neko Overlord",
+    "discordID": "228736069091196928",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/lleyton"
+      },
+      {
+        "icon": "fa-brands:twitter",
+        "link": "https://twitter.com/lleyton__"
+      },
+      {
+        "icon": "fa-brands:mastodon",
+        "link": "https://ordinary.cafe/@lea"
+      }
+    ]
+  },
+  {
+    "name": "Jaiden Riorden",
+    "username": "jade",
+    "title": "Chief Operating Officer",
+    "discordID": "715268269170491443",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/nothingneko"
+      },
+      {
+        "icon": "fa-brands:twitter",
+        "link": "https://twitter.com/jaidens__"
+      },
+      {
+        "icon": "fa-brands:mastodon",
+        "link": "https://ordinary.cafe/@jaiden"
+      }
+    ]
+  },
+  {
+    "name": "Lains",
+    "username": "lains",
+    "title": "Chief Design Officer",
+    "discordID": "191064062153457665",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/lainsce"
+      },
+      {
+        "icon": "fa-solid:globe",
+        "link": "https://lainsce.us"
+      },
+      {
+        "icon": "fa-brands:mastodon",
+        "link": "https://fosstodon.org/@lainsdev"
+      }
+    ]
+  },
+  {
+    "name": "Cappy Ishihara",
+    "username": "cappy",
+    "title": "Senior DevOps Engineer",
+    "discordID": "254542844197470209",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/korewaChino"
+      },
+      {
+        "icon": "fa-solid:globe",
+        "link": "https://cappuchino.xyz/"
+      },
+      {
+        "icon": "fa-brands:twitter",
+        "link": "https://twitter.com/CappyIshihara"
+      }
+    ]
+  },
+  {
+    "name": "windowsboy111",
+    "username": "windowsboy111",
+    "title": "DevOps Engineer",
+    "discordID": "653086042752286730",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/windowsboy111"
+      },
+      {
+        "icon": "fa-brands:mastodon",
+        "link": "https://floss.social/@madomado"
+      }
+    ]
+  },
+  {
+    "name": "Owen Zimmerman",
+    "username": "owen",
+    "title": "Digital Media Consultant",
+    "discordID": "626524398207238175",
+    "socials": [
+      {
+        "icon": "fa-brands:twitter",
+        "link": "https://twitter.com/owen_zimmerman"
+      },
+      {
+        "icon": "fa-brands:mastodon",
+        "link": "https://ordinary.cafe/@owen"
+      }
+    ]
+  },
+  {
+    "name": "Trobo",
+    "username": "trobo",
+    "title": "Web Developer",
+    "discordID": "540898474288480256",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/trobonox"
+      },
+      {
+        "icon": "fa-solid:globe",
+        "link": "https://trobo.tech"
+      }
+    ]
+  },
+  {
+    "name": "Raboneko",
+    "username": "raboneko",
+    "title": "AI Assistant Neko",
+    "discordID": "1001696289324539934",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/raboneko"
+      }
+    ]
+  }
+]

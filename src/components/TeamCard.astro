@@ -1,22 +1,27 @@
 ---
 import { Icon } from 'astro-icon';
+import DiscordStatusBadge from './DiscordStatusBadge';
 
 interface Props {
   name: string;
   title: string;
   username: string;
+  discordID: string;
   socials: {
     icon: string;
     link: string;
   }[];
 }
 
-const { name, title, username, socials } = Astro.props;
+const { name, title, username, socials, discordID } = Astro.props;
 const splitName = name.split(' ');
 ---
 
 <div class="flex flex-col bg-neutral-800 w-60 p-6 rounded-xl items-center gap-3 shadow-sm">
-  <img src={`/people/${username}.webp`} alt={name} class="rounded-full w-40 h-40 bg-zinc-700">
+  <div class="relative">
+    <img src={`/people/${username}.webp`} alt={name} class="rounded-full w-40 h-40 bg-zinc-700">
+    <DiscordStatusBadge discordID={discordID} client:load/>
+  </div>
 
   <div class="text-center">
     <p class="font-semibold">{splitName[0]} <span class="font-extrabold">{splitName.slice(1).join(' ')}</span></p>
