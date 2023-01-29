@@ -37,7 +37,7 @@ const splitName = name.split(' ');
   <div class="flex gap-3 [&_a:hover]:text-gray-400 [&_a]:transition-all">
     {
       socials.map(({icon, link}) => (
-        <a href={link}>
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <Icon class="w-6" name={icon} />
         </a>
       ))
