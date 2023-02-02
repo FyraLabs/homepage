@@ -7,6 +7,7 @@ specifiers:
   '@fontsource/inter': ^4.5.15
   '@headlessui/react': ^1.7.8
   '@heroicons/react': ^2.0.14
+  '@shrutibalasa/tailwind-grid-auto-fit': ^1.1.0
   '@spissvinkel/simplex-noise': ^1.0.1
   '@types/react': ^18.0.21
   '@types/react-dom': ^18.0.6
@@ -39,6 +40,7 @@ dependencies:
   use-lanyard: 1.4.0
 
 devDependencies:
+  '@shrutibalasa/tailwind-grid-auto-fit': 1.1.0
   dotted-map: 2.2.3
   tsx: 3.12.2
 
@@ -776,6 +778,10 @@ packages:
       deepmerge: 4.2.2
       escalade: 3.1.1
     dev: false
+
+  /@shrutibalasa/tailwind-grid-auto-fit/1.1.0:
+    resolution: {integrity: sha512-sh/Vmdz/xTVziUF9ZYDb5YpECApdK85KXSRIJY58GzmdUuum5QBE3jqDeNMjICEVaVOSrOnp+gqUWx8A9dmZjA==}
+    dev: true
 
   /@spissvinkel/simplex-noise/1.0.1:
     resolution: {integrity: sha512-Ni1aqFlajxWFxkp2WuCspat6wmrsRZmDv1hgt90hm8J0XkRByd1bzlJFIKw9kC0q5MlOH5GyVrHVR/ZVvhOzqg==}

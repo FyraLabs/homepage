@@ -48,7 +48,7 @@ import aboutImage from '../assets/about.webp';
   <section class="mx-auto max-w-5xl mt-6">
     <h1 class="font-bold text-3xl mb-8">Meet the Team</h1>
 
-    <div class="grid grid-cols-4 gap-6 place-items-center">
+    <div class="grid grid-auto-fit-sm gap-6 place-items-center">
       {
         team.map((member) => <TeamCard {...member}/>)
       }

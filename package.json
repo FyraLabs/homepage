@@ -29,7 +29,8 @@
     "use-lanyard": "^1.4.0"
   },
   "devDependencies": {
-    "tsx": "^3.12.2",
-    "dotted-map": "^2.2.3"
+    "@shrutibalasa/tailwind-grid-auto-fit": "^1.1.0",
+    "dotted-map": "^2.2.3",
+    "tsx": "^3.12.2"
   }
 }
