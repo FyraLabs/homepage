@@ -1,8 +1,8 @@
 ---
-import Navbar from '../components/Navbar';
-import Layout from '../layouts/Layout.astro';
-import { Icon } from 'astro-icon';
-import map from '../assets/map.svg';
+import Navbar from "../components/Navbar";
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
+import map from "../assets/map.svg";
 ---
 
 <Layout title="Contact">
@@ -10,11 +10,13 @@ import map from '../assets/map.svg';
 
   <div class="mx-6 mb-6">
     <div class="mx-auto max-w-5xl">
-
       <section class="flex flex-col items-center gap-12 mt-14">
         <div class="text-center">
           <h1 class="text-5xl font-bold">Let's Talk.</h1>
-          <h2 class="mt-3 text-gray-300">Got a question or idea? Let's talk. Our team is here to help, wherever you are.</h2>
+          <h2 class="mt-3 text-gray-300">
+            Got a question or idea? Let's talk. Our team is here to help,
+            wherever you are.
+          </h2>
         </div>
         <img src={map} alt="Map of Fyra locations" />
       </section>
@@ -22,27 +24,45 @@ import map from '../assets/map.svg';
       <section class="flex flex-col md:flex-row gap-12 mt-14">
         <article class="flex-1">
           <h1 class="font-semibold text-xl mb-2">Socials</h1>
-          <ul class="flex flex-col gap-1 [&_a]:inline-flex [&_a]:gap-2 [&_a]:items-center [&_a]:text-gray-100 [&_a:hover]:text-gray-300 [&_a]:transition-all [&_svg]:w-5 [&_svg]:h-5">
+          <ul
+            class="flex flex-col gap-1 [&_a]:inline-flex [&_a]:gap-2 [&_a]:items-center [&_a]:text-gray-100 [&_a:hover]:text-gray-300 [&_a]:transition-all [&_svg]:w-5 [&_svg]:h-5"
+          >
             <li class="flex gap-2 items-center">
-              <a href="https://twitter.com/teamfyralabs" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/teamfyralabs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon name="fa-brands:twitter" />
                 <span>@teamfyralabs</span>
               </a>
             </li>
             <li class="flex gap-2 items-center">
-              <a href="https://mastodon.fyralabs.com/@hq" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://mastodon.fyralabs.com/@hq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon name="fa-brands:mastodon" />
                 <span>@hq@fyralabs.com</span>
               </a>
             </li>
             <li class="flex gap-2 items-center">
-              <a href="https://github.com/fyralabs" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/fyralabs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon name="fa-brands:github" />
                 <span>FyraLabs</span>
               </a>
             </li>
             <li class="flex gap-2 items-center">
-              <a href="https://discord.gg/5fdPuxTg5Q" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://discord.gg/5fdPuxTg5Q"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon name="fa-brands:discord" />
                 <span>Discord</span>
               </a>
@@ -56,26 +76,50 @@ import map from '../assets/map.svg';
           <ul class="flex flex-col gap-1">
             <li class="flex gap-2 items-center">
               <span class="font-semibold text-gray-200">General</span>
-              <a href="mailto:contact@fyralabs.com" class="ml-auto group text-gray-300">
-                contact<span class="text-fuchsia-500 group-hover:text-gray-300 transition-all">@fyralabs.com</span>
+              <a
+                href="mailto:contact@fyralabs.com"
+                class="ml-auto group text-gray-300"
+              >
+                contact<span
+                  class="text-fuchsia-500 group-hover:text-gray-300 transition-all"
+                  >@fyralabs.com</span
+                >
               </a>
             </li>
             <li class="flex gap-2 items-center">
               <span class="font-semibold text-gray-200">Security</span>
-              <a href="mailto:security@fyralabs.com" class="ml-auto group text-gray-300">
-                security<span class="text-fuchsia-500 group-hover:text-gray-300 transition-all">@fyralabs.com</span>
+              <a
+                href="mailto:security@fyralabs.com"
+                class="ml-auto group text-gray-300"
+              >
+                security<span
+                  class="text-fuchsia-500 group-hover:text-gray-300 transition-all"
+                  >@fyralabs.com</span
+                >
               </a>
             </li>
             <li class="flex gap-2 items-center">
               <span class="font-semibold text-gray-200">Staff</span>
-              <a href="mailto:staff@fyralabs.com" class="ml-auto group text-gray-300">
-                staff<span class="text-fuchsia-500 group-hover:text-gray-300 transition-all">@fyralabs.com</span>
+              <a
+                href="mailto:staff@fyralabs.com"
+                class="ml-auto group text-gray-300"
+              >
+                staff<span
+                  class="text-fuchsia-500 group-hover:text-gray-300 transition-all"
+                  >@fyralabs.com</span
+                >
               </a>
             </li>
             <li class="flex gap-2 items-center">
               <span class="font-semibold text-gray-200">Consulting</span>
-              <a href="mailto:consulting@fyralabs.com" class="ml-auto group text-gray-300">
-                consulting<span class="text-fuchsia-500 group-hover:text-gray-300 transition-all">@fyralabs.com</span>
+              <a
+                href="mailto:consulting@fyralabs.com"
+                class="ml-auto group text-gray-300"
+              >
+                consulting<span
+                  class="text-fuchsia-500 group-hover:text-gray-300 transition-all"
+                  >@fyralabs.com</span
+                >
               </a>
             </li>
           </ul>
@@ -83,7 +127,11 @@ import map from '../assets/map.svg';
 
         <article class="flex-1">
           <h1 class="font-semibold text-xl mb-1">Staff</h1>
-          <p>Ready to take the next step and join the Fyra Labs team? Fill out our <a class="text-fuchsia-500" href="#">application form</a> now. We'll be in touch soon! Please note that this is an unpaid role.</p>
+          <p>
+            Ready to take the next step and join the Fyra Labs team? Fill out
+            our <a class="text-fuchsia-500" href="#">application form</a> now. We'll
+            be in touch soon! Please note that this is an unpaid role.
+          </p>
         </article>
       </section>
     </div>

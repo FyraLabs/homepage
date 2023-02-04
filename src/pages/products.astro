@@ -1,9 +1,14 @@
 ---
-import Navbar from '../components/Navbar';
-import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Products">
   <Navbar pathname={Astro.url.pathname} client:load />
 
+  <div class="mx-6 mb-6">
+    <div class="mx-auto max-w-5xl">
+      <h1>Products</h1>
+    </div>
+  </div>
 </Layout>
