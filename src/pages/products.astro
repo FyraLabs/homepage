@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 ---
 
 <Layout title="Products">
@@ -8,7 +9,32 @@ import Layout from "../layouts/Layout.astro";
 
   <div class="mx-6 mb-6">
     <div class="mx-auto max-w-5xl">
-      <h1>Products</h1>
+      <section class="flex flex-col items-center gap-12 my-14">
+        <h1 class="text-5xl font-bold">Our Products</h1>
+      </section>
+
+      <div class="mx-12">
+        <section class="flex bg-neutral-800 shadow-md rounded-2xl h-64">
+          <img
+            src={"/ultramarine.webp"}
+            alt="Ultramarine Desktop"
+            class="rounded-l-2xl flex-1 object-cover"
+          />
+          <div class="p-8 flex flex-col justify-between flex-1">
+            <h1 class="font-bold text-3xl mb-2">Ultramarine Linux</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
+              est at deserunt voluptates aperiam iure, saepe earum nobis
+              dignissimos tempora incidunt nesciunt molestiae eos nam molestias
+              rerum quaerat dolorem. Nulla?
+            </p>
+
+            <a href="#" class="flex flex-row items-center gap-1 text-violet-300"
+              >Discover More <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 </Layout>
