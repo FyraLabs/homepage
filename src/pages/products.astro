@@ -1,7 +1,7 @@
 ---
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import ProductCard from "../components/ProductCard.astro";
 ---
 
 <Layout title="Products">
@@ -13,27 +13,33 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
         <h1 class="text-5xl font-bold">Our Products</h1>
       </section>
 
-      <div class="mx-12">
-        <section class="flex bg-neutral-800 shadow-md rounded-2xl h-64">
-          <img
-            src={"/ultramarine.webp"}
-            alt="Ultramarine Desktop"
-            class="rounded-l-2xl flex-1 object-cover"
-          />
-          <div class="p-8 flex flex-col justify-between flex-1">
-            <h1 class="font-bold text-3xl mb-2">Ultramarine Linux</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum
-              est at deserunt voluptates aperiam iure, saepe earum nobis
-              dignissimos tempora incidunt nesciunt molestiae eos nam molestias
-              rerum quaerat dolorem. Nulla?
-            </p>
+      <div class="flex flex-col gap-6 mx-12">
+        <ProductCard link="" name="tauOS">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quia
+            odit beatae cupiditate itaque? Culpa minima quaerat mollitia
+            voluptatem consequuntur sint ex quas corporis minus. Labore eos ipsa
+            tempore corrupti!
+          </p>
+        </ProductCard>
 
-            <a href="#" class="flex flex-row items-center gap-1 text-violet-300"
-              >Discover More <ArrowRightIcon className="h-4 w-4" /></a
-            >
-          </div>
-        </section>
+        <ProductCard link="" name="Ultramarine Linux" reverse={true}>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quia
+            odit beatae cupiditate itaque? Culpa minima quaerat mollitia
+            voluptatem consequuntur sint ex quas corporis minus. Labore eos ipsa
+            tempore corrupti!
+          </p>
+        </ProductCard>
+
+        <ProductCard link="" name="Andaman Toolchain">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quia
+            odit beatae cupiditate itaque? Culpa minima quaerat mollitia
+            voluptatem consequuntur sint ex quas corporis minus. Labore eos ipsa
+            tempore corrupti!
+          </p>
+        </ProductCard>
       </div>
     </div>
   </div>
