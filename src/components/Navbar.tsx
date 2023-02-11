@@ -32,7 +32,7 @@ const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
                 <a className="flex flex-shrink-0 items-center" href="/">
                   <img
                     className="block h-8 w-auto"
-                    src="/logo-transparent.svg"
+                    src="/logo.svg"
                     alt="Fyra Labs"
                   />
                 </a>
