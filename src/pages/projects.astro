@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 import tauPattern from "../assets/tau-pattern.svg";
 import umPattern from "../assets/um-pattern.svg";
+import terraPattern from "../assets/terra-pattern.svg";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const description =
@@ -76,6 +77,31 @@ const description =
 
             <a
               href="https://ultramarine-linux.org/"
+              class="flex flex-row items-center gap-1 text-violet-300"
+              >Explore More <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </article>
+
+        <article class="flex bg-neutral-800 shadow-md rounded-2xl min-h-64">
+          <img
+            src={terraPattern}
+            alt="tauOS"
+            class="object-cover w-1/2 hidden md:block rounded-l-2xl"
+          />
+          <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
+            <h1 class="font-bold text-3xl">Terra</h1>
+
+            <p>
+              Terra is a repository for software that goes beyond what's
+              available in Fedora. Experience quality and security with the
+              latest packages, or distribute your own software on Fedora and
+              other RPM-based distributions. With Terra, a vast array of
+              software is at your fingertips.
+            </p>
+
+            <a
+              href="https://terra.fyralabs.com/"
               class="flex flex-row items-center gap-1 text-violet-300"
               >Explore More <ArrowRightIcon className="h-4 w-4" /></a
             >
