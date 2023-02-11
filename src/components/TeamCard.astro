@@ -26,7 +26,7 @@ const splitName = name.split(' ');
   </div>
 
   <div class="text-center">
-    <p class="font-semibold">{splitName[0]} <span class="font-extrabold">{splitName.slice(1).join(' ')}</span></p>
+    <p class="font-semibold">{splitName.slice(0, -1).join(' ')} <span class="font-extrabold">{splitName.at(-1)}</span></p>
     <p class="text-gray-300">{title}</p>
   </div>
 
