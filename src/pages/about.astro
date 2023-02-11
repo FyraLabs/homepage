@@ -5,22 +5,19 @@ import TeamCard from "../components/TeamCard.astro";
 import team from "../data/team.json";
 import { Image } from "@astrojs/image/components";
 import aboutImage from "../assets/about.webp";
+
+const description =
+  "At Fyra Labs, we believe technology can make a positive impact. Our focus is to create advanced technology that prioritizes privacy, is open-source, and user-centric. Guided by these principles, we aim to develop products that make a real difference.";
 ---
 
 <Layout title="About">
   <Fragment slot="head">
     <meta property="og:title" content="About Fyra Labs" />
     <meta property="og:url" content="https://fyralabs.com/about" />
-    <meta
-      property="og:description"
-      content="At Fyra Labs, we believe technology can make a positive impact. Our focus is to create advanced technology that prioritizes privacy, is open-source, and user-centric. Guided by these principles, we aim to develop products that make a real difference."
-    />
+    <meta property="og:description" content={description} />
     <meta property="og:type" content="business.business" />
     <meta property="og:image" content="/logo.png" />
-    <meta
-      name="description"
-      content="At Fyra Labs, we believe technology can make a positive impact. Our focus is to create advanced technology that prioritizes privacy, is open-source, and user-centric. Guided by these principles, we aim to develop products that make a real difference."
-    />
+    <meta name="description" content={description} />
   </Fragment>
 
   <Navbar pathname={Astro.url.pathname} client:load />
@@ -32,10 +29,7 @@ import aboutImage from "../assets/about.webp";
         <div class="flex-1">
           <h1 class="font-bold text-5xl">About <br />Fyra Labs</h1>
           <p class="mt-3 text-gray-300">
-            At Fyra Labs, we believe technology can make a positive impact. Our
-            focus is to create advanced technology that prioritizes privacy, is
-            open-source, and user-centric. Guided by these principles, we aim to
-            develop products that make a real difference.
+            {description}
           </p>
         </div>
 

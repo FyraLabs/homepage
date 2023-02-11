@@ -3,9 +3,21 @@ import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import map from "../assets/map.svg";
+
+const description =
+  "Got a question or idea? Let's talk. Our team is here to help, wherever you are.";
 ---
 
 <Layout title="Contact">
+  <Fragment slot="head">
+    <meta property="og:title" content="Let's Talk." />
+    <meta property="og:url" content="https://fyralabs.com/about" />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="business.business" />
+    <meta property="og:image" content="/logo.png" />
+    <meta name="description" content={description} />
+  </Fragment>
+
   <Navbar pathname={Astro.url.pathname} client:load />
 
   <div class="mx-6 mb-12">
@@ -14,8 +26,7 @@ import map from "../assets/map.svg";
         <div class="text-center">
           <h1 class="text-5xl font-bold">Let's Talk.</h1>
           <h2 class="mt-3 text-gray-300">
-            Got a question or idea? Let's talk. Our team is here to help,
-            wherever you are.
+            {description}
           </h2>
         </div>
         <img src={map} alt="Map of Fyra locations" />

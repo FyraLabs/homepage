@@ -5,9 +5,21 @@ import Layout from "../layouts/Layout.astro";
 import tauPattern from "../assets/tau-pattern.svg";
 import umPattern from "../assets/um-pattern.svg";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+
+const description =
+  "At Fyra Labs, we drive positive change through open-source technology and community. Explore our portfolio and see how we're shaping the future.";
 ---
 
 <Layout title="Projects">
+  <Fragment slot="head">
+    <meta property="og:title" content="Our Projects" />
+    <meta property="og:url" content="https://fyralabs.com/about" />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="business.business" />
+    <meta property="og:image" content="/logo.png" />
+    <meta name="description" content={description} />
+  </Fragment>
+
   <Navbar pathname={Astro.url.pathname} client:load />
 
   <div class="mx-6 mb-12">
@@ -15,9 +27,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
       <section class="my-14">
         <h1 class="text-5xl font-bold mb-2">Our Projects</h1>
         <h2 class="text-gray-300 text-lg">
-          At Fyra Labs, we drive positive change through open-source technology
-          and community. Explore our portfolio and see how we're shaping the
-          future.
+          {description}
         </h2>
       </section>
 
