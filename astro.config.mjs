@@ -13,6 +13,9 @@ import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import compress from "astro-compress";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react(), image(), sitemap()]
+  integrations: [tailwind(), react(), image(), sitemap(), compress()]
 });

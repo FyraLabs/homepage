@@ -1,9 +1,25 @@
 ---
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
+
+import { SEO } from "astro-seo";
 ---
 
 <Layout title="Welcome to Fyra Labs">
+  <SEO
+    slot="head"
+    title="Welcome to Fyra Labs"
+    description="Creating a better future through cutting-edge, open-source technology."
+    openGraph={{
+      basic: {
+        title:
+          "Creating a better future through cutting-edge, open-source technology.",
+        type: "website",
+        image: "/logo-transparent.png",
+      },
+    }}
+  />
+
   <canvas
     id="background"
     class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
