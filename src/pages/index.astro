@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
 ---
 
 <Layout title="Welcome to Fyra Labs">
@@ -19,22 +20,37 @@ import Layout from "../layouts/Layout.astro";
     />
   </Fragment>
 
-  <canvas
-    id="background"
-    class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
+  <!-- <img
+    class="block h-[128px] w-auto absolute left-14 top-14"
+    src="/logo.svg"
+    alt="Fyra Labs"
+  /> -->
 
-  <Navbar pathname={Astro.url.pathname} client:load />
+  <main class="relative min-h-screen">
+    <canvas
+      id="background"
+      class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"
+    ></canvas>
 
-  <div
-    class="bg-gradient-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
-  >
-  </div>
-  <div class="mb-14 ml-14 flex flex-col absolute bottom-0">
-    <h1 class="font-bold text-5xl">Welcome to Fyra Labs.</h1>
-    <h2 class="text-lg mt-1">
-      Creating a better future through cutting-edge, open-source technology
-    </h2>
-  </div>
+    <Navbar pathname={Astro.url.pathname} client:load />
+
+    <div
+      class="bg-gradient-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
+    >
+    </div>
+    <div class="mb-14 ml-14 flex flex-col absolute bottom-0">
+      <h1 class="font-bold text-5xl">Welcome to Fyra Labs.</h1>
+      <h2 class="text-lg">
+        Creating a better future through cutting-edge, open-source technology
+      </h2>
+      <div class="mt-2 flex gap-3">
+        <Icon name="fa-brands:twitter" class="h-6" />
+        <Icon name="fa-brands:mastodon" class="h-6" />
+        <Icon name="fa-brands:github" class="h-6" />
+        <Icon name="fa-brands:discord" class="h-6" />
+      </div>
+    </div>
+  </main>
 </Layout>
 
 <style>
