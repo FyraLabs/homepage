@@ -5,7 +5,7 @@ import { classNames } from "../util/ui";
 const navigation = [
   { name: "About", href: "/about" },
   { name: "Projects", href: "/projects" },
-  { name: "Consulting", href: "/consulting" },
+  { name: "Services", href: "/services" },
   { name: "Blog", href: "https://blog.fyralabs.com" },
   { name: "Contact", href: "/contact" },
 ];
@@ -30,11 +30,11 @@ const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <a className="flex flex-shrink-0 items-center" href="/">
-                  <img
+                  {/* <img
                     className="block h-8 w-auto"
                     src="/logo.svg"
                     alt="Fyra Labs"
-                  />
+                  /> */}
                 </a>
                 <div className="hidden sm:block ml-auto">
                   <div className="flex space-x-4">
