@@ -3,12 +3,12 @@ import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="owo.">
+<Layout title="Welcome to Fyra Labs">
   <canvas
     id="background"
     class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
 
-  <Navbar pathname="" />
+  <Navbar pathname={Astro.url.pathname} client:load />
 
   <div
     class="bg-gradient-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
