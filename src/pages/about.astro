@@ -8,6 +8,21 @@ import aboutImage from "../assets/about.webp";
 ---
 
 <Layout title="About">
+  <Fragment slot="head">
+    <meta property="og:title" content="About Fyra Labs" />
+    <meta property="og:url" content="https://fyralabs.com/about" />
+    <meta
+      property="og:description"
+      content="At Fyra Labs, we believe technology can make a positive impact. Our focus is to create advanced technology that prioritizes privacy, is open-source, and user-centric."
+    />
+    <meta property="og:type" content="business.business" />
+    <meta property="og:image" content="/logo.png" />
+    <meta
+      name="description"
+      content="At Fyra Labs, we believe technology can make a positive impact. Our focus is to create advanced technology that prioritizes privacy, is open-source, and user-centric."
+    />
+  </Fragment>
+
   <Navbar pathname={Astro.url.pathname} client:load />
 
   <!-- TODO: hack for "min margins", move to layout -->
