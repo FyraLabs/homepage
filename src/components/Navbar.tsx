@@ -4,7 +4,7 @@ import { classNames } from "../util/ui";
 
 const navigation = [
   { name: "About", href: "/about" },
-  { name: "Products", href: "/products" },
+  { name: "Projects", href: "/projects" },
   { name: "Consulting", href: "/consulting" },
   { name: "Blog", href: "https://blog.fyralabs.com" },
   { name: "Contact", href: "/contact" },

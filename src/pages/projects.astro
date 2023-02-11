@@ -1,0 +1,77 @@
+---
+import Navbar from "../components/Navbar";
+import Layout from "../layouts/Layout.astro";
+
+import tauPattern from "../assets/tau-pattern.svg";
+import umPattern from "../assets/um-pattern.svg";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+---
+
+<Layout title="Projects">
+  <Navbar pathname={Astro.url.pathname} client:load />
+
+  <div class="mx-6 mb-6">
+    <div class="mx-auto max-w-4xl">
+      <section class="my-14">
+        <h1 class="text-5xl font-bold mb-2">Our Projects</h1>
+        <h2 class="text-gray-300 text-lg">
+          At Fyra Labs, we drive positive change through open-source technology
+          and community. Explore our portfolio and see how we're shaping the
+          future.
+        </h2>
+      </section>
+
+      <div class="flex flex-col gap-6">
+        <article class="flex bg-neutral-800 shadow-md rounded-2xl h-64">
+          <img
+            src={tauPattern}
+            alt="tauOS"
+            class="object-cover w-1/2 h-full hidden md:block rounded-l-2xl"
+          />
+          <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
+            <h1 class="font-bold text-3xl">tauOS</h1>
+
+            <p>
+              Discover the future of desktop computing with tauOS, currently in
+              development. tauOS is designed with ease of use in mind, featuring
+              an all-inclusive syncing service that synchronizes files,
+              configurations, keys, and more across all your devices.
+            </p>
+
+            <a
+              href="https://tauos.co/"
+              class="flex flex-row items-center gap-1 text-violet-300"
+              >Explore More <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </article>
+
+        <article
+          class="flex bg-neutral-800 shadow-md rounded-2xl h-64 flex-row-reverse"
+        >
+          <img
+            src={umPattern}
+            alt="Ultramarine Linux"
+            class="object-cover w-1/2 h-full hidden md:block rounded-r-2xl"
+          />
+          <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
+            <h1 class="font-bold text-3xl">Ultramarine Linux</h1>
+
+            <p>
+              Ultramarine Linux is a Fedora-based Linux distribution designed to
+              stay out of your way and be easy to use. With Ultramarine Linux,
+              you can get up and running quickly, and get back to doing what you
+              love, all with the power of Fedora.
+            </p>
+
+            <a
+              href="https://ultramarine-linux.org/"
+              class="flex flex-row items-center gap-1 text-violet-300"
+              >Explore More <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</Layout>
