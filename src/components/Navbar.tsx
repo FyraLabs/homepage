@@ -10,9 +10,16 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
+const Navbar: React.FC<{
+  pathname: string;
+  forceDark?: boolean;
+}> = ({
+  pathname,
+  // yes, I'm serious
+  forceDark = false,
+}) => {
   return (
-    <Disclosure as="nav" className="mb-4">
+    <Disclosure as="nav" className={classNames("mb-4")}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -31,7 +38,7 @@ const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <a className="flex flex-shrink-0 items-center" href="/">
                   <img
-                    className="block h-8 w-auto"
+                    className="block h-8 w-auto drop-shadow-xl"
                     src="/logo.svg"
                     alt="Fyra Labs"
                   />
@@ -45,7 +52,10 @@ const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
                         className={classNames(
                           item.href === pathname
                             ? "bg-zinc-700 text-white"
-                            : "text-gray-300 hover:bg-zinc-800 hover:text-white",
+                            : "hover:bg-zinc-800 hover:text-white",
+                          forceDark
+                            ? "text-gray-300"
+                            : "text-gray-700 dark:text-gray-300",
                           "px-3 py-2 rounded-md text-sm font-medium transition-all"
                         )}
                         aria-current={
@@ -69,7 +79,7 @@ const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <Disclosure.Panel className="sm:hidden">
+            <Disclosure.Panel className={"sm:hidden"}>
               <div className="space-y-1 px-2 pt-2 pb-3">
                 {navigation.map((item) => (
                   <Disclosure.Button
@@ -79,7 +89,10 @@ const Navbar: React.FC<{ pathname: string }> = ({ pathname }) => {
                     className={classNames(
                       item.href === pathname
                         ? "bg-zinc-700 text-white"
-                        : "text-gray-300 hover:bg-zinc-800 hover:text-white",
+                        : "hover:bg-zinc-800 hover:text-white",
+                      forceDark
+                        ? "text-gray-300"
+                        : "text-gray-700 dark:text-gray-300",
                       "block px-3 py-2 rounded-md text-base font-medium"
                     )}
                     aria-current={item.href === pathname ? "page" : undefined}

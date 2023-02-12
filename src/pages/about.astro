@@ -5,20 +5,20 @@ import TeamCard from "../components/TeamCard.astro";
 import team from "../data/team.json";
 import { Image } from "@astrojs/image/components";
 import aboutImage from "../assets/about.webp";
+import SEOFragment from "../components/SEOFragment.astro";
 
 const description =
   "At Fyra Labs, we believe technology can make a positive impact. Our focus is to create advanced technology that prioritizes privacy, is open-source, and user-centric. Guided by these principles, we aim to develop products that make a real difference.";
+
+const seo = {
+  title: "About Fyra Labs",
+  url: Astro.url.pathname,
+  description,
+};
 ---
 
 <Layout title="About">
-  <Fragment slot="head">
-    <meta property="og:title" content="About Fyra Labs" />
-    <meta property="og:url" content="https://fyralabs.com/about" />
-    <meta property="og:description" content={description} />
-    <meta property="og:type" content="business.business" />
-    <meta property="og:image" content="/logo.png" />
-    <meta name="description" content={description} />
-  </Fragment>
+  <SEOFragment {...seo} />
 
   <Navbar pathname={Astro.url.pathname} client:load />
 
@@ -28,7 +28,7 @@ const description =
       <section class="flex items-center gap-12">
         <div class="flex-1">
           <h1 class="font-bold text-5xl">About <br />Fyra Labs</h1>
-          <p class="mt-3 text-gray-300">
+          <p class="mt-3 text-gray-700 dark:text-gray-300">
             {description}
           </p>
         </div>
@@ -39,7 +39,7 @@ const description =
           <Image
             src={aboutImage}
             alt="About Fyra Labs"
-            class="rounded-2xl shadow-md bg-neutral-800"
+            class="rounded-2xl shadow-md bg-neutral-100 dark:bg-neutral-800"
           />
         </div>
       </section>
@@ -48,7 +48,9 @@ const description =
         <h1 class="font-bold text-3xl mb-8">Our Principles</h1>
 
         <div class="flex flex-col md:flex-row gap-6">
-          <div class="p-4 bg-neutral-800 shadow-md rounded-2xl">
+          <div
+            class="p-4 bg-neutral-100 dark:bg-neutral-800 shadow-md rounded-2xl"
+          >
             <p class="font-semibold text-2xl mb-3">Open</p>
             <p>
               Fyra Labs believes in the power of open-source. Our code is open
@@ -58,7 +60,9 @@ const description =
             </p>
           </div>
 
-          <div class="p-4 bg-neutral-800 shadow-md rounded-2xl">
+          <div
+            class="p-4 bg-neutral-100 dark:bg-neutral-800 shadow-md rounded-2xl"
+          >
             <p class="font-semibold text-2xl mb-3">Private</p>
             <p>
               At Fyra Labs, we understand that trust is built on user privacy.
@@ -68,7 +72,9 @@ const description =
             </p>
           </div>
 
-          <div class="p-4 bg-neutral-800 shadow-md rounded-2xl">
+          <div
+            class="p-4 bg-neutral-100 dark:bg-neutral-800 shadow-md rounded-2xl"
+          >
             <p class="font-semibold text-2xl mb-3">Human</p>
             <p>
               We believe that technology exists to serve humanity. That's why we

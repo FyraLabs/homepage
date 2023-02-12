@@ -2,23 +2,14 @@
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
+import SEOFragment from "../components/SEOFragment.astro";
+
+const description =
+  "Creating a better future through cutting-edge, open-source technology.";
 ---
 
 <Layout title="Welcome to Fyra Labs">
-  <Fragment slot="head">
-    <meta property="og:title" content="Welcome to Fyra Labs" />
-    <meta property="og:url" content="https://fyralabs.com" />
-    <meta
-      property="og:description"
-      content="Creating a better future through cutting-edge, open-source technology."
-    />
-    <meta property="og:type" content="business.business" />
-    <meta property="og:image" content="/logo.png" />
-    <meta
-      name="description"
-      content="Creating a better future through cutting-edge, open-source technology."
-    />
-  </Fragment>
+  <SEOFragment title="Welcome to Fyra Labs" description={description} url="" />
 
   <!-- <img
     class="block h-[128px] w-auto absolute left-14 top-14"
@@ -30,7 +21,7 @@ import { Icon } from "astro-icon";
     id="background"
     class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
 
-  <Navbar pathname={Astro.url.pathname} client:load />
+  <Navbar pathname={Astro.url.pathname} forceDark client:load />
 
   <div
     class="bg-gradient-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
@@ -39,7 +30,7 @@ import { Icon } from "astro-icon";
   <div class="m-4 md:m-14 flex flex-col absolute bottom-0">
     <h1 class="font-bold text-3xl md:text-5xl">Welcome to Fyra Labs.</h1>
     <h2 class="md:text-lg">
-      Creating a better future through cutting-edge, open-source technology
+      {description}
     </h2>
     <div class="mt-2 flex gap-3">
       <a
