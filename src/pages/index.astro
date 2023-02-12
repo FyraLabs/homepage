@@ -6,10 +6,16 @@ import SEOFragment from "../components/SEOFragment.astro";
 
 const description =
   "Creating a better future through cutting-edge, open-source technology.";
+
+const seo = {
+  title: "Welcome to Fyra Labs",
+  description,
+  url: "",
+};
 ---
 
 <Layout title="Welcome to Fyra Labs">
-  <SEOFragment title="Welcome to Fyra Labs" description={description} url="" />
+  <SEOFragment {...seo} slot="head" />
 
   <!-- <img
     class="block h-[128px] w-auto absolute left-14 top-14"

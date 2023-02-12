@@ -18,7 +18,7 @@ const seo = {
 ---
 
 <Layout title="About">
-  <SEOFragment {...seo} />
+  <SEOFragment {...seo} slot="head" />
 
   <Navbar pathname={Astro.url.pathname} client:load />
 

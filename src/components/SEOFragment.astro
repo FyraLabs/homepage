@@ -10,7 +10,7 @@ const { title, description, url } = Astro.props;
 const website = "https://fyralabs.com";
 ---
 
-<Fragment slot="head">
+<Fragment>
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={website + url} />
