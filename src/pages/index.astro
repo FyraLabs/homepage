@@ -26,59 +26,56 @@ import { Icon } from "astro-icon";
     alt="Fyra Labs"
   /> -->
 
-  <main class="relative min-h-screen">
-    <canvas
-      id="background"
-      class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"
-    ></canvas>
+  <canvas
+    id="background"
+    class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
 
-    <Navbar pathname={Astro.url.pathname} client:load />
+  <Navbar pathname={Astro.url.pathname} client:load />
 
-    <div
-      class="bg-gradient-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
-    >
+  <div
+    class="bg-gradient-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
+  >
+  </div>
+  <div class="m-4 md:m-14 flex flex-col absolute bottom-0">
+    <h1 class="font-bold text-3xl md:text-5xl">Welcome to Fyra Labs.</h1>
+    <h2 class="md:text-lg">
+      Creating a better future through cutting-edge, open-source technology
+    </h2>
+    <div class="mt-2 flex gap-3">
+      <a
+        href="https://twitter.com/teamfyralabs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-violet-300 transition-all"
+      >
+        <Icon name="fa-brands:twitter" class="h-6" />
+      </a>
+      <a
+        href="https://mastodon.fyralabs.com/@hq"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-violet-300 transition-all"
+      >
+        <Icon name="fa-brands:mastodon" class="h-6" />
+      </a>
+      <a
+        href="https://github.com/fyralabs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-violet-300 transition-all"
+      >
+        <Icon name="fa-brands:github" class="h-6" />
+      </a>
+      <a
+        href="https://discord.gg/5fdPuxTg5Q"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-violet-300 transition-all"
+      >
+        <Icon name="fa-brands:discord" class="h-6" />
+      </a>
     </div>
-    <div class="m-4 md:m-14 flex flex-col absolute bottom-0">
-      <h1 class="font-bold text-3xl md:text-5xl">Welcome to Fyra Labs.</h1>
-      <h2 class="md:text-lg">
-        Creating a better future through cutting-edge, open-source technology
-      </h2>
-      <div class="mt-2 flex gap-3">
-        <a
-          href="https://twitter.com/teamfyralabs"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-violet-300 transition-all"
-        >
-          <Icon name="fa-brands:twitter" class="h-6" />
-        </a>
-        <a
-          href="https://mastodon.fyralabs.com/@hq"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-violet-300 transition-all"
-        >
-          <Icon name="fa-brands:mastodon" class="h-6" />
-        </a>
-        <a
-          href="https://github.com/fyralabs"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-violet-300 transition-all"
-        >
-          <Icon name="fa-brands:github" class="h-6" />
-        </a>
-        <a
-          href="https://discord.gg/5fdPuxTg5Q"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:text-violet-300 transition-all"
-        >
-          <Icon name="fa-brands:discord" class="h-6" />
-        </a>
-      </div>
-    </div>
-  </main>
+  </div>
 </Layout>
 
 <style>
