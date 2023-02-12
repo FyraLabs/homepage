@@ -8,7 +8,12 @@ const DiscordStatusBadge: React.FC<{
   dndIsOnline: boolean;
 }> = ({ discordID, dndIsOnline }) => {
   // TODO: real-time & batching
-  const data = useLanyard(discordID as `${bigint}`);
+  const data = useLanyard(discordID as `${bigint}`, {
+    api: {
+      hostname: "lanyard.fyralabs.com",
+      secure: true,
+    },
+  });
   const status = data?.data?.discord_status ?? "Unknown";
 
   return (
