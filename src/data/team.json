@@ -157,21 +157,6 @@
     ]
   },
   {
-    "name": "infinitebash",
-    "username": "infinitebash",
-    "title": "Contributor",
-    "socials": [
-      {
-        "icon": "fa-brands:github",
-        "link": "https://github.com/infinitebash"
-      },
-      {
-        "icon": "fa-solid:key",
-        "link": "https://fyralabs.com/pgp.asc"
-      }
-    ]
-  },
-  {
     "name": "Aikoyori",
     "username": "aikoyori",
     "title": "Designer",
