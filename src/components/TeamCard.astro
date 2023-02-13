@@ -26,15 +26,15 @@ const splitName = name.split(' ');
   </div>
 
   <div class="text-center">
-    <p class="font-semibold">{splitName.slice(0, -1).join(' ')} <span class="font-extrabold">{splitName.at(-1)}</span></p>
-    <p class="text-gray-700 dark:text-gray-300">{title}</p>
+    <p class="font-semibold dark:opacity-[92%]">{splitName.slice(0, -1).join(' ')} <span class="font-extrabold">{splitName.at(-1)}</span></p>
+    <p class="text-gray-800 dark:text-gray-300">{title}</p>
   </div>
 
   <a class="group text-gray-600 dark:text-gray-200 text-sm" href={`mailto:${username}@fyralabs.com`}>
-    {username}<span class="text-violet-700 dark:text-violet-300 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-all">@fyralabs.com</span>
+    {username}<span class="text-violet-700 dark:text-violet-300 group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-all">@fyralabs.com</span>
   </a>
 
-  <div class="flex gap-3 [&_a:hover]:text-gray-400 [&_a]:transition-all">
+  <div class="flex gap-5 [&_a:hover]:text-gray-400 [&_a]:transition-all">
     {
       socials.map(({icon, link}) => (
         <a href={link} target="_blank" rel="noopener noreferrer">
