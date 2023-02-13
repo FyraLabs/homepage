@@ -135,6 +135,7 @@ const seo = {
         </div>
         <form
           action="mailto:contact@fyralabs.com"
+          enctype="multipart/form-data"
           class="lg:w-2/6 md:w-1/2 flex flex-col md:ml-auto w-full mt-6 md:mt-0"
         >
           <div class="relative mb-4">
@@ -164,10 +165,13 @@ const seo = {
               required></textarea>
           </div>
           <button
-            class="text-white bg-violet-500 border-0 py-2 px-8 focus:outline-none hover:bg-violet-600 rounded text-lg"
+            class="text-white bg-violet-500 py-2 px-8 hover:bg-violet-600 focus:ring-violet-900 focus:border-violet-500 rounded text-lg"
             >Contact Us</button
           >
-          <p class="text-xs mt-3">We'll get back to you within 48 hours.</p>
+          <p class="text-xs mt-3">
+            We'll get back to you within 48 hours. This will open your email
+            client to complete.
+          </p>
         </form>
       </section>
     </div>
