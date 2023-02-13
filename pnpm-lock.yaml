@@ -8,6 +8,7 @@ specifiers:
   '@fontsource/inter': ^4.5.15
   '@headlessui/react': ^1.7.8
   '@heroicons/react': ^2.0.14
+  '@lleyton/dotted-map': ^2.3.1
   '@shrutibalasa/tailwind-grid-auto-fit': ^1.1.0
   '@spissvinkel/simplex-noise': ^1.0.1
   '@types/react': ^18.0.21
@@ -17,7 +18,6 @@ specifiers:
   astro-heroicons: ^0.3.0
   astro-icon: ^0.8.0
   astro-robots-txt: ^0.3.12
-  dotted-map: ^2.2.3
   react: ^18.0.0
   react-dom: ^18.0.0
   tailwindcss: ^3.0.24
@@ -46,8 +46,8 @@ dependencies:
   use-lanyard: 1.4.0
 
 devDependencies:
+  '@lleyton/dotted-map': 2.3.1
   '@shrutibalasa/tailwind-grid-auto-fit': 1.1.0
-  dotted-map: 2.2.3
   tsx: 3.12.2
 
 packages:
@@ -758,6 +758,13 @@ packages:
   /@ljharb/has-package-exports-patterns/0.0.2:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
     dev: false
+
+  /@lleyton/dotted-map/2.3.1:
+    resolution: {integrity: sha512-6m9HOxcv5C2r8AUg6hSSkDhXzBbV30DXwX6noU0EHsxct3fRji7oyFJyYV1j/OZEDS1rtwWIsdy3EQUoA0ANZw==}
+    dependencies:
+      '@turf/boolean-point-in-polygon': 6.5.0
+      proj4: 2.8.1
+    dev: true
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1687,13 +1694,6 @@ packages:
       no-case: 3.0.4
       tslib: 2.5.0
     dev: false
-
-  /dotted-map/2.2.3:
-    resolution: {integrity: sha512-8hyOOHHLLVCcCisM3yb9hqp+3bJ7TSMcr1SfrUw8Wxp5UMqih35jIvUyagweCooJbz/EH1nC9GGuPysh7+YlAg==}
-    dependencies:
-      '@turf/boolean-point-in-polygon': 6.5.0
-      proj4: 2.8.1
-    dev: true
 
   /dset/3.1.2:
     resolution: {integrity: sha512-g/M9sqy3oHe477Ar4voQxWtaPIFw1jTdKZuomOjhCcBx9nHUNn0pu6NopuFFrTh/TRZIKEj+76vLWFu9BNKk+Q==}
