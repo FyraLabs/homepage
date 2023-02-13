@@ -53,9 +53,11 @@ const Navbar: React.FC<{
                           item.href === pathname
                             ? "bg-zinc-700 text-white"
                             : "hover:bg-zinc-800 hover:text-white",
-                          forceDark
-                            ? "text-gray-300"
-                            : "text-gray-700 dark:text-gray-300",
+                          item.href !== pathname
+                            ? forceDark
+                              ? "text-gray-300"
+                              : "text-gray-800 dark:text-gray-300"
+                            : "",
                           "px-3 py-2 rounded-md text-sm font-medium transition-all"
                         )}
                         aria-current={
@@ -90,9 +92,11 @@ const Navbar: React.FC<{
                       item.href === pathname
                         ? "bg-zinc-700 text-white"
                         : "hover:bg-zinc-800 hover:text-white",
-                      forceDark
-                        ? "text-gray-300"
-                        : "text-gray-700 dark:text-gray-300",
+                      item.href !== pathname
+                        ? forceDark
+                          ? "text-gray-300"
+                          : "text-gray-800 dark:text-gray-300"
+                        : "",
                       "block px-3 py-2 rounded-md text-base font-medium"
                     )}
                     aria-current={item.href === pathname ? "page" : undefined}

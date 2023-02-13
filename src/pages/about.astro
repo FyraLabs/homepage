@@ -27,8 +27,10 @@ const seo = {
     <div class="mx-auto max-w-5xl">
       <section class="flex items-center gap-12">
         <div class="flex-1">
-          <h1 class="font-bold text-5xl">About <br />Fyra Labs</h1>
-          <p class="mt-3 text-gray-700 dark:text-gray-300">
+          <h1 class="font-bold text-5xl dark:opacity-[92%]">
+            About <br />Fyra Labs
+          </h1>
+          <p class="mt-6 text-gray-800 dark:text-gray-300">
             {description}
           </p>
         </div>
@@ -39,20 +41,22 @@ const seo = {
           <Image
             src={aboutImage}
             alt="About Fyra Labs"
-            class="rounded-2xl shadow-md bg-neutral-100 dark:bg-neutral-800"
+            class="rounded-2xl hover:shadow-md transition-all bg-neutral-100 dark:bg-neutral-800"
           />
         </div>
       </section>
 
       <section class="mt-6">
-        <h1 class="font-bold text-3xl mb-8">Our Principles</h1>
+        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
+          Our Principles
+        </h1>
 
         <div class="flex flex-col md:flex-row gap-6">
           <div
-            class="p-4 bg-neutral-100 dark:bg-neutral-800 shadow-md rounded-2xl"
+            class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
           >
-            <p class="font-semibold text-2xl mb-3">Open</p>
-            <p>
+            <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">Open</p>
+            <p class="dark:opacity-[92%]">
               Fyra Labs believes in the power of open-source. Our code is open
               for anyone to access, examine, and improve. We believe that
               open-source leads to innovation and collaboration, which
@@ -61,10 +65,12 @@ const seo = {
           </div>
 
           <div
-            class="p-4 bg-neutral-100 dark:bg-neutral-800 shadow-md rounded-2xl"
+            class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
           >
-            <p class="font-semibold text-2xl mb-3">Private</p>
-            <p>
+            <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
+              Private
+            </p>
+            <p class="dark:opacity-[92%]">
               At Fyra Labs, we understand that trust is built on user privacy.
               That's why we put privacy at the forefront of our product
               development and employ end-to-end encryption whenever possible to
@@ -73,10 +79,10 @@ const seo = {
           </div>
 
           <div
-            class="p-4 bg-neutral-100 dark:bg-neutral-800 shadow-md rounded-2xl"
+            class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
           >
-            <p class="font-semibold text-2xl mb-3">Human</p>
-            <p>
+            <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">Human</p>
+            <p class="dark:opacity-[92%]">
               We believe that technology exists to serve humanity. That's why we
               design our products with respect for the user in mind. We strive
               to create technology that is inclusive, accessible, and
@@ -87,7 +93,9 @@ const seo = {
       </section>
 
       <section class="mt-6">
-        <h1 class="font-bold text-3xl mb-8">Meet the Team</h1>
+        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
+          Meet the Team
+        </h1>
 
         <div class="grid grid-auto-fit-sm gap-6">
           {team.map((member) => <TeamCard {...member} />)}
