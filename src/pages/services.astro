@@ -134,46 +134,19 @@ const seo = {
           </p>
         </div>
         <!-- TODO: I didn't even know this was a thing tbh. Maybe we want to handle this in a serverless function in the future. For now, this works and is quite nice IMO. -->
-        <form
-          action="mailto:contact@fyralabs.com"
-          enctype="multipart/form-data"
+        <div
           class="lg:w-2/6 md:w-1/2 flex flex-col md:ml-auto w-full mt-6 md:mt-0"
         >
-          <div class="relative mb-4">
-            <label
-              for="subject"
-              class="leading-7 text-sm text-gray-800 dark:text-gray-300"
-              >Subject</label
-            >
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              class="w-full bg-neutral-300 dark:bg-neutral-800 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-violet-900 rounded border border-gray-600 focus:border-violet-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              required
-            />
-          </div>
-          <div class="relative mb-4">
-            <label
-              for="body"
-              class="leading-7 text-sm text-gray-800 dark:text-gray-300"
-              >Message</label
-            >
-            <textarea
-              id="body"
-              name="body"
-              class="w-full bg-neutral-300 dark:bg-neutral-800 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-violet-900 rounded border border-gray-600 focus:border-violet-500 text-base outline-none py-1 px-3 transition-colors duration-200 ease-in-out"
-              required></textarea>
-          </div>
-          <button
-            class="text-white bg-violet-500 py-2 px-8 hover:bg-violet-600 focus:ring-violet-900 focus:border-violet-500 rounded text-lg"
-            >Contact Us</button
+          <a
+            href="mailto:contact@fyralabs.com"
+            class="text-white bg-violet-500 py-2 px-8 hover:bg-violet-600 focus:ring-violet-900 focus:border-violet-500 rounded text-lg text-center"
+            >Contact Us</a
           >
           <p class="text-xs mt-3">
             We'll get back to you within 48 hours. This will open your email
-            client to complete.
+            client.
           </p>
-        </form>
+        </div>
       </section>
     </div>
   </div>
