@@ -191,17 +191,5 @@
         "link": "https://twitter.com/_matteodev"
       }
     ]
-  },
-  {
-    "name": "Vidya",
-    "username": "vidya",
-    "title": "Go Developer",
-    "discordID": "219549133281820672",
-    "socials": [
-      {
-        "icon": "fa-brands:github",
-        "link": "https://github.com/mitaka78"
-      }
-    ]
   }
 ]
