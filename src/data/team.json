@@ -191,5 +191,25 @@
         "link": "https://twitter.com/_matteodev"
       }
     ]
+  },
+  {
+    "name": "Alyxia Sother",
+    "username": "alyxia",
+    "title": "Developer",
+    "discordID": "952185386350829688",
+    "socials": [
+      {
+        "icon": "fa-brands:github",
+        "link": "https://github.com/lexisother"
+      },
+      {
+        "icon": "fa-solid:globe",
+        "link": "https://alyxia.dev/"
+      },
+      {
+        "icon": "fa-brands:twitter",
+        "link": "https://twitter.com/lexisother"
+      }
+    ]
   }
 ]
