@@ -3,6 +3,17 @@ import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import SEOFragment from "../components/SEOFragment.astro";
+import team from "../data/team.json";
+
+const mastodonLinks = team
+  .map(
+    (member) =>
+      member.socials.filter((social) => social.icon === "fa-brands:mastodon")[0]
+        ?.link
+  )
+  .filter((link) => link);
+
+console.log(mastodonLinks);
 
 const description =
   "Creating a better future through cutting-edge, open-source technology";
@@ -22,6 +33,17 @@ const seo = {
     src="/logo.svg"
     alt="Fyra Labs"
   /> -->
+
+  <!-- Mastodon rel=me links -->
+  <div class="hidden" aria-hidden="true">
+    {
+      mastodonLinks.map((link) => (
+        <a href={link} rel="me">
+          {link}
+        </a>
+      ))
+    }
+  </div>
 
   <canvas
     id="background"
