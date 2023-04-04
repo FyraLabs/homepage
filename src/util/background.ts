@@ -28,8 +28,10 @@ canvas.addEventListener("click", () => {
   noiseGenerator = mkSimplexNoise(Math.random);
 });
 
-window.addEventListener("resize", () => {
-  setupCanvas(canvas);
+window.addEventListener("keypress", (event) => {
+  if (event.code === "Space") {
+    noiseGenerator = mkSimplexNoise(Math.random);
+  }
 });
 
 const draw = (frame: number) => {
