@@ -63,7 +63,7 @@
   {
     "name": "Cappy Ishihara",
     "username": "cappy",
-    "title": "Senior DevOps Engineer",
+    "title": "Chief Information Officer",
     "discordID": "254542844197470209",
     "socials": [
       {
@@ -77,6 +77,10 @@
       {
         "icon": "fa-brands:twitter",
         "link": "https://twitter.com/CappyIshihara"
+      },
+      {
+        "icon": "fa-brands:mastodon",
+        "link": "https://ordinary.cafe/@korewaChino"
       }
     ]
   },
