@@ -25,7 +25,7 @@ export default defineConfig({
     tailwind(),
     react(),
     image(),
-    sitemap(),
+    sitemap({ filter: (page) => page !== "https://fyralabs.com/thanks/" }),
     compress(),
     robotsTxt(),
   ],

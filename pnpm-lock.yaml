@@ -60,6 +60,9 @@ dependencies:
     version: 1.4.2
 
 devDependencies:
+  '@cloudflare/workers-types':
+    specifier: ^4.20230404.0
+    version: 4.20230404.0
   '@lleyton/dotted-map':
     specifier: ^2.3.1
     version: 2.3.1
@@ -452,6 +455,10 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
     dev: false
+
+  /@cloudflare/workers-types@4.20230404.0:
+    resolution: {integrity: sha512-fG3oaJX1icfsGV74nhx1+AC6opvZsGqnpx6FvrcVqQaBmCNkjKNqDRFrpasXWFiOIvysBXHKQAzsAJkBZgnM+A==}
+    dev: true
 
   /@emmetio/abbreviation@2.3.1:
     resolution: {integrity: sha512-QXgYlXZGprqb6aCBJPPWVBN/Jb69khJF73GGJkOk//PoMgSbPGuaHn1hCRolctnzlBHjCIC6Om97Pw46/1A23g==}
