@@ -23,8 +23,7 @@ const seo = {
     <div class="mx-auto max-w-5xl">
       <section class="flex items-center gap-12">
         <div class="flex-1 hidden lg:block">
-          <!-- Yes, it works despite the TS error -->
-          {/* @ts-expect-error */}
+          {/* @ts-ignore Yes, it works despite the TS error */}
           <Image
             src={consultingImage}
             alt="Professional Services"
@@ -139,7 +138,7 @@ const seo = {
         >
           <a
             href="mailto:contact@fyralabs.com"
-            class="text-white bg-violet-500 py-2 px-8 hover:bg-violet-600 focus:ring-violet-900 focus:border-violet-500 rounded text-lg text-center"
+            class="font-semibold text-gray-200 bg-violet-500 py-2 px-8 hover:bg-violet-600 focus:ring-violet-900 focus:border-violet-500 rounded text-lg text-center"
             >Contact Us</a
           >
           <p class="text-xs mt-3">

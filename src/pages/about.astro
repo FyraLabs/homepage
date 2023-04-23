@@ -6,6 +6,7 @@ import team from "../data/team.json";
 import { Image } from "@astrojs/image/components";
 import aboutImage from "../assets/about.webp";
 import SEOFragment from "../components/SEOFragment.astro";
+import type { TeamMember } from "../util/team";
 
 const description =
   "At Fyra Labs, we believe technology can make a positive impact. Our focus is to create advanced technology that prioritizes privacy, is open-source, and user-centric. Guided by these principles, we aim to develop products that make a real difference.";
@@ -36,8 +37,7 @@ const seo = {
         </div>
 
         <div class="flex-1 hidden lg:block">
-          <!-- Yes, it works despite the TS error -->
-          {/* @ts-expect-error */}
+          {/* @ts-ignore Yes, it works despite the TS error */}
           <Image
             src={aboutImage}
             alt="About Fyra Labs"
@@ -98,7 +98,7 @@ const seo = {
         </h1>
 
         <div class="grid grid-auto-fit-sm gap-6">
-          {team.map((member) => <TeamCard {...member} />)}
+          {(team as TeamMember[]).map((member) => <TeamCard {...member} />)}
         </div>
       </section>
     </div>

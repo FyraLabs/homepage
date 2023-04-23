@@ -6,15 +6,15 @@
     "discordID": "228736069091196928",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/lleyton"
       },
       {
-        "icon": "fa-brands:twitter",
+        "type": "twitter",
         "link": "https://twitter.com/lleyton__"
       },
       {
-        "icon": "fa-brands:mastodon",
+        "type": "mastodon",
         "link": "https://ordinary.cafe/@lea"
       }
     ]
@@ -27,15 +27,15 @@
     "dndIsOnline": true,
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/nothingneko"
       },
       {
-        "icon": "fa-brands:twitter",
+        "type": "twitter",
         "link": "https://twitter.com/jaidens__"
       },
       {
-        "icon": "fa-brands:mastodon",
+        "type": "mastodon",
         "link": "https://ordinary.cafe/@jaiden"
       }
     ]
@@ -47,15 +47,15 @@
     "discordID": "191064062153457665",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/lainsce"
       },
       {
-        "icon": "fa-solid:globe",
+        "type": "website",
         "link": "https://lainsce.us"
       },
       {
-        "icon": "fa-brands:mastodon",
+        "type": "mastodon",
         "link": "https://fosstodon.org/@lainsdev"
       }
     ]
@@ -67,19 +67,19 @@
     "discordID": "254542844197470209",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/korewaChino"
       },
       {
-        "icon": "fa-solid:globe",
+        "type": "website",
         "link": "https://cappuchino.xyz/"
       },
       {
-        "icon": "fa-brands:twitter",
+        "type": "twitter",
         "link": "https://twitter.com/CappyIshihara"
       },
       {
-        "icon": "fa-brands:mastodon",
+        "type": "mastodon",
         "link": "https://ordinary.cafe/@korewaChino"
       }
     ]
@@ -91,11 +91,11 @@
     "discordID": "653086042752286730",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/windowsboy111"
       },
       {
-        "icon": "fa-brands:mastodon",
+        "type": "mastodon",
         "link": "https://floss.social/@madomado"
       }
     ]
@@ -107,11 +107,11 @@
     "discordID": "626524398207238175",
     "socials": [
       {
-        "icon": "fa-brands:twitter",
+        "type": "twitter",
         "link": "https://twitter.com/owen_zimmerman"
       },
       {
-        "icon": "fa-brands:mastodon",
+        "type": "mastodon",
         "link": "https://ordinary.cafe/@owen"
       }
     ]
@@ -123,11 +123,11 @@
     "discordID": "540898474288480256",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/trobonox"
       },
       {
-        "icon": "fa-solid:globe",
+        "type": "website",
         "link": "https://trobo.tech"
       }
     ]
@@ -139,7 +139,7 @@
     "discordID": "1001696289324539934",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/raboneko"
       }
     ]
@@ -151,11 +151,11 @@
     "discordID": "476203781139202058",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/rmnscnce"
       },
       {
-        "icon": "fa-solid:globe",
+        "type": "website",
         "link": "https://me.pjm.my.id/"
       }
     ]
@@ -167,15 +167,15 @@
     "discordID": "254214302653743104",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/Aikoyori"
       },
       {
-        "icon": "fa-brands:twitter",
+        "type": "twitter",
         "link": "https://twitter.com/Aikoyori"
       },
       {
-        "icon": "fa-solid:globe",
+        "type": "website",
         "link": "https://aikoyori.xyz/"
       }
     ]
@@ -187,11 +187,11 @@
     "discordID": "933697808152801311",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/matteodev8"
       },
       {
-        "icon": "fa-brands:twitter",
+        "type": "twitter",
         "link": "https://twitter.com/_matteodev"
       }
     ]
@@ -203,15 +203,15 @@
     "discordID": "952185386350829688",
     "socials": [
       {
-        "icon": "fa-brands:github",
+        "type": "github",
         "link": "https://github.com/lexisother"
       },
       {
-        "icon": "fa-solid:globe",
+        "type": "website",
         "link": "https://alyxia.dev/"
       },
       {
-        "icon": "fa-brands:twitter",
+        "type": "twitter",
         "link": "https://twitter.com/lexisother"
       }
     ]

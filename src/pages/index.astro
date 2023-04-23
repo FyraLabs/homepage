@@ -8,8 +8,7 @@ import team from "../data/team.json";
 const mastodonLinks = team
   .map(
     (member) =>
-      member.socials.filter((social) => social.icon === "fa-brands:mastodon")[0]
-        ?.link
+      member.socials.filter((social) => social.type === "mastodon")[0]?.link
   )
   .filter((link) => link);
 

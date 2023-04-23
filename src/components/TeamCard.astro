@@ -1,19 +1,10 @@
 ---
 import { Icon } from 'astro-icon';
 import DiscordStatusBadge from './DiscordStatusBadge';
-import { Image } from '@astrojs/image/components';
+import { Image } from "@astrojs/image/components";
+import { socialToIcon, socialToName, TeamMember } from '../util/team';
 
-interface Props {
-  name: string;
-  title: string;
-  username: string;
-  discordID?: string;
-  dndIsOnline?: boolean;
-  socials: {
-    icon: string;
-    link: string;
-  }[];
-}
+type Props = TeamMember;
 
 const { name, title, username, socials, discordID, dndIsOnline } = Astro.props;
 const splitName = name.split(' ');
@@ -36,9 +27,9 @@ const splitName = name.split(' ');
 
   <div class="flex gap-5 [&_a:hover]:text-gray-400 [&_a]:transition-all">
     {
-      socials.map(({icon, link}) => (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <Icon class="w-6" name={icon} />
+      socials.map(({type, link}) => (
+        <a href={link} target="_blank" rel="noopener" aria-label={socialToName[type]}>
+          <Icon class="w-6" name={socialToIcon[type]} />
         </a>
       ))
     }
