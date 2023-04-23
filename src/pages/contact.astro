@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
-import map from "../assets/map.svg";
+import map from "../assets/map.svg?url";
 import SEOFragment from "../components/SEOFragment.astro";
 
 const description =
@@ -28,7 +28,7 @@ const seo = {
             {description}
           </h2>
         </div>
-        <img src={map} alt="Map of Fyra locations" />
+        <img src={map} alt="Map of Fyra locations" wi />
       </section>
 
       <section class="flex flex-col md:flex-row gap-12 mt-14">
