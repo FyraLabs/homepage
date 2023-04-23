@@ -45,5 +45,5 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       }),
     });
 
-  return Response.redirect("/thanks", 303);
+  return Response.redirect("https://fyralabs.com/thanks", 303);
 };
