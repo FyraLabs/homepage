@@ -1,6 +1,7 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { classNames } from "../util/ui";
+import { useMemo } from "react";
 
 const navigation = [
   { name: "About", href: "/about" },
@@ -18,6 +19,10 @@ const Navbar: React.FC<{
   // yes, I'm serious
   forceDark = false,
 }) => {
+  const normalizedPathname = useMemo(
+    () => pathname.replace(/\/$/, ""),
+    [pathname]
+  );
   return (
     <Disclosure as="nav" className={classNames("mb-4")}>
       {({ open }) => (
@@ -50,10 +55,10 @@ const Navbar: React.FC<{
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.href === pathname
+                          item.href === normalizedPathname
                             ? "bg-zinc-700 text-white"
                             : "hover:bg-zinc-800 hover:text-white",
-                          item.href !== pathname
+                          item.href !== normalizedPathname
                             ? forceDark
                               ? "text-gray-300"
                               : "text-gray-800 dark:text-gray-300"
@@ -61,7 +66,7 @@ const Navbar: React.FC<{
                           "px-3 py-2 rounded-md text-sm font-medium transition-all"
                         )}
                         aria-current={
-                          item.href === pathname ? "page" : undefined
+                          item.href === normalizedPathname ? "page" : undefined
                         }
                       >
                         {item.name}
@@ -89,17 +94,19 @@ const Navbar: React.FC<{
                     as="a"
                     href={item.href}
                     className={classNames(
-                      item.href === pathname
+                      item.href === normalizedPathname
                         ? "bg-zinc-700 text-white"
                         : "hover:bg-zinc-800 hover:text-white",
-                      item.href !== pathname
+                      item.href !== normalizedPathname
                         ? forceDark
                           ? "text-gray-300"
                           : "text-gray-800 dark:text-gray-300"
                         : "",
                       "block px-3 py-2 rounded-md text-base font-medium"
                     )}
-                    aria-current={item.href === pathname ? "page" : undefined}
+                    aria-current={
+                      item.href === normalizedPathname ? "page" : undefined
+                    }
                   >
                     {item.name}
                   </Disclosure.Button>
