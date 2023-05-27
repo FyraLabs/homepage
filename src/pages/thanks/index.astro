@@ -1,0 +1,21 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import { astroI18n, t } from "astro-i18n";
+
+astroI18n.init(Astro);
+---
+
+<Layout title={t("index.thanks.shortTitle")}>
+  <div class="flex flex-col min-h-screen">
+    <Navbar />
+    <div class="flex-1 flex justify-center items-center">
+      <main class="text-center">
+        <h1 class="font-bold text-2xl">{t("index.thanks.title")}</h1>
+        <p class="text">
+          {t("index.thanks.description")}
+        </p>
+      </main>
+    </div>
+  </div>
+</Layout>

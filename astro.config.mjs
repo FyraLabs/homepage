@@ -1,3 +1,4 @@
+import i18n from "astro-i18n"
 import { defineConfig } from "astro/config";
 
 // https://astro.build/config
@@ -22,6 +23,7 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   site: "https://fyralabs.com",
   integrations: [
+    i18n(),
     tailwind(),
     react(),
     image(),

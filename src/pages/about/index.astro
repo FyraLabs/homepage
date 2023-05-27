@@ -1,0 +1,105 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import TeamCard from "../../components/TeamCard.astro";
+import team from "../../data/team.json";
+import { Image } from "@astrojs/image/components";
+import aboutImage from "../../assets/about.webp";
+import SEOFragment from "../../components/SEOFragment.astro";
+import type { TeamMember } from "../../util/team";
+import { astroI18n, t } from "astro-i18n";
+
+astroI18n.init(Astro);
+
+const title = t("index.about.title");
+const shortTitle = t("index.about.shortTitle");
+const description = t("index.about.description");
+
+const seo = {
+  title: title,
+  url: Astro.url.pathname,
+  description,
+};
+---
+
+<Layout title={shortTitle}>
+  <SEOFragment {...seo} slot="head" />
+
+  <Navbar />
+
+  <!-- TODO: hack for "min margins", move to layout -->
+  <div class="mx-6 mb-12">
+    <div class="mx-auto max-w-5xl">
+      <section class="flex items-center gap-12">
+        <div class="flex-1">
+          <h1 class="font-bold text-5xl dark:opacity-[92%] max-w-12">
+            {title}
+          </h1>
+          <p class="mt-6 text-gray-800 dark:text-gray-300">
+            {description}
+          </p>
+        </div>
+
+        <div class="flex-1 hidden lg:block">
+          {/* @ts-expect-error Yes, it works despite the TS error */}
+          <Image
+            src={aboutImage}
+            alt={title}
+            class="rounded-2xl hover:shadow-md transition-all bg-neutral-100 dark:bg-neutral-800"
+          />
+        </div>
+      </section>
+
+      <section class="mt-6">
+        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
+          {t("index.about.principles.title")}
+        </h1>
+
+        <div class="flex flex-col md:flex-row gap-6">
+          <div
+            class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
+          >
+            <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
+              {t("index.about.principles.open.title")}
+            </p>
+            <p class="dark:opacity-[92%]">
+              {t("index.about.principles.open.description")}
+            </p>
+          </div>
+
+          <div
+            class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
+          >
+            <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
+              {t("index.about.principles.private.title")}
+            </p>
+            <p class="dark:opacity-[92%]">
+              {t("index.about.principles.private.description")}
+            </p>
+          </div>
+
+          <div
+            class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
+          >
+            <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
+              {t("index.about.principles.human.title")}
+            </p>
+            <p class="dark:opacity-[92%]">
+              {t("index.about.principles.human.description")}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-6">
+        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
+          {t("index.about.team.title")}
+        </h1>
+
+        <div class="grid grid-auto-fit-sm gap-6">
+          {(team as TeamMember[]).map((member) => <TeamCard {...member} />)}
+        </div>
+      </section>
+    </div>
+  </div>
+</Layout>

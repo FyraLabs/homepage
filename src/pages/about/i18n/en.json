@@ -1,0 +1,37 @@
+{
+  "{route}": "about",
+  "title": "About Fyra Labs",
+  "shortTitle": "About",
+  "description": "At Fyra Labs, we believe technology can make a positive impact. Our focus is to create advanced technology that prioritizes privacy, is open-source, and user-centric. Guided by these principles, we aim to develop products that make a real difference.",
+  "principles": {
+    "title": "Our Principles",
+    "open": {
+      "title": "Open",
+      "description": "Fyra Labs believes in the power of open-source. Our code is open for anyone to access, examine, and improve. We believe that open-source leads to innovation and collaboration, which ultimately leads to better technology for everyone."
+    },
+    "private": {
+      "title": "Private",
+      "description": "At Fyra Labs, we understand that trust is built on user privacy. That's why we put privacy at the forefront of our product development and employ end-to-end encryption whenever possible to protect user data, even from ourselves."
+    },
+    "human": {
+      "title": "Human",
+      "description": "We believe that technology exists to serve humanity. That's why we design our products with respect for the user in mind. We strive to create technology that is inclusive, accessible, and user-centered, for the benefit of all."
+    }
+  },
+  "team": {
+    "title": "Meet the Team",
+    "titles": {
+      "ceo": "Chief Executive Officer",
+      "coo": "Chief Operating Officer",
+      "cxo": "Chief Design Officer",
+      "cio": "Chief Information Officer",
+      "devops": "DevOps Engineer",
+      "mediaConsultant": "Digital Media Consultant",
+      "webDev": "Web Developer",
+      "neko": "AI Assistant Neko",
+      "kernelDev": "Kernel Developer",
+      "designer": "Designer",
+      "developer": "Developer"
+    }
+  }
+}

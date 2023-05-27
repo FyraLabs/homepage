@@ -1,32 +1,36 @@
 ---
-import Navbar from "../components/Navbar";
-import Layout from "../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
 
-import tauPattern from "../assets/tau-pattern.svg";
-import umPattern from "../assets/um-pattern.svg";
-import terraPattern from "../assets/terra-pattern.svg";
+import tauPattern from "../../assets/tau-pattern.svg";
+import umPattern from "../../assets/um-pattern.svg";
+import terraPattern from "../../assets/terra-pattern.svg";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import SEOFragment from "../components/SEOFragment.astro";
+import SEOFragment from "../../components/SEOFragment.astro";
 import { Image } from "@astrojs/image/components";
+import { astroI18n, t } from "astro-i18n";
 
-const description =
-  "At Fyra Labs, we drive positive change through open-source technology and community. Explore our portfolio and see how we're shaping the future.";
+astroI18n.init(Astro);
+
+const title = t("index.projects.title");
+const shortTitle = t("index.projects.shortTitle");
+const description = t("index.projects.description");
 const seo = {
-  title: "Our Projects",
+  title: shortTitle,
   description,
   url: Astro.url.pathname,
 };
 ---
 
-<Layout title="Projects">
+<Layout title={shortTitle}>
   <SEOFragment {...seo} slot="head" />
 
-  <Navbar pathname={Astro.url.pathname} client:load />
+  <Navbar />
 
   <div class="mx-6 mb-12">
     <div class="mx-auto max-w-4xl">
       <section class="my-14">
-        <h1 class="text-5xl font-bold mb-2 dark:opacity-[92%]">Our Projects</h1>
+        <h1 class="text-5xl font-bold mb-2 dark:opacity-[92%]">{title}</h1>
         <h2 class="text-gray-800 dark:text-gray-300 text-lg">
           {description}
         </h2>
@@ -36,26 +40,26 @@ const seo = {
         <article
           class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64"
         >
-          {/* @ts-ignore Yes, it works despite the TS error */}
+          {/* @ts-expect-error Yes, it works despite the TS error */}
           <Image
             src={tauPattern}
-            alt="tauOS"
+            alt={t("index.projects.projects.tau.title")}
             class="object-cover w-1/2 hidden md:block rounded-l-2xl"
           />
           <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
-            <h1 class="font-bold text-3xl dark:opacity-[92%]">tauOS</h1>
+            <h1 class="font-bold text-3xl dark:opacity-[92%]">
+              {t("index.projects.projects.tau.title")}
+            </h1>
 
             <p class="dark:opacity-[92%]">
-              Discover the future of desktop computing with tauOS, currently in
-              development. tauOS is designed with ease of use in mind, featuring
-              an all-inclusive syncing service that synchronizes files,
-              configurations, keys, and more across all your devices.
+              {t("index.projects.projects.tau.description")}
             </p>
 
             <a
               href="https://tauos.co/"
               class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
-              >Explore More <ArrowRightIcon className="h-4 w-4" /></a
+              >{t("index.projects.projects.exploreCta")}
+              <ArrowRightIcon className="h-4 w-4" /></a
             >
           </div>
         </article>
@@ -63,28 +67,26 @@ const seo = {
         <article
           class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64 flex-row-reverse"
         >
-          {/* @ts-ignore Yes, it works despite the TS error */}
+          {/* @ts-expect-error Yes, it works despite the TS error */}
           <Image
             src={umPattern}
-            alt="Ultramarine Linux"
+            alt={t("index.projects.projects.um.title")}
             class="object-cover w-1/2 hidden md:block rounded-r-2xl"
           />
           <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
             <h1 class="font-bold text-3xl dark:opacity-[92%]">
-              Ultramarine Linux
+              {t("index.projects.projects.um.title")}
             </h1>
 
             <p class="dark:opacity-[92%]">
-              Ultramarine Linux is a Fedora-based Linux distribution designed to
-              stay out of your way and be easy to use. With Ultramarine Linux,
-              you can get up and running quickly, and get back to doing what you
-              love, all with the power of Fedora.
+              {t("index.projects.projects.um.description")}
             </p>
 
             <a
               href="https://ultramarine-linux.org/"
               class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
-              >Explore More <ArrowRightIcon className="h-4 w-4" /></a
+              >{t("index.projects.projects.exploreCta")}
+              <ArrowRightIcon className="h-4 w-4" /></a
             >
           </div>
         </article>
@@ -92,26 +94,26 @@ const seo = {
         <article
           class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64"
         >
-          {/* @ts-ignore Yes, it works despite the TS error */}
+          {/* @ts-expect-error Yes, it works despite the TS error */}
           <Image
             src={terraPattern}
-            alt="tauOS"
+            alt={t("index.projects.projects.terra.title")}
             class="object-cover w-1/2 hidden md:block rounded-l-2xl"
           />
           <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
-            <h1 class="font-bold text-3xl dark:opacity-[92%]">Terra</h1>
+            <h1 class="font-bold text-3xl dark:opacity-[92%]">
+              {t("index.projects.projects.terra.title")}
+            </h1>
 
             <p class="dark:opacity-[92%]">
-              Terra is a repository for software that goes beyond what's
-              available in Fedora. Experience quality and security with the
-              latest packages, or distribute your own software on Fedora and
-              other RPM-based distributions.
+              {t("index.projects.projects.terra.description")}
             </p>
 
             <a
               href="https://terra.fyralabs.com/"
               class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
-              >Explore More <ArrowRightIcon className="h-4 w-4" /></a
+              >{t("index.projects.projects.exploreCta")}
+              <ArrowRightIcon className="h-4 w-4" /></a
             >
           </div>
         </article>

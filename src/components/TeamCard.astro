@@ -3,6 +3,7 @@ import { Icon } from 'astro-icon';
 import DiscordStatusBadge from './DiscordStatusBadge';
 import { Image } from "@astrojs/image/components";
 import { socialToIcon, socialToName, TeamMember } from '../util/team';
+import { t } from "astro-i18n";
 
 type Props = TeamMember;
 
@@ -18,7 +19,7 @@ const splitName = name.split(' ');
 
   <div class="text-center">
     <p class="font-semibold dark:opacity-[92%]">{splitName.slice(0, -1).join(' ')} <span class="font-extrabold">{splitName.at(-1)}</span></p>
-    <p class="text-gray-800 dark:text-gray-300">{title}</p>
+    <p class="text-gray-800 dark:text-gray-300">{t(title)}</p>
   </div>
 
   <a class="group text-gray-600 dark:text-gray-200 text-sm" href={`mailto:${username}@fyralabs.com`}>
