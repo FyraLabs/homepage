@@ -1,5 +1,5 @@
 ---
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar.astro";
 import Layout from "../../layouts/Layout.astro";
 import consultingImage from "../../assets/consulting.webp";
 import { Image } from "@astrojs/image/components";
@@ -21,7 +21,7 @@ const seo = {
 <Layout title={shortTitle}>
   <SEOFragment {...seo} slot="head" />
 
-  <Navbar pathname={Astro.url.pathname} client:load />
+  <Navbar />
 
   <div class="mx-6 mb-12">
     <div class="mx-auto max-w-5xl">

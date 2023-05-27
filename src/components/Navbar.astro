@@ -1,0 +1,32 @@
+---
+import NavbarInner from "./NavbarInner";
+import { l, t } from "astro-i18n";
+
+interface Props {
+  forceDark: boolean;
+}
+
+const { forceDark } = Astro.props;
+
+const items = [
+  { name: t("index.navbar.items.about"), href: l("/about") },
+  { name: t("index.navbar.items.projects"), href: l("/projects") },
+  { name: t("index.navbar.items.services"), href: l("/services") },
+  {
+    name: t("index.navbar.items.blog"),
+    href: "https://blog.fyralabs.com",
+  },
+  { name: t("index.navbar.items.contact"), href: l("/contact") },
+];
+---
+
+<NavbarInner
+  pathname={Astro.url.pathname}
+  forceDark={forceDark}
+  items={items}
+  translations={{
+    openMenu: t("index.navbar.openMenu"),
+    logoAlt: t("index.navbar.openMenu"),
+  }}
+  client:load
+/>

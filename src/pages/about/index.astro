@@ -1,5 +1,5 @@
 ---
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar.astro";
 import Layout from "../../layouts/Layout.astro";
 import TeamCard from "../../components/TeamCard.astro";
 import team from "../../data/team.json";
@@ -25,7 +25,7 @@ const seo = {
 <Layout title={shortTitle}>
   <SEOFragment {...seo} slot="head" />
 
-  <Navbar pathname={Astro.url.pathname} client:load />
+  <Navbar />
 
   <!-- TODO: hack for "min margins", move to layout -->
   <div class="mx-6 mb-12">
