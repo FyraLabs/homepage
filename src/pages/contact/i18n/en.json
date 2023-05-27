@@ -1,0 +1,29 @@
+{
+  "{route}": "contact",
+  "title": "Let's Talk",
+  "shortTitle": "Contact",
+  "description": "Got a question or idea? Let's talk. Our team is here to help, wherever you are.",
+  "socials": {
+    "title": "Socials"
+  },
+  "emails": {
+    "title": "Emails",
+    "contact": {
+      "title": "Contact"
+    },
+    "security": {
+      "title": "Security"
+    },
+    "staff": {
+      "title": "Staff"
+    },
+    "services": {
+      "title": "Services"
+    }
+  },
+  "staff": {
+    "title": "Staff",
+    "description": "Ready to take the next step and join the Fyra Labs team? Fill out our application form now. Please note that this is currently an unpaid role.",
+    "cta": "Shall we begin?"
+  }
+}

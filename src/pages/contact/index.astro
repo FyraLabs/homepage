@@ -1,23 +1,24 @@
 ---
-import Navbar from "../components/Navbar";
-import Layout from "../layouts/Layout.astro";
+import Navbar from "../../components/Navbar";
+import Layout from "../../layouts/Layout.astro";
 import { Icon } from "astro-icon";
-import map from "../assets/map.svg?url";
-import SEOFragment from "../components/SEOFragment.astro";
-import { astroI18n } from "astro-i18n";
+import map from "../../assets/map.svg?url";
+import SEOFragment from "../../components/SEOFragment.astro";
+import { astroI18n, t } from "astro-i18n";
 
 astroI18n.init(Astro);
 
-const description =
-  "Got a question or idea? Let's talk. Our team is here to help, wherever you are.";
+const title = t("index.contact.title");
+const shortTitle = t("index.contact.shortTitle");
+const description = t("index.contact.description");
 const seo = {
-  title: "Let's Talk",
+  title: shortTitle,
   description,
   url: Astro.url.pathname,
 };
 ---
 
-<Layout title="Contact">
+<Layout title={shortTitle}>
   <SEOFragment {...seo} slot="head" />
 
   <Navbar pathname={Astro.url.pathname} client:load />
@@ -26,7 +27,7 @@ const seo = {
     <div class="mx-auto max-w-5xl">
       <section class="flex flex-col items-center gap-12 mt-14">
         <div class="text-center">
-          <h1 class="text-5xl font-bold dark:opacity-[92%]">Let's Talk</h1>
+          <h1 class="text-5xl font-bold dark:opacity-[92%]">{title}</h1>
           <h2 class="mt-3 text-gray-800 dark:text-gray-300">
             {description}
           </h2>
@@ -36,7 +37,9 @@ const seo = {
 
       <section class="flex flex-col md:flex-row gap-12 mt-14">
         <article class="flex-1">
-          <h1 class="font-semibold text-xl mb-2 dark:opacity-[92%]">Socials</h1>
+          <h1 class="font-semibold text-xl mb-2 dark:opacity-[92%]">
+            {t("index.contact.socials.title")}
+          </h1>
           <ul
             class="flex flex-col gap-1 [&_a]:inline-flex [&_a]:gap-2 [&_a]:items-center [&_a]:text-gray-800 [&_a]:dark:text-gray-100 [&_a:hover]:text-gray-800 [&_a:hover]:dark:text-gray-300 [&_a]:transition-all [&_svg]:w-5 [&_svg]:h-5"
           >
@@ -84,12 +87,14 @@ const seo = {
         </article>
 
         <article class="flex-1">
-          <h1 class="font-semibold text-xl mb-2 dark:opacity-[92%]">Emails</h1>
+          <h1 class="font-semibold text-xl mb-2 dark:opacity-[92%]">
+            {t("index.contact.emails.title")}
+          </h1>
 
           <ul class="flex flex-col gap-1">
             <li class="flex gap-2 items-center">
               <span class="font-semibold text-gray-600 dark:text-gray-200"
-                >General</span
+                >{t("index.contact.emails.contact.title")}</span
               >
               <a
                 href="mailto:contact@fyralabs.com"
@@ -103,7 +108,7 @@ const seo = {
             </li>
             <li class="flex gap-2 items-center">
               <span class="font-semibold text-gray-600 dark:text-gray-200"
-                >Security</span
+                >{t("index.contact.emails.security.title")}</span
               >
               <a
                 href="mailto:security@fyralabs.com"
@@ -117,7 +122,7 @@ const seo = {
             </li>
             <li class="flex gap-2 items-center">
               <span class="font-semibold text-gray-600 dark:text-gray-200"
-                >Staff</span
+                >{t("index.contact.emails.staff.title")}</span
               >
               <a
                 href="mailto:staff@fyralabs.com"
@@ -131,13 +136,13 @@ const seo = {
             </li>
             <li class="flex gap-2 items-center">
               <span class="font-semibold text-gray-600 dark:text-gray-200"
-                >Consulting</span
+                >{t("index.contact.emails.services.title")}</span
               >
               <a
                 href="mailto:consulting@fyralabs.com"
                 class="ml-auto group text-gray-800 dark:text-gray-300"
               >
-                consulting<span
+                services<span
                   class="text-violet-700 dark:text-violet-300 group-hover:text-gray-800 group-hover:dark:text-gray-300 transition-all"
                   >@fyralabs.com</span
                 >
@@ -146,17 +151,19 @@ const seo = {
           </ul>
         </article>
 
-        <article class="flex-1">
-          <h1 class="font-semibold text-xl mb-1 dark:opacity-[92%]">Staff</h1>
+        <section class="flex-1">
+          <h1 class="font-semibold text-xl mb-1 dark:opacity-[92%]">
+            {t("index.contact.staff.title")}
+          </h1>
           <p class="dark:opacity-[92%]">
-            Ready to take the next step and join the Fyra Labs team? Fill out
-            our <a
+            {t("index.contact.staff.description")}
+            <a
               class="text-violet-700 dark:text-violet-300 hover:text-inherit transition-all"
-              href="https://airtable.com/shr7nmRedL9NgR1JT">application form</a
-            > now. We'll be in touch soon! Please note that this is an unpaid role.
-            (for now)
+              href="https://airtable.com/shr7nmRedL9NgR1JT"
+              >{t("index.contact.staff.cta")}</a
+            >
           </p>
-        </article>
+        </section>
       </section>
     </div>
   </div>

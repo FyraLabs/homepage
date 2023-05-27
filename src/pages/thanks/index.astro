@@ -1,19 +1,19 @@
 ---
-import Navbar from "../components/Navbar";
-import Layout from "../layouts/Layout.astro";
-import { astroI18n } from "astro-i18n";
+import Navbar from "../../components/Navbar";
+import Layout from "../../layouts/Layout.astro";
+import { astroI18n, t } from "astro-i18n";
 
 astroI18n.init(Astro);
 ---
 
-<Layout title="Submitted">
+<Layout title={t("index.thanks.shortTitle")}>
   <div class="flex flex-col min-h-screen">
     <Navbar pathname={Astro.url.pathname} client:load />
     <div class="flex-1 flex justify-center items-center">
       <main class="text-center">
-        <h1 class="font-bold text-2xl">Thanks for getting in touch!</h1>
+        <h1 class="font-bold text-2xl">{t("index.thanks.title")}</h1>
         <p class="text">
-          We will get back to you as soon as possible, at most 48 hours.
+          {t("index.thanks.description")}
         </p>
       </main>
     </div>

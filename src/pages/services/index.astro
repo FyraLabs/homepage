@@ -1,23 +1,24 @@
 ---
-import Navbar from "../components/Navbar";
-import Layout from "../layouts/Layout.astro";
-import consultingImage from "../assets/consulting.webp";
+import Navbar from "../../components/Navbar";
+import Layout from "../../layouts/Layout.astro";
+import consultingImage from "../../assets/consulting.webp";
 import { Image } from "@astrojs/image/components";
-import SEOFragment from "../components/SEOFragment.astro";
-import { astroI18n } from "astro-i18n";
+import SEOFragment from "../../components/SEOFragment.astro";
+import { astroI18n, t } from "astro-i18n";
 
 astroI18n.init(Astro);
 
-const description =
-  "At Fyra Labs, we are driven by a mission to bring positive change through technology. From web design to strategy consulting, our comprehensive services are designed to help organizations and individuals reach their full potential. Let's bring about positive change together.";
+const title = t("index.services.title");
+const shortTitle = t("index.services.shortTitle");
+const description = t("index.services.description");
 const seo = {
-  title: "Professional Services",
+  title: shortTitle,
   description,
   url: Astro.url.pathname,
 };
 ---
 
-<Layout title="Services">
+<Layout title={shortTitle}>
   <SEOFragment {...seo} slot="head" />
 
   <Navbar pathname={Astro.url.pathname} client:load />
@@ -26,17 +27,17 @@ const seo = {
     <div class="mx-auto max-w-5xl">
       <section class="flex items-center gap-12">
         <div class="flex-1 hidden lg:block">
-          {/* @ts-ignore Yes, it works despite the TS error */}
+          {/* @ts-expect-error Yes, it works despite the TS error */}
           <Image
             src={consultingImage}
-            alt="Professional Services"
+            alt={title}
             class="rounded-2xl hover:shadow-md transition-all bg-neutral-100 dark:bg-neutral-800"
           />
         </div>
 
         <div class="flex-1">
           <h1 class="font-bold text-5xl dark:opacity-[92%]">
-            Professional Services
+            {title}
           </h1>
           <p class="mt-6 text-gray-800 dark:text-gray-300">
             {description}
@@ -45,19 +46,19 @@ const seo = {
       </section>
 
       <section class="mt-6">
-        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">Our Services</h1>
+        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
+          {t("index.services.services.title")}
+        </h1>
 
         <div class="grid grid-auto-fit-md gap-6">
           <div
             class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
           >
             <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
-              Strategy
+              {t("index.services.services.strategy.title")}
             </p>
             <p class="dark:opacity-[92%]">
-              Guide your business to success with our tailored strategy
-              consulting services. We will work with you to develop a plan to
-              meet your goals.
+              {t("index.services.services.strategy.description")}
             </p>
           </div>
 
@@ -65,11 +66,10 @@ const seo = {
             class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
           >
             <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
-              Operations
+              {t("index.services.services.operations.title")}
             </p>
             <p class="dark:opacity-[92%]">
-              Help streamline your daily operations by offering solutions to
-              improve processes, reduce waste, and optimize use of resources.
+              {t("index.services.services.operations.description")}
             </p>
           </div>
 
@@ -77,11 +77,10 @@ const seo = {
             class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
           >
             <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
-              Media Production
+              {t("index.services.services.mediaProduction.title")}
             </p>
             <p class="dark:opacity-[92%]">
-              Elevate your brand with professional-grade media production,
-              including video production, photo editing, and graphic design.
+              {t("index.services.services.mediaProduction.description")}
             </p>
           </div>
 
@@ -89,12 +88,10 @@ const seo = {
             class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
           >
             <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
-              Web Design
+              {t("index.services.services.webDesign.title")}
             </p>
             <p class="dark:opacity-[92%]">
-              Craft a digital presence that represents your brand and captivates
-              your audience. Our web design services are personalized to meet
-              your unique needs and goals.
+              {t("index.services.services.webDesign.description")}
             </p>
           </div>
 
@@ -102,12 +99,10 @@ const seo = {
             class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
           >
             <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
-              Systems Engineering
+              {t("index.services.services.systemsEngineering.title")}
             </p>
             <p class="dark:opacity-[92%]">
-              Keep your technology running smoothly with our expert systems
-              engineering services, specializing in server and service
-              management.
+              {t("index.services.services.systemsEngineering.description")}
             </p>
           </div>
 
@@ -115,11 +110,10 @@ const seo = {
             class="p-4 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
           >
             <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
-              Software Development
+              {t("index.services.services.softwareDevelopment.title")}
             </p>
             <p class="dark:opacity-[92%]">
-              We design and develop software tailored to meet your unique needs.
-              Our team works closely with you to bring your vision to life.
+              {t("index.services.services.softwareDevelopment.description")}
             </p>
           </div>
         </div>
@@ -128,11 +122,10 @@ const seo = {
       <section class="mt-12 container mx-auto flex flex-wrap">
         <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
           <h1 class="font-bold text-3xl mb-3 dark:opacity-[92%]">
-            Ready to go to the next level?
+            {t("index.services.contact.title")}
           </h1>
           <p class="text-gray-800 dark:text-gray-300">
-            Take the first step towards unlocking your potential. Reach out to
-            us today and let's work towards a brighter future together.
+            {t("index.services.contact.description")}
           </p>
         </div>
         <form
@@ -144,7 +137,7 @@ const seo = {
             <label
               for="email"
               class="leading-7 text-sm text-gray-700 dark:text-gray-300"
-              >Email</label
+              >{t("index.services.contact.form.email")}</label
             >
             <input
               type="email"
@@ -160,7 +153,7 @@ const seo = {
             <label
               for="message"
               class="leading-7 text-sm text-gray-700 dark:text-gray-300"
-              >Message</label
+              >{t("index.services.contact.form.message")}</label
             >
             <textarea
               id="message"
@@ -173,9 +166,11 @@ const seo = {
           <button
             type="submit"
             class="font-semibold text-gray-200 bg-violet-600 py-2 px-8 hover:bg-violet-700 focus:ring-violet-800 rounded text-lg text-center transition-colors"
-            >Contact Us</button
+            >{t("index.services.contact.form.contact")}</button
           >
-          <p class="text-xs mt-3">We'll get back to you within 48 hours.</p>
+          <p class="text-xs mt-3">
+            {t("index.services.contact.form.disclaimer")}
+          </p>
         </form>
       </section>
     </div>
