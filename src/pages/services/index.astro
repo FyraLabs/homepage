@@ -4,6 +4,9 @@ import Layout from "../layouts/Layout.astro";
 import consultingImage from "../assets/consulting.webp";
 import { Image } from "@astrojs/image/components";
 import SEOFragment from "../components/SEOFragment.astro";
+import { astroI18n } from "astro-i18n";
+
+astroI18n.init(Astro);
 
 const description =
   "At Fyra Labs, we are driven by a mission to bring positive change through technology. From web design to strategy consulting, our comprehensive services are designed to help organizations and individuals reach their full potential. Let's bring about positive change together.";

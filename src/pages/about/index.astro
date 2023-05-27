@@ -5,11 +5,13 @@ import TeamCard from "../components/TeamCard.astro";
 import team from "../data/team.json";
 import { Image } from "@astrojs/image/components";
 import aboutImage from "../assets/about.webp";
-import SEOFragment from "../components/SEOFragment.astro";
-import type { TeamMember } from "../util/team";
+import SEOFragment from "../../components/SEOFragment.astro";
+import type { TeamMember } from "../../util/team";
+import { astroI18n, t } from "astro-i18n";
 
-const description =
-  "At Fyra Labs, we believe technology can make a positive impact. Our focus is to create advanced technology that prioritizes privacy, is open-source, and user-centric. Guided by these principles, we aim to develop products that make a real difference.";
+astroI18n.init(Astro);
+
+const description = t("about.")
 
 const seo = {
   title: "About Fyra Labs",
