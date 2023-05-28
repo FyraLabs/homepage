@@ -3,17 +3,21 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { classNames } from "../util/ui";
 import { useMemo } from "react";
 
+const navigation = [
+  { name: "About", href: "/about" },
+  { name: "Projects", href: "/projects" },
+  { name: "Services", href: "/services" },
+  { name: "Blog", href: "https://blog.fyralabs.com" },
+  { name: "Contact", href: "/contact" },
+];
+
 const Navbar: React.FC<{
   pathname: string;
   forceDark?: boolean;
-  items: { name: string; href: string }[];
-  translations: { logoAlt: string; openMenu: string };
 }> = ({
   pathname,
   // yes, I'm serious
   forceDark = false,
-  items,
-  translations: { logoAlt, openMenu },
 }) => {
   const normalizedPathname = useMemo(
     () => pathname.replace(/\/$/, ""),
@@ -28,7 +32,7 @@ const Navbar: React.FC<{
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-zinc-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="sr-only">{openMenu}</span>
+                  <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
@@ -41,12 +45,12 @@ const Navbar: React.FC<{
                   <img
                     className="block h-8 w-auto drop-shadow-xl"
                     src="/logo.svg"
-                    alt={logoAlt}
+                    alt="Fyra Labs"
                   />
                 </a>
                 <div className="hidden sm:block ml-auto">
                   <div className="flex space-x-4">
-                    {items.map((item) => (
+                    {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -84,7 +88,7 @@ const Navbar: React.FC<{
           >
             <Disclosure.Panel className={"sm:hidden"}>
               <div className="space-y-1 px-2 pt-2 pb-3">
-                {items.map((item) => (
+                {navigation.map((item) => (
                   <Disclosure.Button
                     key={item.name}
                     as="a"

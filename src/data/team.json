@@ -2,7 +2,7 @@
   {
     "name": "Lleyton \"Lea\" Gray",
     "username": "lleyton",
-    "title": "index.about.team.titles.ceo",
+    "title": "Chief Executive Officer",
     "discordID": "228736069091196928",
     "socials": [
       {
@@ -22,7 +22,7 @@
   {
     "name": "Jaiden Riordan",
     "username": "jade",
-    "title": "index.about.team.titles.coo",
+    "title": "Chief Operating Officer",
     "discordID": "715268269170491443",
     "dndIsOnline": true,
     "socials": [
@@ -43,7 +43,7 @@
   {
     "name": "Paulo \"Lains\" Galardi",
     "username": "lains",
-    "title": "index.about.team.titles.cxo",
+    "title": "Chief Design Officer",
     "discordID": "191064062153457665",
     "socials": [
       {
@@ -63,7 +63,7 @@
   {
     "name": "Pornpipat \"Cappy\" Popum",
     "username": "cappy",
-    "title": "index.about.team.titles.cio",
+    "title": "Chief Information Officer",
     "discordID": "254542844197470209",
     "socials": [
       {
@@ -87,7 +87,7 @@
   {
     "name": "windowsboy111",
     "username": "windowsboy111",
-    "title": "index.about.team.titles.devops",
+    "title": "DevOps Engineer",
     "discordID": "653086042752286730",
     "socials": [
       {
@@ -103,7 +103,7 @@
   {
     "name": "Owen SZ",
     "username": "owen",
-    "title": "index.about.team.titles.mediaConsultant",
+    "title": "Digital Media Consultant",
     "discordID": "626524398207238175",
     "socials": [
       {
@@ -119,7 +119,7 @@
   {
     "name": "Trobo",
     "username": "trobo",
-    "title": "index.about.team.titles.webDev",
+    "title": "Web Developer",
     "discordID": "540898474288480256",
     "socials": [
       {
@@ -135,7 +135,7 @@
   {
     "name": "Raboneko",
     "username": "raboneko",
-    "title": "index.about.team.titles.neko",
+    "title": "AI Assistant Neko",
     "discordID": "1001696289324539934",
     "socials": [
       {
@@ -147,7 +147,7 @@
   {
     "name": "Mo 森",
     "username": "mo",
-    "title": "index.about.team.titles.kernelDev",
+    "title": "Kernel Developer",
     "discordID": "476203781139202058",
     "socials": [
       {
@@ -163,7 +163,7 @@
   {
     "name": "Aikoyori",
     "username": "aikoyori",
-    "title": "index.about.team.titles.designer",
+    "title": "Designer",
     "discordID": "254214302653743104",
     "socials": [
       {
@@ -183,7 +183,7 @@
   {
     "name": "Matteo",
     "username": "matteo",
-    "title": "index.about.team.titles.developer",
+    "title": "Developer",
     "discordID": "933697808152801311",
     "socials": [
       {
@@ -199,7 +199,7 @@
   {
     "name": "Alyxia Sother",
     "username": "alyxia",
-    "title": "index.about.team.titles.developer",
+    "title": "Developer",
     "discordID": "952185386350829688",
     "socials": [
       {
