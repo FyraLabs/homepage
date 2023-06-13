@@ -5,7 +5,9 @@ import { mkSimplexNoise } from "@spissvinkel/simplex-noise";
 // Inspired by https://editor.p5js.org/BarneyCodes/sketches/2eES4fBEL
 
 const canvas = document.getElementById("background") as HTMLCanvasElement;
-const ctx = setupCanvas(canvas);
+let ctx = setupCanvas(canvas);
+
+window.addEventListener("resize", () => (ctx = setupCanvas(canvas)));
 
 const particles = Array(1000)
   .fill(0)
@@ -34,8 +36,14 @@ window.addEventListener("keypress", (event) => {
   }
 });
 
-const draw = (frame: number) => {
-  if (frame % 4 == 0) {
+let startTime: number | undefined = undefined;
+
+// elapsed is the amount of time since the ENTIRE animation started
+// deltaTime is the time between this frame and the last
+// lastBlankTime is the time since we last "blanked" the canvas to achieve the fade effect
+const draw = (elapsed: number, deltaTime: number, lastBlankTime: number) => {
+  if (lastBlankTime + 67 <= elapsed) {
+    lastBlankTime = elapsed;
     ctx.globalAlpha = 0.1;
     ctx.fillStyle = "#000";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -49,11 +57,11 @@ const draw = (frame: number) => {
     const noise = noiseGenerator.noise3D(
       p.x * noiseScale,
       p.y * noiseScale,
-      frame * noiseScale * noiseScale
+      (elapsed / 1000) * 60 * noiseScale * noiseScale
     );
     const a = noise * TAU;
-    p.x += Math.cos(a) * 1.5;
-    p.y += Math.sin(a) * 1.5;
+    p.x += Math.cos(a) * (deltaTime / 12);
+    p.y += Math.sin(a) * (deltaTime / 12);
 
     // If particle is outside of canvas, randomize it's position
     if (p.x < 0 || p.x > canvas.width || p.y < 0 || p.y > canvas.height) {
@@ -64,7 +72,13 @@ const draw = (frame: number) => {
     point(ctx, p.x, p.y, 1);
   });
 
-  requestAnimationFrame(() => draw(frame + 1));
+  requestAnimationFrame((time) => {
+    if (startTime === undefined) {
+      startTime = time;
+    }
+
+    draw(time - startTime, time - startTime - elapsed, lastBlankTime);
+  });
 };
 
-draw(0);
+draw(0, 0, 0);
