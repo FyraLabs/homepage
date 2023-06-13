@@ -36,8 +36,11 @@ window.addEventListener("keypress", (event) => {
 
 let startTime: number | undefined = undefined;
 
-const draw = (elapsed: number, lastBlankTime: number) => {
-  if (lastBlankTime + 35 <= elapsed) {
+// elapsed is the amount of time since the ENTIRE animation started
+// deltaTime is the time between this frame and the last
+// lastBlankTime is the time since we last "blanked" the canvas to achieve the fade effect
+const draw = (elapsed: number, deltaTime: number, lastBlankTime: number) => {
+  if (lastBlankTime + 40 <= elapsed) {
     lastBlankTime = elapsed;
     ctx.globalAlpha = 0.1;
     ctx.fillStyle = "#000";
@@ -55,8 +58,8 @@ const draw = (elapsed: number, lastBlankTime: number) => {
       elapsed * noiseScale * noiseScale
     );
     const a = noise * TAU;
-    p.x += Math.cos(a) * 1.5;
-    p.y += Math.sin(a) * 1.5;
+    p.x += Math.cos(a) * (deltaTime / 12);
+    p.y += Math.sin(a) * (deltaTime / 12);
 
     // If particle is outside of canvas, randomize it's position
     if (p.x < 0 || p.x > canvas.width || p.y < 0 || p.y > canvas.height) {
@@ -72,8 +75,8 @@ const draw = (elapsed: number, lastBlankTime: number) => {
       startTime = time;
     }
 
-    draw(time - startTime, lastBlankTime);
+    draw(time - startTime, time - startTime - elapsed, lastBlankTime);
   });
 };
 
-draw(0, 0);
+draw(0, 0, 0);
