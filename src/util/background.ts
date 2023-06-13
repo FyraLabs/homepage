@@ -34,8 +34,11 @@ window.addEventListener("keypress", (event) => {
   }
 });
 
-const draw = (frame: number) => {
-  if (frame % 4 == 0) {
+let startTime: number | undefined = undefined;
+
+const draw = (elapsed: number, lastBlankTime: number) => {
+  if (lastBlankTime + 35 <= elapsed) {
+    lastBlankTime = elapsed;
     ctx.globalAlpha = 0.1;
     ctx.fillStyle = "#000";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -49,7 +52,7 @@ const draw = (frame: number) => {
     const noise = noiseGenerator.noise3D(
       p.x * noiseScale,
       p.y * noiseScale,
-      frame * noiseScale * noiseScale
+      elapsed * noiseScale * noiseScale
     );
     const a = noise * TAU;
     p.x += Math.cos(a) * 1.5;
@@ -64,7 +67,13 @@ const draw = (frame: number) => {
     point(ctx, p.x, p.y, 1);
   });
 
-  requestAnimationFrame(() => draw(frame + 1));
+  requestAnimationFrame((time) => {
+    if (startTime === undefined) {
+      startTime = time;
+    }
+
+    draw(time - startTime, lastBlankTime);
+  });
 };
 
-draw(0);
+draw(0, 0);
