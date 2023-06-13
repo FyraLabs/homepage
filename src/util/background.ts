@@ -5,7 +5,9 @@ import { mkSimplexNoise } from "@spissvinkel/simplex-noise";
 // Inspired by https://editor.p5js.org/BarneyCodes/sketches/2eES4fBEL
 
 const canvas = document.getElementById("background") as HTMLCanvasElement;
-const ctx = setupCanvas(canvas);
+let ctx = setupCanvas(canvas);
+
+window.addEventListener("resize", () => (ctx = setupCanvas(canvas)));
 
 const particles = Array(1000)
   .fill(0)
@@ -40,7 +42,7 @@ let startTime: number | undefined = undefined;
 // deltaTime is the time between this frame and the last
 // lastBlankTime is the time since we last "blanked" the canvas to achieve the fade effect
 const draw = (elapsed: number, deltaTime: number, lastBlankTime: number) => {
-  if (lastBlankTime + 40 <= elapsed) {
+  if (lastBlankTime + 67 <= elapsed) {
     lastBlankTime = elapsed;
     ctx.globalAlpha = 0.1;
     ctx.fillStyle = "#000";
@@ -55,7 +57,7 @@ const draw = (elapsed: number, deltaTime: number, lastBlankTime: number) => {
     const noise = noiseGenerator.noise3D(
       p.x * noiseScale,
       p.y * noiseScale,
-      elapsed * noiseScale * noiseScale
+      (elapsed / 1000) * 60 * noiseScale * noiseScale
     );
     const a = noise * TAU;
     p.x += Math.cos(a) * (deltaTime / 12);
