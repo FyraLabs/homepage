@@ -37,7 +37,7 @@ const seo = {
         </div>
 
         <div class="flex-1 hidden lg:block">
-          {/* @ts-ignore Yes, it works despite the TS error */}
+          <!-- @ts-expect-error -->
           <Image
             src={aboutImage}
             alt="About Fyra Labs"
@@ -57,10 +57,10 @@ const seo = {
           >
             <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">Open</p>
             <p class="dark:opacity-[92%]">
-              We believe in the power of open-source. Our code is open
-              for anyone to access, examine, and improve. We believe that
-              open-source leads to innovation, which
-              ultimately leads to better technology for everyone.
+              We believe in the power of open-source. Our code is open for
+              anyone to access, examine, and improve. We believe that
+              open-source leads to innovation, which ultimately leads to better
+              technology for everyone.
             </p>
           </div>
 
@@ -71,9 +71,10 @@ const seo = {
               Private
             </p>
             <p class="dark:opacity-[92%]">
-              We understand that trust is built on privacy.
-              That's why we prioritize privacy in by employing end-to-end encryption and on-device 
-              proccesing whenever possible to protect your data, even from ourselves.
+              We understand that trust is built on privacy. That's why we
+              prioritize privacy in by employing end-to-end encryption and
+              on-device proccesing whenever possible to protect your data, even
+              from ourselves.
             </p>
           </div>
 
@@ -84,7 +85,8 @@ const seo = {
             <p class="dark:opacity-[92%]">
               We believe that technology exists to serve humanity. That's why we
               design our products with respect for the user in mind. We strive
-              to create technology that is inclusive, and accesible, for the benefit of all.
+              to create technology that is inclusive, and accesible, for the
+              benefit of all.
             </p>
           </div>
         </div>
