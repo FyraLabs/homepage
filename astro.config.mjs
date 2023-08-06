@@ -13,7 +13,7 @@ import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
-import compress from "astro-compress";
+// import compress from "astro-compress";
 
 // https://astro.build/config
 import robotsTxt from "astro-robots-txt";
@@ -26,7 +26,7 @@ export default defineConfig({
     react(),
     image(),
     sitemap({ filter: (page) => page !== "https://fyralabs.com/thanks/" }),
-    compress(),
+    // compress(),
     robotsTxt(),
   ],
 });
