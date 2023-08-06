@@ -4,6 +4,7 @@
     "username": "lleyton",
     "title": "Chief Executive Officer",
     "discordID": "228736069091196928",
+    "dndIsOnline": true,
     "socials": [
       {
         "type": "github",
@@ -32,7 +33,11 @@
       },
       {
         "type": "twitter",
-        "link": "https://twitter.com/jaidens__"
+        "link": "https://twitter.com/nothingneko_"
+      },
+      {
+        "type": "website",
+        "link": "https://nothingneko.xyz/"
       },
       {
         "type": "mastodon",
@@ -85,14 +90,14 @@
     ]
   },
   {
-    "name": "windowsboy111",
-    "username": "windowsboy111",
-    "title": "DevOps Engineer",
+    "name": "Mado",
+    "username": "mado",
+    "title": "VP of DevOps",
     "discordID": "653086042752286730",
     "socials": [
       {
         "type": "github",
-        "link": "https://github.com/windowsboy111"
+        "link": "https://github.com/madonuko"
       },
       {
         "type": "mastodon",
@@ -109,6 +114,10 @@
       {
         "type": "twitter",
         "link": "https://twitter.com/owen_zimmerman"
+      },
+      {
+        "type": "website",
+        "link": "https://owenzimmerman.com/"
       },
       {
         "type": "mastodon",
