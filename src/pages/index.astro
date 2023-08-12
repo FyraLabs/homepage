@@ -5,12 +5,15 @@ import { Icon } from "astro-icon";
 import SEOFragment from "../components/SEOFragment.astro";
 import team from "../data/team.json";
 
-const mastodonLinks = team
-  .map(
-    (member) =>
-      member.socials.filter((social) => social.type === "mastodon")[0]?.link
-  )
-  .filter((link) => link);
+const mastodonLinks = [
+  ...team
+    .map(
+      (member) =>
+        member.socials.filter((social) => social.type === "mastodon")[0]?.link
+    )
+    .filter((link) => link),
+  "https://fedi.fyralabs.com/@hq",
+];
 
 const description =
   "Creating a better future through cutting-edge, open-source technology";
