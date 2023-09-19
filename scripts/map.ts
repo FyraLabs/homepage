@@ -55,5 +55,5 @@ console.log(
     radius: 0.22,
     color: "#3f3f46",
     shape: "circle",
-  })
+  }),
 );

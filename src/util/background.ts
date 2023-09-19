@@ -57,7 +57,7 @@ const draw = (elapsed: number, deltaTime: number, lastBlankTime: number) => {
     const noise = noiseGenerator.noise3D(
       p.x * noiseScale,
       p.y * noiseScale,
-      (elapsed / 1000) * 60 * noiseScale * noiseScale
+      (elapsed / 1000) * 60 * noiseScale * noiseScale,
     );
     const a = noise * TAU;
     p.x += Math.cos(a) * (deltaTime / 12);

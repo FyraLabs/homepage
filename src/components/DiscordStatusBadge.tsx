@@ -27,7 +27,7 @@ const DiscordStatusBadge: React.FC<{
           ? "bg-yellow-500 border-yellow-600 dark:bg-amber-300 dark:border-amber-400"
           : status === "dnd"
           ? "bg-red-500 border-red-600 dark:bg-red-400 dark:border-red-500"
-          : "bg-gray-500 border-gray-600 dark:bg-gray-300 dark:border-gray-400"
+          : "bg-gray-500 border-gray-600 dark:bg-gray-300 dark:border-gray-400",
       )}
     />
   );
