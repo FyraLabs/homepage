@@ -47,6 +47,7 @@ const Navbar: React.FC<{
                     src="/logo.svg"
                     alt="Fyra Labs"
                   />
+                  <span className="sr-only">Homepage</span>
                 </a>
                 <div className="hidden sm:block ml-auto">
                   <div className="flex space-x-4">
