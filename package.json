@@ -11,31 +11,31 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^3.0.3",
-    "@astrojs/sitemap": "^3.0.2",
-    "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/react": "^3.0.7",
+    "@astrojs/sitemap": "^3.0.3",
+    "@astrojs/tailwind": "^5.0.3",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@spissvinkel/simplex-noise": "^1.0.1",
-    "@types/react": "^18.2.31",
-    "@types/react-dom": "^18.2.14",
-    "astro": "^3.3.2",
-    "astro-compress": "^2.0.15",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "astro": "^4.0.1",
+    "astro-compress": "^2.2.3",
     "astro-heroicons": "^0.3.0",
-    "astro-icon": "^0.8.1",
+    "astro-icon": "^0.8.2",
     "astro-robots-txt": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.3",
-    "use-lanyard": "^1.4.4"
+    "tailwindcss": "^3.3.6",
+    "use-lanyard": "^1.5.2"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20231016.0",
+    "@cloudflare/workers-types": "^4.20231121.0",
     "@lleyton/dotted-map": "^2.3.1",
     "@shrutibalasa/tailwind-grid-auto-fit": "^1.1.0",
-    "prettier": "^3.0.3",
-    "prettier-plugin-astro": "^0.12.0",
-    "sharp": "^0.32.6",
-    "tsx": "^3.14.0"
+    "prettier": "^3.1.0",
+    "prettier-plugin-astro": "^0.12.2",
+    "sharp": "^0.33.0",
+    "tsx": "^4.6.2"
   }
 }
