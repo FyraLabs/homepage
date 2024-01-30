@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 import DiscordStatusBadge from './DiscordStatusBadge';
 import { Image } from "astro:assets";
 import { socialToIcon, socialToName, type TeamMember } from '../util/team';
@@ -29,7 +29,7 @@ const splitName = name.split(' ');
     {
       socials.map(({type, link}) => (
         <a href={link} target="_blank" rel="noopener" aria-label={socialToName[type]}>
-          <Icon class="w-6" name={socialToIcon[type]} />
+          <Icon class="text-2xl" name={socialToIcon[type]} />
         </a>
       ))
     }

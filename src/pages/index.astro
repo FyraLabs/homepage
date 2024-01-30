@@ -1,7 +1,7 @@
 ---
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import SEOFragment from "../components/SEOFragment.astro";
 import team from "../data/team.json";
 
@@ -9,14 +9,13 @@ const mastodonLinks = [
   ...team
     .map(
       (member) =>
-        member.socials.filter((social) => social.type === "mastodon")[0]?.link
+        member.socials.filter((social) => social.type === "mastodon")[0]?.link,
     )
     .filter((link) => link),
   "https://fedi.fyralabs.com/@hq",
 ];
 
-const description =
-  "Empowering everyone to change the world";
+const description = "Empowering everyone to change the world";
 
 const seo = {
   title: "Welcome to Fyra Labs",
@@ -70,7 +69,7 @@ const seo = {
         class="hover:text-violet-300 transition-all"
         aria-label="Twitter"
       >
-        <Icon name="fa-brands:twitter" class="h-6" />
+        <Icon name="fa-brands:twitter" class="text-2xl" />
       </a>
       <a
         href="https://fedi.fyralabs.com/@hq"
@@ -79,7 +78,7 @@ const seo = {
         class="hover:text-violet-300 transition-all"
         aria-label="Mastodon"
       >
-        <Icon name="fa-brands:mastodon" class="h-6" />
+        <Icon name="fa-brands:mastodon" class="text-2xl" />
       </a>
       <a
         href="https://github.com/fyralabs"
@@ -88,7 +87,7 @@ const seo = {
         class="hover:text-violet-300 transition-all"
         aria-label="GitHub"
       >
-        <Icon name="fa-brands:github" class="h-6" />
+        <Icon name="fa-brands:github" class="text-2xl" />
       </a>
       <a
         href="https://discord.gg/5fdPuxTg5Q"
@@ -97,7 +96,7 @@ const seo = {
         class="hover:text-violet-300 transition-all"
         aria-label="Discord"
       >
-        <Icon name="fa-brands:discord" class="h-6" />
+        <Icon name="fa-brands:discord" class="text-2xl" />
       </a>
       <a
         href="https://matrix.to/#/#hub:fyralabs.com"
@@ -106,7 +105,7 @@ const seo = {
         class="hover:text-violet-300 transition-all"
         aria-label="Matrix"
       >
-        <Icon name="simple-icons:matrix" class="h-6" />
+        <Icon name="simple-icons:matrix" class="text-2xl" />
       </a>
     </div>
   </div>

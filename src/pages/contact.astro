@@ -1,12 +1,11 @@
 ---
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/Layout.astro";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import map from "../assets/map.svg?url";
 import SEOFragment from "../components/SEOFragment.astro";
 
-const description =
-  "Got a question or idea? Our global team is here to help!";
+const description = "Got a question or idea? Our global team is here to help!";
 const seo = {
   title: "Let's Talk",
   description,
@@ -156,8 +155,7 @@ const seo = {
         <article class="flex-1">
           <h1 class="font-semibold text-xl mb-1 dark:opacity-[92%]">Jobs</h1>
           <p class="dark:opacity-[92%]">
-            Want to join our team? Fill out
-            our <a
+            Want to join our team? Fill out our <a
               class="text-violet-700 dark:text-violet-300 hover:text-inherit transition-all"
               href="https://airtable.com/shr7nmRedL9NgR1JT">application form</a
             > now. We'll be in touch soon! Please note that this is an unpaid role.
