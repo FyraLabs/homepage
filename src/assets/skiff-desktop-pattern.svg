@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
+    <g mask="url(&quot;#SvgjsMask1061&quot;)" fill="none">
+        <g transform="translate(0, 0)" stroke-linecap="round" stroke="url(&quot;#SvgjsLinearGradient1062&quot;)">
+            <path d="M300 147.68 L300 412.32" stroke-width="15"></path>
+            <path d="M320 223.09 L320 336.9" stroke-width="15"></path>
+            <path d="M340 173.19 L340 386.81" stroke-width="15"></path>
+            <path d="M360 255.11 L360 304.89" stroke-width="15"></path>
+            <path d="M380 124.63 L380 435.38" stroke-width="15"></path>
+            <path d="M400 120.66 L400 439.34" stroke-width="15"></path>
+            <path d="M420 241.39 L420 318.61" stroke-width="15"></path>
+            <path d="M440 240.83 L440 319.17" stroke-width="15"></path>
+            <path d="M460 253.67 L460 306.33" stroke-width="15"></path>
+            <path d="M480 137.06 L480 422.94" stroke-width="15"></path>
+            <path d="M500 153.19 L500 406.81" stroke-width="15"></path>
+            <path d="M520 222.41 L520 337.58" stroke-width="15"></path>
+            <path d="M540 236.81 L540 323.19" stroke-width="15"></path>
+            <path d="M560 166.14 L560 393.86" stroke-width="15"></path>
+            <path d="M580 191.4 L580 368.6" stroke-width="15"></path>
+            <path d="M600 221.57 L600 338.43" stroke-width="15"></path>
+            <path d="M620 124.1 L620 435.89" stroke-width="15"></path>
+            <path d="M640 139.78 L640 420.22" stroke-width="15"></path>
+            <path d="M660 153.28 L660 406.72" stroke-width="15"></path>
+            <path d="M680 241.7 L680 318.3" stroke-width="15"></path>
+            <path d="M700 256.19 L700 303.81" stroke-width="15"></path>
+            <path d="M720 198.84 L720 361.15" stroke-width="15"></path>
+            <path d="M740 205.97 L740 354.03" stroke-width="15"></path>
+            <path d="M760 156.72 L760 403.27" stroke-width="15"></path>
+            <path d="M780 253.09 L780 306.92" stroke-width="15"></path>
+            <path d="M800 259.64 L800 300.36" stroke-width="15"></path>
+            <path d="M820 164.45 L820 395.55" stroke-width="15"></path>
+            <path d="M840 159.06 L840 400.94" stroke-width="15"></path>
+            <path d="M860 257.62 L860 302.38" stroke-width="15"></path>
+            <path d="M880 140 L880 420" stroke-width="15"></path>
+            <path d="M900 133.12 L900 426.88" stroke-width="15"></path>
+            <path d="M920 152.3 L920 407.7" stroke-width="15"></path>
+            <path d="M940 187.96 L940 372.04" stroke-width="15"></path>
+            <path d="M960 145.19 L960 414.81" stroke-width="15"></path>
+            <path d="M980 188.62 L980 371.38" stroke-width="15"></path>
+            <path d="M1000 176.58 L1000 383.42" stroke-width="15"></path>
+            <path d="M1020 202.67 L1020 357.33" stroke-width="15"></path>
+            <path d="M1040 153.59 L1040 406.41" stroke-width="15"></path>
+            <path d="M1060 201.81 L1060 358.19" stroke-width="15"></path>
+            <path d="M1080 258.24 L1080 301.76" stroke-width="15"></path>
+            <path d="M1100 122.24 L1100 437.76" stroke-width="15"></path>
+            <path d="M1120 160.55 L1120 399.45" stroke-width="15"></path>
+            <path d="M1140 130.33 L1140 429.67" stroke-width="15"></path>
+        </g>
+    </g>
+    <defs>
+        <mask id="SvgjsMask1061">
+            <rect width="1440" height="560" fill="#ffffff"></rect>
+        </mask>
+        <linearGradient x1="280.8" y1="280" x2="1159.2" y2="280" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1062">
+            <stop stop-color="#3a7cc3" offset="0"></stop>
+            <stop stop-color="rgba(153, 17, 221, 1)" offset="1"></stop>
+        </linearGradient>
+    </defs>
+</svg>
