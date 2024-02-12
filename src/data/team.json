@@ -224,5 +224,24 @@
         "link": "https://twitter.com/lexisother"
       }
     ]
+  },
+  {
+    "name": "June",
+    "username": "june",
+    "title": "Chief Fish Officer",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/june-fish"
+      },
+      {
+        "type": "website",
+        "link": "https://june.fish/"
+      },
+      {
+        "type": "mastodon",
+        "link": "https://ordinary.cafe/@june"
+      }
+    ]
   }
 ]
