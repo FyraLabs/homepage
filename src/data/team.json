@@ -76,12 +76,12 @@
         "link": "https://github.com/korewaChino"
       },
       {
-        "type": "website",
-        "link": "https://cappuchino.xyz/"
-      },
-      {
         "type": "twitter",
         "link": "https://twitter.com/CappyIshihara"
+      },
+      {
+        "type": "website",
+        "link": "https://cappuchino.xyz/"
       },
       {
         "type": "mastodon",
