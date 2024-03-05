@@ -106,11 +106,15 @@
     ]
   },
   {
-    "name": "Owen SZ",
+    "name": "Owen Zimmerman",
     "username": "owen",
-    "title": "Digital Media Consultant",
+    "title": "Hardware Operations Manager",
     "discordID": "626524398207238175",
     "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/Owen-sz"
+      },     
       {
         "type": "twitter",
         "link": "https://twitter.com/owen_zimmerman"
