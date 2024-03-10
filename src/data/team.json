@@ -37,7 +37,7 @@
       },
       {
         "type": "website",
-        "link": "https://nothingneko.xyz/"
+        "link": "https://jaiden.sh/"
       },
       {
         "type": "mastodon",
@@ -130,6 +130,25 @@
     ]
   },
   {
+    "name": "June",
+    "username": "june",
+    "title": "Chief Fish Officer",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/june-fish"
+      },
+      {
+        "type": "website",
+        "link": "https://june.fish/"
+      },
+      {
+        "type": "mastodon",
+        "link": "https://ordinary.cafe/@june"
+      }
+    ]
+  }
+  {
     "name": "Trobo",
     "username": "trobo",
     "title": "Web Developer",
@@ -176,7 +195,7 @@
   {
     "name": "Aikoyori",
     "username": "aikoyori",
-    "title": "Designer",
+    "title": "Artist in Residence",
     "discordID": "254214302653743104",
     "socials": [
       {
@@ -190,6 +209,22 @@
       {
         "type": "website",
         "link": "https://aikoyori.xyz/"
+      }
+    ]
+  },
+  {
+    "name": "mtr",
+    "title": "Artist in Residence",
+    "username": "mtr",s
+    "discordID": "604075087292923943",
+    "socials": [
+      {
+        "type": "website",
+        "link": "https://abtmtr.link/"
+      },
+      {
+        "type": "mastodon",
+        "link": "https://local.abtmtr.link/mtr"
       }
     ]
   },
@@ -209,43 +244,4 @@
       }
     ]
   },
-  {
-    "name": "Alyxia Sother",
-    "username": "alyxia",
-    "title": "Developer",
-    "discordID": "952185386350829688",
-    "socials": [
-      {
-        "type": "github",
-        "link": "https://github.com/lexisother"
-      },
-      {
-        "type": "website",
-        "link": "https://alyxia.dev/"
-      },
-      {
-        "type": "twitter",
-        "link": "https://twitter.com/lexisother"
-      }
-    ]
-  },
-  {
-    "name": "June",
-    "username": "june",
-    "title": "Chief Fish Officer",
-    "socials": [
-      {
-        "type": "github",
-        "link": "https://github.com/june-fish"
-      },
-      {
-        "type": "website",
-        "link": "https://june.fish/"
-      },
-      {
-        "type": "mastodon",
-        "link": "https://ordinary.cafe/@june"
-      }
-    ]
-  }
 ]
