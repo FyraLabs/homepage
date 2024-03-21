@@ -2,14 +2,14 @@
 Hash: SHA512
 
 Contact: mailto:security@fyralabs.com
-Expires: 2023-12-05T02:42:00.000Z
+Expires: 2025-03-21T01:33:48.000Z
 Encryption: https://fyralabs.com/pgp.asc
-Preferred-Languages: en,es,pt-br,cmn,yue,th,en_owo
+Preferred-Languages: en, es, pt-br, cmn, yue, th, en_owo
 Canonical: https://fyralabs.com/.well-known/security.txt
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQTWU0iR/ECqSxHATizPqdvJT3LwHwUCY6f5agAKCRDPqdvJT3Lw
-H0x/APwMqWsXkhSITD4YvDonpr1lkzL7lo7WZVzbmCRIk0hcZAD/RebxmifaPis4
-4MobqWZBT4X2GtT3eHr3aF21U963Ugc=
-=h8Ih
+iHUEARYKAB0WIQQArrubKNHQ6X0HE7OQww0P6MGcwwUCZfuPfAAKCRCQww0P6MGc
+wwH2AP0RwQPDCC8WYIvsOofBW60X06MDciT02Tm9jl7sRXvPlgEA0MXADHM7iwrY
+Ti5XycQ+G6JrR1+KCx32+ZLS/+xKNQA=
+=v0IZ
 -----END PGP SIGNATURE-----
