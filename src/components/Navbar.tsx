@@ -7,6 +7,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Projects", href: "/projects" },
   { name: "Services", href: "/services" },
+  { name: "Developers", href: "https://developer.fyralabs.com" },
   { name: "Blog", href: "https://blog.fyralabs.com" },
   { name: "Contact", href: "/contact" },
 ];
