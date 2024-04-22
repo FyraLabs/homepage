@@ -32,7 +32,7 @@
     "use-lanyard": "^1.5.2"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240320.1",
+    "@cloudflare/workers-types": "^4.20240419.0",
     "@lleyton/dotted-map": "^2.3.1",
     "@shrutibalasa/tailwind-grid-auto-fit": "^1.1.0",
     "prettier": "^3.2.5",
