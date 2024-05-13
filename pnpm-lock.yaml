@@ -65,8 +65,8 @@ dependencies:
 
 devDependencies:
   '@cloudflare/workers-types':
-    specifier: ^4.20240320.1
-    version: 4.20240320.1
+    specifier: ^4.20240512.0
+    version: 4.20240512.0
   '@lleyton/dotted-map':
     specifier: ^2.3.1
     version: 2.3.1
@@ -461,8 +461,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@cloudflare/workers-types@4.20240320.1:
-    resolution: {integrity: sha512-CiYtVpQURPgQqtBKkmOAnfPElVZuD7Xyf1IxKtKp2B4aB9gnooapwJhzeY8c4Ls4u17SgMS0MprOkrgYwzZ6xg==}
+  /@cloudflare/workers-types@4.20240512.0:
+    resolution: {integrity: sha512-o2yTEWg+YK/I1t/Me+dA0oarO0aCbjibp6wSeaw52DSE9tDyKJ7S+Qdyw/XsMrKn4t8kF6f/YOba+9O4MJfW9w==}
     dev: true
 
   /@emnapi/runtime@0.45.0:
