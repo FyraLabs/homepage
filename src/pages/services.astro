@@ -16,6 +16,11 @@ const seo = {
 
 <Layout title="Services">
   <SEOFragment {...seo} slot="head" />
+  <script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+    async
+    defer
+    slot="head"></script>
 
   <Navbar pathname={Astro.url.pathname} client:load />
 
@@ -184,7 +189,7 @@ const seo = {
               id="email"
               name="email"
               class="w-full bg-neutral-300 dark:bg-neutral-800 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-violet-800 rounded border border-gray-600 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              placeholder="manx@nekocorp.com"
+              placeholder="siamese@nekocorp.com"
               maxlength="120"
               required
             />
@@ -202,6 +207,13 @@ const seo = {
               placeholder="Let's work together..."
               required
               maxlength="600"></textarea>
+          </div>
+          <div class="relative mb-2">
+            <div
+              class="cf-turnstile [&>iframe]:!w-full"
+              data-sitekey="0x4AAAAAAAbyR6xfuweUvk2z"
+            >
+            </div>
           </div>
           <button
             type="submit"
