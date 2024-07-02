@@ -145,6 +145,10 @@
       {
         "type": "mastodon",
         "link": "https://ordinary.cafe/@june"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/june__fish"
       }
     ]
   },
