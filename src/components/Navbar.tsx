@@ -9,6 +9,7 @@ const navigation = [
   { name: "Services", href: "/services" },
   { name: "Developers", href: "https://developer.fyralabs.com" },
   { name: "Blog", href: "https://blog.fyralabs.com" },
+  { name: "Merch", href: "https://fyra.bigcartel.com" },
   { name: "Contact", href: "/contact" },
 ];
 
