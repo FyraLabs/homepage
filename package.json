@@ -19,7 +19,7 @@
     "@heroicons/react": "^2.1.5",
     "@iconify-json/fa-brands": "^1.1.9",
     "@iconify-json/fa-solid": "^1.1.9",
-    "@iconify-json/simple-icons": "^1.1.114",
+    "@iconify-json/simple-icons": "^1.2.1",
     "@spissvinkel/simplex-noise": "^1.0.1",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
