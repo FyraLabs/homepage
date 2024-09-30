@@ -21,7 +21,7 @@
     "@iconify-json/fa-solid": "^1.2.0",
     "@iconify-json/simple-icons": "^1.2.4",
     "@spissvinkel/simplex-noise": "^1.0.1",
-    "@types/react": "^18.3.9",
+    "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.15.9",
     "astro-compress": "^2.3.1",
