@@ -15,7 +15,7 @@
     "@astrojs/sitemap": "^3.2.0",
     "@astrojs/tailwind": "^5.1.1",
     "@cloudflare/pages-plugin-turnstile": "^1.0.2",
-    "@headlessui/react": "^2.1.9",
+    "@headlessui/react": "^2.1.10",
     "@heroicons/react": "^2.1.5",
     "@iconify-json/fa-brands": "^1.2.0",
     "@iconify-json/fa-solid": "^1.2.0",
