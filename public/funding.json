@@ -1,0 +1,13 @@
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "organisation",
+    "role": "owner",
+    "name": "Fyra Labs",
+    "email": "contact@fyralabs.com",
+    "description": "A startup producing libre software with the goal of producing tools for anyone to change their world. Our primary focus is on the end-user Linux ecosystem, building up to a Linux system that works better for the user than existing options, and that anyone can use.",
+    "webpageUrl": {
+      "url": "https://fyralabs.com"
+    }
+  }
+}
