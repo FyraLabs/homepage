@@ -55,8 +55,24 @@
         "user-experience",
         "productivity",
         "hardware",
+        "computers",
         "fedora"
       ]
+    },
+    {
+      "guid": "chisel-operator",
+      "name": "Chisel Operator",
+      "description": "NEEDS COPY",
+      "webpageUrl": {
+        "url": "https://chisel.fyralabs.com",
+        "wellKnown": "https://chisel.fyralabs.com/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/FyraLabs/chisel-operator",
+        "wellKnown": "https://github.com/FyraLabs/chisel-operator/blob/main/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-3.0"],
+      "tags": ["cloud", "devops", "networking", "server", "k8s"]
     }
   ]
 }
