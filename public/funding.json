@@ -100,5 +100,29 @@
         "fedora"
       ]
     }
-  ]
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "gh-sponsors",
+        "type": "gateway",
+        "address": "https://github.com/sponsors/FyraLabs"
+      },
+      {
+        "guid": "stripe",
+        "type": "gateway",
+        "address": "https://buy.stripe.com/bIY5nP8fEe7kdb2bII"
+      },
+      {
+        "guid": "bank",
+        "type": "bank",
+        "description": "Will accept direct bank transfers. Please e-mail for details."
+      },
+      {
+        "guid": "cheque",
+        "type": "cheque",
+        "description": "Will accept mailed cheques. Please e-mail for details."
+      }
+    ]
+  }
 }
