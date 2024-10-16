@@ -73,6 +73,32 @@
       },
       "licenses": ["spdx:GPL-3.0"],
       "tags": ["cloud", "devops", "networking", "server", "k8s"]
+    },
+    {
+      "guid": "tauos",
+      "name": "tauOS",
+      "description": "NEEDS COPY",
+      "webpageUrl": {
+        "url": "https://tauos.co",
+        "wellKnown": "https://tauos.co/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/tau-OS/testers",
+        "wellKnown": "https://github.com/tau-OS/testers/blob/main/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-3.0"],
+      "tags": [
+        "development",
+        "linux",
+        "operating-systems",
+        "kernel",
+        "user-experience",
+        "productivity",
+        "hardware",
+        "computers",
+        "design",
+        "fedora"
+      ]
     }
   ]
 }
