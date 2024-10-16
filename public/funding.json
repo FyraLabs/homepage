@@ -114,6 +114,11 @@
         "address": "https://buy.stripe.com/bIY5nP8fEe7kdb2bII"
       },
       {
+        "guid": "paypal",
+        "type": "gateway",
+        "address": "https://www.paypal.com/donate/?hosted_button_id=FE3SHU5U4CL5C"
+      },
+      {
         "guid": "bank",
         "type": "bank",
         "description": "Will accept direct bank transfers. Please e-mail for details."
