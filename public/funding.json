@@ -9,5 +9,30 @@
     "webpageUrl": {
       "url": "https://fyralabs.com"
     }
-  }
+  },
+  "projects": [
+    {
+      "guid": "terra",
+      "name": "Terra",
+      "description": "A community package repository for Fedora based distributions, providing access to essential software not in Fedora, and making it easier for developers to reach the Fedora ecosystem.",
+      "webpageUrl": {
+        "url": "https://terra.fyralabs.com",
+        "wellKnown": "https://terra.fyralabs.com/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/terrapkg/packages",
+        "wellKnown": "https://github.com/terrapkg/packages/blob/frawhide/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-3.0"],
+      "tags": [
+        "development",
+        "programming",
+        "devops",
+        "linux",
+        "operating-systems",
+        "fedora",
+        "rpm"
+      ]
+    }
+  ]
 }
