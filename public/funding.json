@@ -33,6 +33,30 @@
         "fedora",
         "rpm"
       ]
+    },
+    {
+      "guid": "ultramarine-linux",
+      "name": "Ultramarine Linux",
+      "description": "NEEDS COPY",
+      "webpageUrl": {
+        "url": "https://ultramarine-linux.org",
+        "wellKnown": "https://ultramarine-linux.org/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/Ultramarine-Linux/triage",
+        "wellKnown": "https://github.com/Ultramarine-Linux/triage/blob/main/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-3.0"],
+      "tags": [
+        "development",
+        "linux",
+        "operating-systems",
+        "kernel",
+        "user-experience",
+        "productivity",
+        "hardware",
+        "fedora"
+      ]
     }
   ]
 }
