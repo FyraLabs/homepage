@@ -128,6 +128,18 @@
         "type": "cheque",
         "description": "Will accept mailed cheques. Please e-mail for details."
       }
+    ],
+    "plans": [
+      {
+        "guid": "anything",
+        "status": "active",
+        "name": "Pay Anything",
+        "description": "Pay anything you wish, either once or on a set recurring basis.",
+        "amount": 0,
+        "currency": "USD",
+        "frequency": "other",
+        "channels": ["gh-sponsors", "stripe", "paypal", "bank", "cheque"]
+      }
     ]
   }
 }
