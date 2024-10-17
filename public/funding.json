@@ -105,17 +105,17 @@
     "channels": [
       {
         "guid": "gh-sponsors",
-        "type": "gateway",
+        "type": "payment-provider",
         "address": "https://github.com/sponsors/FyraLabs"
       },
       {
         "guid": "stripe",
-        "type": "gateway",
+        "type": "payment-provider",
         "address": "https://buy.stripe.com/bIY5nP8fEe7kdb2bII"
       },
       {
         "guid": "paypal",
-        "type": "gateway",
+        "type": "payment-provider",
         "address": "https://www.paypal.com/donate/?hosted_button_id=FE3SHU5U4CL5C"
       },
       {
