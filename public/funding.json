@@ -5,7 +5,7 @@
     "role": "owner",
     "name": "Fyra Labs",
     "email": "contact@fyralabs.com",
-    "description": "A startup producing libre software with the goal of producing tools for anyone to change their world. Our primary focus is on the end-user Linux ecosystem, building up to a Linux system that works better for the user than existing options, and that anyone can use.",
+    "description": "A startup producing libre software with the goal of empowering people to change their world. Our primary focus is on the desktop Linux ecosystem, building towards a friendlier (but still powerful) system that anyone can use.",
     "webpageUrl": {
       "url": "https://fyralabs.com"
     }
@@ -14,7 +14,7 @@
     {
       "guid": "terra",
       "name": "Terra",
-      "description": "A community package repository for Fedora based distributions, providing access to essential software not in Fedora, and making it easier for developers to reach the Fedora ecosystem.",
+      "description": "A community package repository for Fedora based distributions. Reducing the barrier to entry for developers and enthusiasts, and shipping software Fedora can't/won't.",
       "webpageUrl": {
         "url": "https://terra.fyralabs.com",
         "wellKnown": "https://terra.fyralabs.com/.well-known/funding-manifest-urls"
@@ -37,7 +37,7 @@
     {
       "guid": "ultramarine-linux",
       "name": "Ultramarine Linux",
-      "description": "NEEDS COPY",
+      "description": "A Linux distro designed so you can just do your thing. Meeting you where you're at by cutting out configuration, and supporting a wider range of hardware.",
       "webpageUrl": {
         "url": "https://ultramarine-linux.org",
         "wellKnown": "https://ultramarine-linux.org/.well-known/funding-manifest-urls"
@@ -62,7 +62,7 @@
     {
       "guid": "chisel-operator",
       "name": "Chisel Operator",
-      "description": "NEEDS COPY",
+      "description": "The easiest way to tunnel any Kubernetes cluster to the internet. Chisel Operator automatically provisions tunnels on supported cloud providers, bypassing convoluted enterprise and CGNAT setups.",
       "webpageUrl": {
         "url": "https://chisel.fyralabs.com",
         "wellKnown": "https://chisel.fyralabs.com/.well-known/funding-manifest-urls"
