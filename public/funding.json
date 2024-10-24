@@ -99,6 +99,31 @@
         "design",
         "fedora"
       ]
+    },
+    {
+      "guid": "stardust",
+      "name": "Stardust XR",
+      "description": "Stardust XR is a display server and ecosystem for Linux based XR systems, allowing developers to build XR applications that play nice with eachother.",
+      "webpageUrl": {
+        "url": "https://stardustxr.org",
+        "wellKnown": "https://stardustxr.org/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/StardustXR/server",
+        "wellKnown": "https://github.com/StardustXR/server/blob/main/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-3.0"],
+      "tags": [
+        "augmented-reality",
+        "design",
+        "gaming",
+        "graphics",
+        "linux",
+        "operating-systems",
+        "productivity",
+        "user-experience",
+        "virtual-reality"
+      ]
     }
   ],
   "funding": {
