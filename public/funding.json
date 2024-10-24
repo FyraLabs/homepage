@@ -103,7 +103,7 @@
     {
       "guid": "stardust",
       "name": "Stardust XR",
-      "description": "Stardust XR is a display server and ecosystem for Linux based XR systems, allowing developers to build XR applications that play nice with eachother.",
+      "description": "Stardust XR is an open platform for extended and virtual reality, allowing developers to build XR applications that play nicely with each other.",
       "webpageUrl": {
         "url": "https://stardustxr.org",
         "wellKnown": "https://stardustxr.org/.well-known/funding-manifest-urls"
