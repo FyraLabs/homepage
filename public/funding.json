@@ -83,8 +83,8 @@
         "wellKnown": "https://tauos.co/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/tau-OS/testers",
-        "wellKnown": "https://github.com/tau-OS/testers/blob/main/.well-known/funding-manifest-urls"
+        "url": "https://github.com/tau-OS/triage",
+        "wellKnown": "https://github.com/tau-OS/triage/blob/main/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:GPL-3.0"],
       "tags": [
