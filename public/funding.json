@@ -14,7 +14,7 @@
     {
       "guid": "terra",
       "name": "Terra",
-      "description": "A community package repository for Fedora based distributions. Reducing the barrier to entry for developers and enthusiasts, and shipping software Fedora can't/won't.",
+      "description": "A community package repository for Fedora based distributions. Reducing the barrier of entry for developers and enthusiasts, and shipping software Fedora can't or won't.",
       "webpageUrl": {
         "url": "https://terra.fyralabs.com",
         "wellKnown": "https://terra.fyralabs.com/.well-known/funding-manifest-urls"
@@ -37,7 +37,7 @@
     {
       "guid": "ultramarine-linux",
       "name": "Ultramarine Linux",
-      "description": "A Linux distro designed so you can just do your thing. Meeting you where you're at by cutting out configuration, and supporting a wider range of hardware.",
+      "description": "A Linux distro designed so you can just do your thing. We meet you where you're at by cutting out configuration, and supporting a wider range of hardware.",
       "webpageUrl": {
         "url": "https://ultramarine-linux.org",
         "wellKnown": "https://ultramarine-linux.org/.well-known/funding-manifest-urls"
@@ -62,7 +62,7 @@
     {
       "guid": "chisel-operator",
       "name": "Chisel Operator",
-      "description": "The easiest way to tunnel any Kubernetes cluster to the internet. Chisel Operator automatically provisions tunnels on supported cloud providers, bypassing convoluted enterprise and CGNAT setups.",
+      "description": "The easiest way to tunnel a Kubernetes cluster to the internet. Chisel Operator automatically provisions tunnels on supported cloud providers, bypassing convoluted enterprise and CGNAT setups.",
       "webpageUrl": {
         "url": "https://chisel.fyralabs.com",
         "wellKnown": "https://chisel.fyralabs.com/.well-known/funding-manifest-urls"
@@ -77,7 +77,7 @@
     {
       "guid": "tauos",
       "name": "tauOS",
-      "description": "NEEDS COPY",
+      "description": "tauOS is your next-generation operating system. Treating all your devices as one, being resilient to breakage, and providing a development platform that prioritizes DX, tauOS lets you do your thing, better.",
       "webpageUrl": {
         "url": "https://tauos.co",
         "wellKnown": "https://tauos.co/.well-known/funding-manifest-urls"
