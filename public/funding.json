@@ -109,8 +109,8 @@
         "wellKnown": "https://stardustxr.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/StardustXR/server",
-        "wellKnown": "https://github.com/StardustXR/server/blob/main/.well-known/funding-manifest-urls"
+        "url": "https://github.com/StardustXR/core",
+        "wellKnown": "https://github.com/StardustXR/core/blob/main/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:GPL-3.0"],
       "tags": [
