@@ -1,0 +1,170 @@
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "organisation",
+    "role": "owner",
+    "name": "Fyra Labs",
+    "email": "contact@fyralabs.com",
+    "description": "A startup producing libre software with the goal of empowering people to change their world. Our primary focus is on the desktop Linux ecosystem, building towards a friendlier (but still powerful) system that anyone can use.",
+    "webpageUrl": {
+      "url": "https://fyralabs.com"
+    }
+  },
+  "projects": [
+    {
+      "guid": "terra",
+      "name": "Terra",
+      "description": "A community package repository for Fedora based distributions. Reducing the barrier of entry for developers and enthusiasts, and shipping software Fedora can't or won't.",
+      "webpageUrl": {
+        "url": "https://terra.fyralabs.com",
+        "wellKnown": "https://terra.fyralabs.com/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/terrapkg/packages",
+        "wellKnown": "https://github.com/terrapkg/packages/blob/frawhide/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-3.0-or-later"],
+      "tags": [
+        "development",
+        "programming",
+        "devops",
+        "linux",
+        "operating-systems",
+        "fedora",
+        "rpm"
+      ]
+    },
+    {
+      "guid": "ultramarine-linux",
+      "name": "Ultramarine Linux",
+      "description": "A Linux distro designed so you can just do your thing. We meet you where you're at by cutting out configuration, and supporting a wider range of hardware.",
+      "webpageUrl": {
+        "url": "https://ultramarine-linux.org",
+        "wellKnown": "https://ultramarine-linux.org/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/Ultramarine-Linux/triage",
+        "wellKnown": "https://github.com/Ultramarine-Linux/triage/blob/main/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-3.0-or-later"],
+      "tags": [
+        "development",
+        "linux",
+        "operating-systems",
+        "kernel",
+        "user-experience",
+        "productivity",
+        "hardware",
+        "computers",
+        "fedora"
+      ]
+    },
+    {
+      "guid": "chisel-operator",
+      "name": "Chisel Operator",
+      "description": "The easiest way to tunnel a Kubernetes cluster to the internet. Chisel Operator automatically provisions tunnels on supported cloud providers, bypassing convoluted enterprise and CGNAT setups.",
+      "webpageUrl": {
+        "url": "https://chisel.fyralabs.com",
+        "wellKnown": "https://chisel.fyralabs.com/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/FyraLabs/chisel-operator",
+        "wellKnown": "https://github.com/FyraLabs/chisel-operator/blob/main/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-3.0-or-later"],
+      "tags": ["cloud", "devops", "networking", "server", "k8s"]
+    },
+    {
+      "guid": "tauos",
+      "name": "tauOS",
+      "description": "tauOS is your next-generation operating system. Treating all your devices as one, being resilient to breakage, and providing a development platform that prioritizes DX, tauOS lets you do your thing, better.",
+      "webpageUrl": {
+        "url": "https://tauos.co",
+        "wellKnown": "https://tauos.co/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/tau-OS/triage",
+        "wellKnown": "https://github.com/tau-OS/triage/blob/main/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-3.0-or-later"],
+      "tags": [
+        "development",
+        "linux",
+        "operating-systems",
+        "kernel",
+        "user-experience",
+        "productivity",
+        "hardware",
+        "computers",
+        "design",
+        "fedora"
+      ]
+    },
+    {
+      "guid": "stardust",
+      "name": "Stardust XR",
+      "description": "Stardust XR is an open platform for extended and virtual reality, allowing developers to build XR applications that play nicely with each other.",
+      "webpageUrl": {
+        "url": "https://stardustxr.org",
+        "wellKnown": "https://stardustxr.org/.well-known/funding-manifest-urls"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/StardustXR/core",
+        "wellKnown": "https://github.com/StardustXR/core/blob/main/.well-known/funding-manifest-urls"
+      },
+      "licenses": ["spdx:GPL-2.0-or-later", "spdx:MIT"],
+      "tags": [
+        "augmented-reality",
+        "design",
+        "gaming",
+        "graphics",
+        "linux",
+        "operating-systems",
+        "productivity",
+        "user-experience",
+        "virtual-reality"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "gh-sponsors",
+        "type": "payment-provider",
+        "address": "https://github.com/sponsors/FyraLabs"
+      },
+      {
+        "guid": "stripe",
+        "type": "payment-provider",
+        "address": "https://buy.stripe.com/bIY5nP8fEe7kdb2bII"
+      },
+      {
+        "guid": "paypal",
+        "type": "payment-provider",
+        "address": "https://www.paypal.com/donate/?hosted_button_id=FE3SHU5U4CL5C"
+      },
+      {
+        "guid": "bank",
+        "type": "bank",
+        "description": "Will accept direct bank transfers. Please e-mail for details."
+      },
+      {
+        "guid": "cheque",
+        "type": "cheque",
+        "description": "Will accept mailed cheques. Please e-mail for details."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "anything",
+        "status": "active",
+        "name": "Pay Anything",
+        "description": "Pay anything you wish, either once or on a set recurring basis.",
+        "amount": 0,
+        "currency": "USD",
+        "frequency": "other",
+        "channels": ["gh-sponsors", "stripe", "paypal", "bank", "cheque"]
+      }
+    ]
+  }
+}
