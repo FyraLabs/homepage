@@ -23,7 +23,7 @@
         "url": "https://github.com/terrapkg/packages",
         "wellKnown": "https://github.com/terrapkg/packages/blob/frawhide/.well-known/funding-manifest-urls"
       },
-      "licenses": ["spdx:GPL-3.0"],
+      "licenses": ["spdx:GPL-3.0-or-later"],
       "tags": [
         "development",
         "programming",
@@ -46,7 +46,7 @@
         "url": "https://github.com/Ultramarine-Linux/triage",
         "wellKnown": "https://github.com/Ultramarine-Linux/triage/blob/main/.well-known/funding-manifest-urls"
       },
-      "licenses": ["spdx:GPL-3.0"],
+      "licenses": ["spdx:GPL-3.0-or-later"],
       "tags": [
         "development",
         "linux",
@@ -71,7 +71,7 @@
         "url": "https://github.com/FyraLabs/chisel-operator",
         "wellKnown": "https://github.com/FyraLabs/chisel-operator/blob/main/.well-known/funding-manifest-urls"
       },
-      "licenses": ["spdx:GPL-3.0"],
+      "licenses": ["spdx:GPL-3.0-or-later"],
       "tags": ["cloud", "devops", "networking", "server", "k8s"]
     },
     {
@@ -86,7 +86,7 @@
         "url": "https://github.com/tau-OS/triage",
         "wellKnown": "https://github.com/tau-OS/triage/blob/main/.well-known/funding-manifest-urls"
       },
-      "licenses": ["spdx:GPL-3.0"],
+      "licenses": ["spdx:GPL-3.0-or-later"],
       "tags": [
         "development",
         "linux",
@@ -112,7 +112,7 @@
         "url": "https://github.com/StardustXR/core",
         "wellKnown": "https://github.com/StardustXR/core/blob/main/.well-known/funding-manifest-urls"
       },
-      "licenses": ["spdx:GPL-3.0"],
+      "licenses": ["spdx:GPL-2.0-or-later", "spdx:MIT"],
       "tags": [
         "augmented-reality",
         "design",
