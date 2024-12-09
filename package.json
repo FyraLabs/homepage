@@ -36,7 +36,7 @@
     "@cloudflare/workers-types": "^4.20241127.0",
     "@lleyton/dotted-map": "^2.3.1",
     "@shrutibalasa/tailwind-grid-auto-fit": "^1.1.0",
-    "prettier": "^3.4.1",
+    "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
     "sharp": "^0.33.5",
     "tsx": "^4.19.2"
