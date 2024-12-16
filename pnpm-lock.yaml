@@ -27,8 +27,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0(react@18.3.1)
       '@iconify-json/fa-brands':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.2.1
+        version: 1.2.1
       '@iconify-json/fa-solid':
         specifier: ^1.2.1
         version: 1.2.1
@@ -722,8 +722,8 @@ packages:
     peerDependencies:
       react: '>= 16 || ^19.0.0-rc'
 
-  '@iconify-json/fa-brands@1.2.0':
-    resolution: {integrity: sha512-063zve/7GEfzEnlDQycVQbcrx6MD206bmrnWLYaPFvLcPVioN8DGPbOBzpy3/zI2RQFe/T+ZuCB8XWi+AmBR9w==}
+  '@iconify-json/fa-brands@1.2.1':
+    resolution: {integrity: sha512-v5wVXoWIusAU1n0GGctIY+VyINIFXaD/WWHiwS+TFX74C0pFZrmrwUkqZDDCclu7zxuhlixPO+VLyDqNtoppfA==}
 
   '@iconify-json/fa-solid@1.2.1':
     resolution: {integrity: sha512-eEcnCb6yjRJ0bZrQQZOvO9P5PYCGujz2V8PpiIxBSlm6xqoVLNtOfUyPr6xZD4zWeW7H3cmWi2ZXSzqxQ5e4lw==}
@@ -3531,7 +3531,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  '@iconify-json/fa-brands@1.2.0':
+  '@iconify-json/fa-brands@1.2.1':
     dependencies:
       '@iconify/types': 2.0.0
 
