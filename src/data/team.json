@@ -15,6 +15,10 @@
         "link": "https://twitter.com/lleyton__"
       },
       {
+        "type": "website",
+        "link": "https://ultraviolet.sh/"
+      },
+      {
         "type": "mastodon",
         "link": "https://ordinary.cafe/@lea"
       }
