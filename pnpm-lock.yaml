@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/react':
-        specifier: ^4.1.2
-        version: 4.1.2(@types/node@22.10.5)(@types/react-dom@18.3.1)(@types/react@18.3.12)(jiti@2.4.2)(lightningcss@1.28.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.37.0)(tsx@4.19.2)
+        specifier: ^4.1.4
+        version: 4.1.4(@types/node@22.10.5)(@types/react-dom@18.3.1)(@types/react@18.3.12)(jiti@2.4.2)(lightningcss@1.28.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.37.0)(tsx@4.19.2)
       '@astrojs/sitemap':
         specifier: ^3.2.1
         version: 3.2.1
@@ -123,8 +123,8 @@ packages:
     resolution: {integrity: sha512-GilTHKGCW6HMq7y3BUv9Ac7GMe/MO9gi9GW62GzKtth0SwukCu/qp2wLiGpEujhY+VVhaG9v7kv/5vFzvf4NYw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/react@4.1.2':
-    resolution: {integrity: sha512-Slw8Bho50w1+rYnSnDl5PDAUikSOEItx5DEJU5OgmarTirBr1audIb2DgC8faAGcGkq5WhuUVsSiq/TmSORlwA==}
+  '@astrojs/react@4.1.4':
+    resolution: {integrity: sha512-PdTgUDysZopxYAS/LNFcrwgLC0gm0fUe7jfPSU5o4V4ZU/hZXShMBY1beLNoQHpbFaRnLi0ot2MS/81NU734WQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21 || ^19.0.0
@@ -3167,7 +3167,7 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@4.1.2(@types/node@22.10.5)(@types/react-dom@18.3.1)(@types/react@18.3.12)(jiti@2.4.2)(lightningcss@1.28.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.37.0)(tsx@4.19.2)':
+  '@astrojs/react@4.1.4(@types/node@22.10.5)(@types/react-dom@18.3.1)(@types/react@18.3.12)(jiti@2.4.2)(lightningcss@1.28.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(terser@5.37.0)(tsx@4.19.2)':
     dependencies:
       '@types/react': 18.3.12
       '@types/react-dom': 18.3.1
