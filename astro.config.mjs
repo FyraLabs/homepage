@@ -19,7 +19,7 @@ export default defineConfig({
   ],
   redirects: {
     // why are we not using pages redirects for this?
-    // see: https://x.com/lleyton__/status/1825811082822517213
+    // see: https://x.com/uvdotsh/status/1825811082822517213
     "/matrix": "https://matrix.to/#/#hub:fyralabs.com",
   },
 });
