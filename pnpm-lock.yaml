@@ -70,8 +70,8 @@ importers:
         version: 1.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20250414.0
-        version: 4.20250414.0
+        specifier: ^4.20250421.0
+        version: 4.20250421.0
       '@lleyton/dotted-map':
         specifier: ^2.3.1
         version: 2.3.1
@@ -227,8 +227,8 @@ packages:
   '@cloudflare/pages-plugin-turnstile@1.0.2':
     resolution: {integrity: sha512-vKPqN/guV1sk/t8TUIZEGlrlld3iwmfdbuWex8jbhUmv/9ozf2HmBjVBYgnr5q7UPjQsWB7hwqZsx8z3k+BkyQ==}
 
-  '@cloudflare/workers-types@4.20250414.0':
-    resolution: {integrity: sha512-ZHl8LiyUMWiIxYqpasen8Lc75Ef+0afqL26TEd95eRIi5kgkEbjDJ7uIUnpxMoZTRI0J8Hy5YEPtt4nFXt+TpA==}
+  '@cloudflare/workers-types@4.20250421.0':
+    resolution: {integrity: sha512-GYSmQxF9ZE2kkmjCSiYTFdcXUHPeBrz9XvKhqGLTKT8ITYxN5kXy9OYlpkhtVWWUE+XNq7qm5uSKwluaOBKoAw==}
 
   '@emnapi/runtime@1.4.1':
     resolution: {integrity: sha512-LMshMVP0ZhACNjQNYXiU1iZJ6QCcv0lUdPDPugqGvCGXt5xtRVBPdtA0qU12pEXZzpWAhWlZYptfdAFq10DOVQ==}
@@ -3136,7 +3136,7 @@ snapshots:
 
   '@cloudflare/pages-plugin-turnstile@1.0.2': {}
 
-  '@cloudflare/workers-types@4.20250414.0': {}
+  '@cloudflare/workers-types@4.20250421.0': {}
 
   '@emnapi/runtime@1.4.1':
     dependencies:
