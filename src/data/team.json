@@ -112,7 +112,7 @@
   {
     "name": "Owen Zimmerman",
     "username": "owen",
-    "title": "Hardware Operations Manager",
+    "title": "Chief Business Officer",
     "discordID": "626524398207238175",
     "socials": [
       {
@@ -143,16 +143,16 @@
         "link": "https://github.com/june-fish"
       },
       {
+        "type": "twitter",
+        "link": "https://twitter.com/june__fish"
+      },
+      {
         "type": "website",
         "link": "https://june.fish/"
       },
       {
         "type": "mastodon",
         "link": "https://ordinary.cafe/@june"
-      },
-      {
-        "type": "twitter",
-        "link": "https://twitter.com/june__fish"
       }
     ]
   },
