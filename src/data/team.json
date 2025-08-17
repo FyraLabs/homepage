@@ -50,6 +50,53 @@
     ]
   },
   {
+    "name": "Owen Zimmerman",
+    "username": "owen",
+    "title": "Chief Business Officer",
+    "discordID": "626524398207238175",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/Owen-sz"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/owen_zimmerman"
+      },
+      {
+        "type": "website",
+        "link": "https://owenzimmerman.com/"
+      },
+      {
+        "type": "mastodon",
+        "link": "https://ordinary.cafe/@owen"
+      }
+    ]
+  },
+  {
+    "name": "June",
+    "username": "june",
+    "title": "Chief Fish Officer",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/june-fish"
+      },
+      {
+        "type": "twitter",
+        "link": "https://twitter.com/june__fish"
+      },
+      {
+        "type": "website",
+        "link": "https://june.fish/"
+      },
+      {
+        "type": "mastodon",
+        "link": "https://ordinary.cafe/@june"
+      }
+    ]
+  },
+  {
     "name": "Paulo \"Lains\" Galardi",
     "username": "lains",
     "title": "Chief Experience Officer",
@@ -110,49 +157,18 @@
     ]
   },
   {
-    "name": "Owen Zimmerman",
-    "username": "owen",
-    "title": "Chief Business Officer",
-    "discordID": "626524398207238175",
+    "name": "Riley",
+    "username": "riley",
+    "title": "Software Engineering Intern",
+    "discordID": "201689865606266880",
     "socials": [
       {
         "type": "github",
-        "link": "https://github.com/Owen-sz"
-      },
-      {
-        "type": "twitter",
-        "link": "https://twitter.com/owen_zimmerman"
+        "link": "https://github.com/zackerthescar"
       },
       {
         "type": "website",
-        "link": "https://owenzimmerman.com/"
-      },
-      {
-        "type": "mastodon",
-        "link": "https://ordinary.cafe/@owen"
-      }
-    ]
-  },
-  {
-    "name": "June",
-    "username": "june",
-    "title": "Chief Fish Officer",
-    "socials": [
-      {
-        "type": "github",
-        "link": "https://github.com/june-fish"
-      },
-      {
-        "type": "twitter",
-        "link": "https://twitter.com/june__fish"
-      },
-      {
-        "type": "website",
-        "link": "https://june.fish/"
-      },
-      {
-        "type": "mastodon",
-        "link": "https://ordinary.cafe/@june"
+        "link": "https://zackerthescar.com"
       }
     ]
   },
@@ -251,21 +267,5 @@
         "link": "https://twitter.com/_matteodev"
       }
     ]
-  },
-  {
-    "name": "Riley",
-    "username": "riley",
-    "title": "Software Engineering Intern",
-    "discordID": "201689865606266880",
-    "socials": [
-      {
-        "type": "github",
-        "link": "https://github.com/zackerthescar"
-      },
-      {
-        "type": "website",
-        "link": "https://zackerthescar.com"
-      }
-    ]
-  },
+  }
 ]
