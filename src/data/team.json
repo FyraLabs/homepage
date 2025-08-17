@@ -251,5 +251,21 @@
         "link": "https://twitter.com/_matteodev"
       }
     ]
-  }
+  },
+  {
+    "name": "Riley",
+    "username": "riley",
+    "title": "Software Engineering Intern",
+    "discordID": "201689865606266880",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/zackerthescar"
+      },
+      {
+        "type": "website",
+        "link": "https://zackerthescar.com"
+      }
+    ]
+  },
 ]
