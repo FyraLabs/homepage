@@ -11,35 +11,34 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.2.4",
-    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/sitemap": "^3.6.0",
     "@astrojs/tailwind": "^6.0.2",
     "@cloudflare/pages-plugin-turnstile": "^1.0.2",
-    "@headlessui/react": "^2.2.2",
+    "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
-    "@iconify-json/fa-brands": "^1.2.1",
-    "@iconify-json/fa-solid": "^1.2.1",
-    "@iconify-json/simple-icons": "^1.2.33",
+    "@iconify-json/fa-brands": "^1.2.2",
+    "@iconify-json/fa-solid": "^1.2.2",
+    "@iconify-json/simple-icons": "^1.2.60",
     "@spissvinkel/simplex-noise": "^1.0.1",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^18.3.1",
-    "astro": "^5.7.4",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^5.16.3",
     "astro-compress": "^2.3.8",
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^3.4.17",
-    "use-lanyard": "^1.5.2"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^3.4.18",
+    "use-lanyard": "^1.7.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250421.0",
+    "@cloudflare/workers-types": "^4.20251128.0",
     "@lleyton/dotted-map": "^2.3.1",
     "@shrutibalasa/tailwind-grid-auto-fit": "^1.1.0",
-    "prettier": "^3.5.3",
+    "prettier": "^3.7.3",
     "prettier-plugin-astro": "^0.14.1",
-    "sharp": "^0.34.1",
-    "tsx": "^4.19.3"
-  },
-  "packageManager": "pnpm@9.1.2+sha512.127dc83b9ea10c32be65d22a8efb4a65fb952e8fefbdfded39bdc3c97efc32d31b48b00420df2c1187ace28c921c902f0cb5a134a4d032b8b5295cbfa2c681e2"
+    "sharp": "^0.34.5",
+    "tsx": "^4.21.0"
+  }
 }
