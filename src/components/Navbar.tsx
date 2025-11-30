@@ -71,6 +71,12 @@ const Navbar: React.FC<{
                         aria-current={
                           item.href === normalizedPathname ? "page" : undefined
                         }
+                        {...(item.href.startsWith("https://")
+                          ? {
+                              target: "_blank",
+                              rel: "noopener",
+                            }
+                          : {})}
                       >
                         {item.name}
                       </a>
@@ -110,6 +116,12 @@ const Navbar: React.FC<{
                     aria-current={
                       item.href === normalizedPathname ? "page" : undefined
                     }
+                    {...(item.href.startsWith("https://")
+                      ? {
+                          target: "_blank",
+                          rel: "noopener",
+                        }
+                      : {})}
                   >
                     {item.name}
                   </Disclosure.Button>
