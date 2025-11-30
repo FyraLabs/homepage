@@ -17,7 +17,7 @@ const splitName = name.split(' ');
   </div>
 
   <div class="text-center">
-    <p class="font-semibold dark:opacity-[92%]">{splitName.slice(0, -1).join(' ')}{' '}<span class="font-extrabold">{splitName.at(-1)}</span></p>
+    <p class="font-semibold dark:opacity-92">{splitName.slice(0, -1).join(' ')}{' '}<span class="font-extrabold">{splitName.at(-1)}</span></p>
     <p class="text-gray-800 dark:text-gray-300">{title}</p>
   </div>
 
@@ -28,7 +28,7 @@ const splitName = name.split(' ');
   <div class="flex gap-5 [&_a:hover]:text-gray-400 [&_a]:transition-all">
     {
       socials.map(({type, link}) => (
-        <a href={link} target="_blank" rel="noopener" aria-label={socialToName[type]}>
+        <a href={link} target="_blank" rel="noopener noreferrer" aria-label={socialToName[type]}>
           <Icon class="text-2xl" name={socialToIcon[type]} />
         </a>
       ))
