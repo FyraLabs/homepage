@@ -96,7 +96,7 @@ const seo = {
           Meet the Team
         </h1>
 
-        <div class="grid grid-auto-fit-sm gap-6">
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(14rem,1fr))] gap-6">
           {(team as TeamMember[]).map((member) => <TeamCard {...member} />)}
         </div>
       </section>
