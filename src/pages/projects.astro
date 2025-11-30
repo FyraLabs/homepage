@@ -6,6 +6,8 @@ import tauPattern from "../assets/tau-pattern.svg";
 import umPattern from "../assets/um-pattern.svg";
 import terraPattern from "../assets/terra-pattern.svg";
 import chiselOperatorPattern from "../assets/chisel-operator-pattern.svg";
+import suzyqboardPattern from "../assets/suzyqboard-pattern.svg";
+import submarinePattern from "../assets/submarine-pattern.svg";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import SEOFragment from "../components/SEOFragment.astro";
 import { Image } from "astro:assets";
@@ -37,33 +39,6 @@ const seo = {
         <!-- https://bgjar.com/ -->
 
         <article
-          class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64"
-        >
-          <Image
-            src={tauPattern}
-            alt="tauOS"
-            class="object-cover w-1/2 hidden md:block rounded-l-2xl"
-          />
-          <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
-            <h1 class="font-bold text-3xl dark:opacity-[92%]">tauOS</h1>
-
-            <p class="dark:opacity-[92%]">
-              Discover the future of desktop computing with tauOS, currently in
-              development. tauOS is designed with ease of use in mind, featuring
-              human-centric design, an unbreakable core, and an syncing service
-              that synchronizes files, configurations, keys, and more across all
-              your devices.
-            </p>
-
-            <a
-              href="https://tauos.co/"
-              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
-              >Explore <ArrowRightIcon className="h-4 w-4" /></a
-            >
-          </div>
-        </article>
-
-        <article
           class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64 flex-row-reverse"
         >
           <Image
@@ -89,6 +64,8 @@ const seo = {
             >
           </div>
         </article>
+
+        <!-- https://bgjar.com/ -->
 
         <article
           class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64"
@@ -140,6 +117,91 @@ const seo = {
 
             <a
               href="https://chisel.fyralabs.com"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Explore <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </article>
+
+        <!-- https://fffuel.co/ <3 -->
+
+        <article
+          class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64"
+        >
+          <Image
+            src={submarinePattern}
+            alt="Submarine"
+            class="object-cover w-1/2 hidden md:block rounded-l-2xl aspect-video"
+          />
+          <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
+            <h1 class="font-bold text-3xl dark:opacity-[92%]">Submarine</h1>
+
+            <p class="dark:opacity-[92%]">
+              Submarine is an experimental bootloader for Chromebooks (and soon,
+              other devices) which utilizes a minimal Linux environment to
+              bootstrap a larger, full Linux system. Not requiring firmware
+              modifications, it is the easist way to boot Linux on a Chromebook.
+            </p>
+
+            <a
+              href="https://github.com/fyraLabs/submarine"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Explore <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </article>
+
+        <!-- https://fffuel.co/ <3 -->
+
+        <article
+          class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64 flex-row-reverse"
+        >
+          <Image
+            src={suzyqboardPattern}
+            alt="Suzyqboard"
+            class="object-cover w-1/2 hidden md:block rounded-l-2xl"
+          />
+          <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
+            <h1 class="font-bold text-3xl dark:opacity-[92%]">Suzyqboard</h1>
+
+            <p class="dark:opacity-[92%]">
+              Our Suzyqboard is a high quality debug board that enables you to
+              access CCD (closed case debugging) on Chromebook devices. Using
+              CCD, you can (un)brick, debug, and flash (ex. coreboot) your
+              Chromebook.
+            </p>
+
+            <a
+              href="https://github.com/fyraLabs/suzyqboard"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Explore <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </article>
+
+        <!-- https://bgjar.com/ -->
+
+        <article
+          class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64"
+        >
+          <Image
+            src={tauPattern}
+            alt="tauOS"
+            class="object-cover w-1/2 hidden md:block rounded-l-2xl"
+          />
+          <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
+            <h1 class="font-bold text-3xl dark:opacity-[92%]">tauOS</h1>
+
+            <p class="dark:opacity-[92%]">
+              Discover the future of desktop computing with tauOS, currently in
+              development. tauOS is designed with ease of use in mind, featuring
+              human-centric design, an unbreakable core, and an syncing service
+              that synchronizes files, configurations, keys, and more across all
+              your devices.
+            </p>
+
+            <a
+              href="https://tauos.co/"
               class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
               >Explore <ArrowRightIcon className="h-4 w-4" /></a
             >
