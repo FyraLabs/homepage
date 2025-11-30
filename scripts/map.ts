@@ -43,8 +43,7 @@ const pins = [
   },
 ];
 
-// @ts-expect-error
-const map = new DottedMap.default({
+const map = new DottedMap({
   height: 40,
   grid: "vertical",
 });
