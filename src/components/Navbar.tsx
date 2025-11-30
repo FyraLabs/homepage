@@ -43,7 +43,7 @@ const Navbar: React.FC<{
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <a className="flex flex-shrink-0 items-center" href="/">
+                <a className="flex shrink-0 items-center" href="/">
                   <img
                     className="block h-8 w-auto drop-shadow-xl"
                     src="/logo.svg"
