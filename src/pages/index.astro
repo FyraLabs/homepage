@@ -118,8 +118,8 @@ const seo = {
 
   <div class="mx-6 mt-24 mb-24">
     <div class="mx-auto max-w-5xl flex flex-col gap-36">
-      <div class="flex gap-12 items-center">
-        <div class="flex-1">
+      <div class="flex flex-wrap gap-12 items-center">
+        <div class="flex-1 basis-[400px]">
           <p class="text-3xl font-bold font-mono text-white/50 mb-3">00</p>
           <h1 class="font-bold text-5xl dark:opacity-[92%]">Who are we?</h1>
           <p class="mt-6 text-gray-800 dark:text-gray-300">
@@ -131,7 +131,7 @@ const seo = {
             but we take on endeavors as it furthers our goals.
           </p>
         </div>
-        <div class="flex-1 flex overflow-x-scroll gap-6 snap-x">
+        <div class="flex-1 flex basis-[400px] overflow-x-scroll gap-6 snap-x">
           <div class="flex-1 grid gap-4 grid-cols-6">
             {
               (team as TeamMember[]).map((member) => (
@@ -139,7 +139,7 @@ const seo = {
                   <Image
                     src={import(`../assets/people/${member.username}.webp`)}
                     alt=""
-                    class="rounded-full w-14 h-14 bg-zinc-700"
+                    class="rounded-full w-14 h-14 bg-zinc-700 aspect-square"
                   />
                 </div>
               ))
@@ -148,8 +148,8 @@ const seo = {
         </div>
       </div>
 
-      <div class="flex gap-12 items-center">
-        <div class="flex-1">
+      <div class="flex flex-wrap gap-12 items-center">
+        <div class="flex-1 basis-[400px]">
           <p class="text-3xl font-bold font-mono text-white/50 mb-3">01</p>
           <h1 class="font-bold text-5xl dark:opacity-[92%]">What do we do?</h1>
           <p class="mt-6 text-gray-800 dark:text-gray-300">
@@ -158,7 +158,7 @@ const seo = {
             products are open source and developed in the open.
           </p>
         </div>
-        <div class="flex-1 grid grid-cols-3 gap-4">
+        <div class="flex-1 basis-[400px] grid grid-cols-3 gap-4">
           <div
             class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-3"
             style={{
@@ -231,8 +231,8 @@ const seo = {
         </div>
       </div>
 
-      <div class="flex gap-12 items-center">
-        <div class="flex-1">
+      <div class="flex flex-wrap gap-12 items-center">
+        <div class="flex-1 basis-[400px]">
           <p class="text-3xl font-bold font-mono text-white/50 mb-3">02</p>
           <h1 class="font-bold text-5xl dark:opacity-[92%]">Questions?</h1>
           <p class="mt-6 text-gray-800 dark:text-gray-300">
@@ -240,7 +240,7 @@ const seo = {
             hire us to help you? Join our Discord or send us an email!
           </p>
         </div>
-        <div class="flex-1"><ContactForm /></div>
+        <div class="flex-1 basis-[400px]"><ContactForm /></div>
       </div>
     </div>
   </div>
