@@ -26,7 +26,7 @@ const mastodonLinks = [
   "https://fedi.fyralabs.com/@hq",
 ];
 
-const description = "Empowering everyone to change the world";
+const description = "Empowering everyone to change their world";
 
 const seo = {
   title: "Welcome to Fyra Labs",
@@ -57,19 +57,23 @@ const seo = {
   </div>
 
   <div class="relative h-[95vh]">
-    <Navbar pathname={Astro.url.pathname} forceDark client:load />
+    <Navbar
+      className="z-20 absolute right-0 left-0"
+      pathname={Astro.url.pathname}
+      forceDark
+      client:load
+    />
 
     <canvas
       id="background"
-      class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"
-    ></canvas>
+      class="absolute top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
 
     <div
-      class="bg-linear-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
+      class="bg-linear-to-b from-transparent via-transparent to-black z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
     >
     </div>
     <div
-      class="m-4 mb-14 md:m-14 flex flex-col absolute bottom-0 bg-black text-gray-50"
+      class="m-4 mb-14 md:m-14 flex flex-col absolute bottom-0 bg-black text-gray-50 z-20"
     >
       <h1 class="font-bold md:leading-tight text-3xl md:text-6xl">
         Welcome to Fyra Labs

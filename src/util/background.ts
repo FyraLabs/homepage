@@ -30,11 +30,11 @@ canvas.addEventListener("click", () => {
   noiseGenerator = mkSimplexNoise(Math.random);
 });
 
-window.addEventListener("keypress", (event) => {
-  if (event.code === "Space") {
-    noiseGenerator = mkSimplexNoise(Math.random);
-  }
-});
+// window.addEventListener("keypress", (event) => {
+//   if (event.code === "Space") {
+//     noiseGenerator = mkSimplexNoise(Math.random);
+//   }
+// });
 
 let startTime: number | undefined = undefined;
 
