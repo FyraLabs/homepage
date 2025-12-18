@@ -13,6 +13,7 @@ import submarinePattern from "../assets/submarine-pattern.svg";
 
 import { Image } from "astro:assets";
 import ContactForm from "../components/ContactForm.astro";
+import { Marquee } from "../components/Marquee";
 
 const mastodonLinks = [
   ...team
@@ -118,8 +119,8 @@ const seo = {
 
   <div class="mx-6 mt-24 mb-24">
     <div class="mx-auto max-w-5xl flex flex-col gap-36">
-      <div class="flex flex-wrap gap-12 items-center">
-        <div class="flex-1 basis-[400px]">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1">
           <p class="text-3xl font-bold font-mono text-white/50 mb-3">00</p>
           <h1 class="font-bold text-5xl dark:opacity-[92%]">Who are we?</h1>
           <p class="mt-6 text-gray-800 dark:text-gray-300">
@@ -131,25 +132,49 @@ const seo = {
             but we take on endeavors as it furthers our goals.
           </p>
         </div>
-        <div class="flex-1 flex basis-[400px] overflow-x-scroll gap-6 snap-x">
-          <div class="flex-1 grid gap-4 grid-cols-6">
+        <div class="flex-1 flex overflow-x-hidden gap-6 snap-x max-w-full">
+          <div class="hidden md:grid flex-1 gap-4 grid-cols-6">
             {
               (team as TeamMember[]).map((member) => (
-                <div>
+                <div class="size-14">
                   <Image
                     src={import(`../assets/people/${member.username}.webp`)}
                     alt=""
-                    class="rounded-full w-14 h-14 bg-zinc-700 aspect-square"
+                    class="rounded-full bg-zinc-700 aspect-square"
                   />
                 </div>
               ))
             }
           </div>
+          <div class="md:hidden relative w-full">
+            <div
+              class="absolute left-0 top-0 bottom-0 w-24 bg-linear-to-r to-transparent from-zinc-50 dark:from-zinc-900 z-10"
+            >
+            </div>
+            <div
+              class="absolute right-0 top-0 bottom-0 w-24 bg-linear-to-l to-transparent from-zinc-50 dark:from-zinc-900 z-10"
+            >
+            </div>
+
+            <Marquee className="flex-1 grid gap-4 grid-flow-col relative">
+              {
+                (team as TeamMember[]).map((member) => (
+                  <div class="size-14">
+                    <Image
+                      src={import(`../assets/people/${member.username}.webp`)}
+                      alt=""
+                      class="rounded-full bg-zinc-700 aspect-square"
+                    />
+                  </div>
+                ))
+              }
+            </Marquee>
+          </div>
         </div>
       </div>
 
-      <div class="flex flex-wrap gap-12 items-center">
-        <div class="flex-1 basis-[400px]">
+      <div class="flex flex-wrap flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1">
           <p class="text-3xl font-bold font-mono text-white/50 mb-3">01</p>
           <h1 class="font-bold text-5xl dark:opacity-[92%]">What do we do?</h1>
           <p class="mt-6 text-gray-800 dark:text-gray-300">
@@ -158,9 +183,9 @@ const seo = {
             products are open source and developed in the open.
           </p>
         </div>
-        <div class="flex-1 basis-[400px] grid grid-cols-3 gap-4">
+        <div class="flex-1 grid grid-cols-6 grid-flow-row-dense gap-4">
           <div
-            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-3"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-6"
             style={{
               backgroundImage: `url(${umPattern.src})`,
               backgroundSize: "cover",
@@ -176,7 +201,7 @@ const seo = {
             </div>
           </div>
           <div
-            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-2 not-md:row-start-4 not-md:col-span-3"
             style={{
               backgroundImage: `url(${suzyqboardPattern.src})`,
               backgroundSize: "cover",
@@ -187,7 +212,7 @@ const seo = {
             </div>
           </div>
           <div
-            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-2"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-4 not-md:col-span-6"
             style={{
               backgroundImage: `url(${terraPattern.src})`,
               backgroundSize: "cover",
@@ -201,7 +226,7 @@ const seo = {
             </div>
           </div>
           <div
-            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-2"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-4 not-md:col-span-6"
             style={{
               backgroundImage: `url(${chiselOperatorPattern.src})`,
               backgroundSize: "cover",
@@ -217,7 +242,7 @@ const seo = {
             </div>
           </div>
           <div
-            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-2 not-md:col-span-3"
             style={{
               backgroundImage: `url(${submarinePattern.src})`,
               backgroundSize: "cover",
