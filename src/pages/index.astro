@@ -4,6 +4,14 @@ import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 import SEOFragment from "../components/SEOFragment.astro";
 import team from "../data/team.json";
+import type { TeamMember } from "../util/team";
+import umPattern from "../assets/um-pattern.svg";
+import terraPattern from "../assets/terra-pattern.svg";
+import chiselOperatorPattern from "../assets/chisel-operator-pattern.svg";
+import suzyqboardPattern from "../assets/suzyqboard-pattern.svg";
+import submarinePattern from "../assets/submarine-pattern.svg";
+
+import { Image } from "astro:assets";
 
 const mastodonLinks = [
   ...team
@@ -45,70 +53,202 @@ const seo = {
     }
   </div>
 
-  <canvas
-    id="background"
-    class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
+  <div class="relative h-[95vh]">
+    <Navbar pathname={Astro.url.pathname} forceDark client:load />
 
-  <Navbar pathname={Astro.url.pathname} forceDark client:load />
+    <canvas
+      id="background"
+      class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"
+    ></canvas>
 
-  <div
-    class="bg-linear-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
-  >
-  </div>
-  <div class="m-4 mb-14 md:m-14 flex flex-col absolute bottom-0">
-    <h1 class="font-bold md:leading-tight text-3xl md:text-6xl">
-      Welcome to Fyra Labs
-    </h1>
-    <h2 class="md:text-lg">
-      {description}
-    </h2>
-    <div class="mt-3 flex gap-5">
-      <a
-        href="https://twitter.com/teamfyralabs"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-violet-300 transition-all"
-        aria-label="Twitter"
-      >
-        <Icon name="fa-brands:twitter" class="text-2xl" />
-      </a>
-      <a
-        href="https://fedi.fyralabs.com/@hq"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-violet-300 transition-all"
-        aria-label="Mastodon"
-      >
-        <Icon name="fa-brands:mastodon" class="text-2xl" />
-      </a>
-      <a
-        href="https://github.com/fyralabs"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-violet-300 transition-all"
-        aria-label="GitHub"
-      >
-        <Icon name="fa-brands:github" class="text-2xl" />
-      </a>
-      <a
-        href="https://fyralabs.com/discord"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-violet-300 transition-all"
-        aria-label="Discord"
-      >
-        <Icon name="fa-brands:discord" class="text-2xl" />
-      </a>
+    <div
+      class="bg-linear-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
+    >
+    </div>
+    <div
+      class="m-4 mb-14 md:m-14 flex flex-col absolute bottom-0 bg-black text-gray-50"
+    >
+      <h1 class="font-bold md:leading-tight text-3xl md:text-6xl">
+        Welcome to Fyra Labs
+      </h1>
+      <h2 class="md:text-lg">
+        {description}
+      </h2>
+      <div class="mt-3 flex gap-5">
+        <a
+          href="https://twitter.com/teamfyralabs"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-violet-300 transition-all"
+          aria-label="Twitter"
+        >
+          <Icon name="fa-brands:twitter" class="text-2xl" />
+        </a>
+        <a
+          href="https://fedi.fyralabs.com/@hq"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-violet-300 transition-all"
+          aria-label="Mastodon"
+        >
+          <Icon name="fa-brands:mastodon" class="text-2xl" />
+        </a>
+        <a
+          href="https://github.com/fyralabs"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-violet-300 transition-all"
+          aria-label="GitHub"
+        >
+          <Icon name="fa-brands:github" class="text-2xl" />
+        </a>
+        <a
+          href="https://fyralabs.com/discord"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-violet-300 transition-all"
+          aria-label="Discord"
+        >
+          <Icon name="fa-brands:discord" class="text-2xl" />
+        </a>
+      </div>
     </div>
   </div>
+
+  <div class="mx-6 mt-24 mb-24">
+    <div class="mx-auto max-w-5xl flex flex-col gap-24">
+      <div class="flex gap-12 items-center">
+        <div class="flex-1">
+          <p class="text-3xl font-bold font-mono text-white/50 mb-3">00</p>
+          <h1 class="font-bold text-5xl dark:opacity-[92%]">Who are we?</h1>
+          <p class="mt-6 text-gray-800 dark:text-gray-300">
+            Many things! A we're a team, a startup, and a community. Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Animi magnam
+            laboriosam tempore placeat iste blanditiis nisi obcaecati deserunt
+            vel, soluta quibusdam cumque impedit ratione molestias tenetur
+            labore possimus alias quo.
+          </p>
+        </div>
+        <div class="flex-1 flex overflow-x-scroll gap-6 snap-x">
+          <div class="flex-1 grid gap-4 grid-cols-6">
+            {
+              (team as TeamMember[]).map((member) => (
+                <div>
+                  <Image
+                    src={import(`../assets/people/${member.username}.webp`)}
+                    alt=""
+                    class="rounded-full w-14 h-14 bg-zinc-700"
+                  />
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-12 items-center">
+        <div class="flex-1 grid grid-cols-3 gap-4">
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-3"
+            style={{
+              backgroundImage: `url(${umPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">
+                Ultramarine Linux
+              </h1>
+              <h2 class="dark:opacity-92">
+                The modern operating system for what you love.
+              </h2>
+            </div>
+          </div>
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
+            style={{
+              backgroundImage: `url(${suzyqboardPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">SuzyQ Board</h1>
+            </div>
+          </div>
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-2"
+            style={{
+              backgroundImage: `url(${terraPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">Terra</h1>
+              <h2 class="dark:opacity-92">
+                The missing community repository for Fedora.
+              </h2>
+            </div>
+          </div>
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-2"
+            style={{
+              backgroundImage: `url(${chiselOperatorPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">
+                Chisel Operator
+              </h1>
+              <h2 class="dark:opacity-92">
+                The easy way to expose Kubernetes services to the internet.
+              </h2>
+            </div>
+          </div>
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
+            style={{
+              backgroundImage: `url(${submarinePattern.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div class="mt-auto z-10">
+              <h1 class="text-2xl font-bold dark:opacity-92">Submarine</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <p class="text-3xl font-bold font-mono text-white/50 mb-3">01</p>
+          <h1 class="font-bold text-5xl dark:opacity-[92%]">What do we do?</h1>
+          <p class="mt-6 text-gray-800 dark:text-gray-300">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ipsa
+            non culpa, dolor eos esse tempore, perspiciatis vitae, odit maiores
+            totam quo modi quam sit! Nostrum voluptates voluptate excepturi.
+            Facere.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-12 items-center">
+        <div class="flex-1">
+          <p class="text-3xl font-bold font-mono text-white/50 mb-3">02</p>
+          <h1 class="font-bold text-5xl dark:opacity-[92%]">Questions?</h1>
+          <p class="mt-6 text-gray-800 dark:text-gray-300">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
+            consequatur, quae blanditiis asperiores ullam facilis tempore magni.
+            Unde consectetur quidem ab doloremque aut. Reiciendis inventore
+            iusto praesentium excepturi molestias numquam!
+          </p>
+        </div>
+        <div class="flex-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @reference '../styles/global.css';
+  </style>
+
+  <script src="../util/background.ts"></script>
 </Layout>
-
-<style>
-  @reference '../styles/global.css';
-
-  html {
-    @apply bg-black text-gray-50;
-  }
-</style>
-
-<script src="../util/background.ts"></script>
