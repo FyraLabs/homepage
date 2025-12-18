@@ -14,6 +14,7 @@ import submarinePattern from "../assets/submarine-pattern.svg";
 import { Image } from "astro:assets";
 import ContactForm from "../components/ContactForm.astro";
 import { Marquee } from "../components/Marquee";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const mastodonLinks = [
   ...team
@@ -278,6 +279,13 @@ const seo = {
             Need support, want to ask questions, want to contribute, or want to
             hire us to help you? Join our Discord or send us an email!
           </p>
+          <a
+            href="https://fyralabs.com/discord"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300 mt-3"
+            >Join Discord <ArrowRightIcon className="h-4 w-4" /></a
+          >
         </div>
         <div class="flex-1 w-full"><ContactForm /></div>
       </div>
