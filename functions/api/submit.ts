@@ -1,18 +1,9 @@
-import turnstilePlugin from "@cloudflare/pages-plugin-turnstile";
-
 interface Env {
   DISCORD_WEBHOOK_URL?: string;
   TURNSTILE_SECRET?: string;
 }
 
 export const onRequestPost: PagesFunction<Env>[] = [
-  (context) =>
-    // TURNSTILE_SECRET may not be set in preview deploys
-    context.env.TURNSTILE_SECRET
-      ? turnstilePlugin({
-          secret: context.env.TURNSTILE_SECRET,
-        })(context)
-      : context.next(),
   async (context) => {
     const data = await context.request.formData();
     const email = data.get("email");

@@ -2,12 +2,6 @@
 
 ---
 
-<script
-  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-  async
-  defer
-  slot="head"></script>
-
 <form method="POST" action="/api/submit" class="flex flex-col w-full">
   <div class="relative mb-2">
     <label
@@ -36,13 +30,6 @@
       placeholder="Let's work together..."
       required
       maxlength="600"></textarea>
-  </div>
-  <div class="relative mb-2">
-    <div
-      class="cf-turnstile [&>iframe]:w-full!"
-      data-sitekey="0x4AAAAAAAbyR6xfuweUvk2z"
-    >
-    </div>
   </div>
   <button
     type="submit"
