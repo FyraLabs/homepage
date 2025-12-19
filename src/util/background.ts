@@ -7,7 +7,23 @@ import { mkSimplexNoise } from "@spissvinkel/simplex-noise";
 const canvas = document.getElementById("background") as HTMLCanvasElement;
 let ctx = setupCanvas(canvas);
 
-window.addEventListener("resize", () => (ctx = setupCanvas(canvas)));
+const debounce = <T extends (...args: any[]) => void>(
+  func: T,
+  delay: number,
+) => {
+  let timeoutId: ReturnType<typeof setTimeout>;
+  return (...args: Parameters<T>) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => func(...args), delay);
+  };
+};
+
+const handleResize = debounce(() => {
+  ctx = setupCanvas(canvas);
+}, 10);
+
+const resizeObserver = new ResizeObserver(handleResize);
+resizeObserver.observe(canvas);
 
 const particles = Array(1000)
   .fill(0)
