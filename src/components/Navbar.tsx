@@ -16,17 +16,19 @@ const navigation = [
 const Navbar: React.FC<{
   pathname: string;
   forceDark?: boolean;
+  className?: string;
 }> = ({
   pathname,
   // yes, I'm serious
   forceDark = false,
+  className = "",
 }) => {
   const normalizedPathname = useMemo(
     () => pathname.replace(/\/$/, ""),
     [pathname],
   );
   return (
-    <Disclosure as="nav" className={classNames("mb-4")}>
+    <Disclosure as="nav" className={classNames("mb-4", className)}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

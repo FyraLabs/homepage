@@ -27,8 +27,10 @@
     "astro-compress": "^2.3.8",
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
+    "clsx": "^2.1.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.17",
     "use-lanyard": "^1.7.0"
   },

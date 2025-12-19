@@ -4,6 +4,17 @@ import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 import SEOFragment from "../components/SEOFragment.astro";
 import team from "../data/team.json";
+import type { TeamMember } from "../util/team";
+import umPattern from "../assets/um-pattern.svg";
+import terraPattern from "../assets/terra-pattern.svg";
+import chiselOperatorPattern from "../assets/chisel-operator-pattern.svg";
+import suzyqboardPattern from "../assets/suzyqboard-pattern.svg";
+import submarinePattern from "../assets/submarine-pattern.svg";
+
+import { Image } from "astro:assets";
+import ContactForm from "../components/ContactForm.astro";
+import { Marquee } from "../components/Marquee";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const mastodonLinks = [
   ...team
@@ -15,7 +26,8 @@ const mastodonLinks = [
   "https://fedi.fyralabs.com/@hq",
 ];
 
-const description = "Empowering everyone to change the world";
+const description =
+  "Empowering everyone to change their world, by bringing open source software to the masses";
 
 const seo = {
   title: "Welcome to Fyra Labs",
@@ -45,70 +57,258 @@ const seo = {
     }
   </div>
 
-  <canvas
-    id="background"
-    class="absolute -z-20 top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
+  <div class="relative h-[95vh]">
+    <Navbar
+      className="z-20 absolute right-0 left-0"
+      pathname={Astro.url.pathname}
+      forceDark
+      client:load
+    />
 
-  <Navbar pathname={Astro.url.pathname} forceDark client:load />
+    <canvas
+      id="background"
+      class="absolute top-0 left-0 right-0 bottom-0 w-full h-full"></canvas>
 
-  <div
-    class="bg-linear-to-b from-transparent via-transparent to-black -z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
-  >
-  </div>
-  <div class="m-4 mb-14 md:m-14 flex flex-col absolute bottom-0">
-    <h1 class="font-bold md:leading-tight text-3xl md:text-6xl">
-      Welcome to Fyra Labs
-    </h1>
-    <h2 class="md:text-lg">
-      {description}
-    </h2>
-    <div class="mt-3 flex gap-5">
-      <a
-        href="https://twitter.com/teamfyralabs"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-violet-300 transition-all"
-        aria-label="Twitter"
-      >
-        <Icon name="fa-brands:twitter" class="text-2xl" />
-      </a>
-      <a
-        href="https://fedi.fyralabs.com/@hq"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-violet-300 transition-all"
-        aria-label="Mastodon"
-      >
-        <Icon name="fa-brands:mastodon" class="text-2xl" />
-      </a>
-      <a
-        href="https://github.com/fyralabs"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-violet-300 transition-all"
-        aria-label="GitHub"
-      >
-        <Icon name="fa-brands:github" class="text-2xl" />
-      </a>
-      <a
-        href="https://fyralabs.com/discord"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-violet-300 transition-all"
-        aria-label="Discord"
-      >
-        <Icon name="fa-brands:discord" class="text-2xl" />
-      </a>
+    <div
+      class="bg-linear-to-b from-transparent via-transparent to-black z-10 absolute top-0 left-0 right-0 bottom-0 pointer-events-none"
+    >
+    </div>
+    <div
+      class="m-4 mb-14 md:m-14 flex flex-col absolute bottom-0 bg-black text-gray-50 z-20"
+    >
+      <h1 class="font-bold md:leading-tight text-3xl md:text-6xl">
+        Welcome to Fyra Labs
+      </h1>
+      <h2 class="md:text-lg">
+        {description}
+      </h2>
+      <div class="mt-3 flex gap-5">
+        <a
+          href="https://twitter.com/teamfyralabs"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-violet-300 transition-all"
+          aria-label="Twitter"
+        >
+          <Icon name="fa-brands:twitter" class="text-2xl" />
+        </a>
+        <a
+          href="https://fedi.fyralabs.com/@hq"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-violet-300 transition-all"
+          aria-label="Mastodon"
+        >
+          <Icon name="fa-brands:mastodon" class="text-2xl" />
+        </a>
+        <a
+          href="https://github.com/fyralabs"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-violet-300 transition-all"
+          aria-label="GitHub"
+        >
+          <Icon name="fa-brands:github" class="text-2xl" />
+        </a>
+        <a
+          href="https://fyralabs.com/discord"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-violet-300 transition-all"
+          aria-label="Discord"
+        >
+          <Icon name="fa-brands:discord" class="text-2xl" />
+        </a>
+      </div>
     </div>
   </div>
+
+  <div class="mx-6 mt-24 mb-24">
+    <div class="mx-auto max-w-5xl flex flex-col gap-18 md:gap-36">
+      <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-center">
+        <div class="flex-1">
+          <p class="text-xl md:text-3xl font-bold font-mono text-white/50 mb-3">
+            00
+          </p>
+          <h1 class="font-bold text-3xl md:text-5xl dark:opacity-[92%]">
+            Who are we?
+          </h1>
+          <p class="mt-6 text-gray-800 dark:text-gray-300">
+            Many things! A we're a team, a startup, and a community. Together,
+            we have a shared mission of bringing open source software to the
+            mass market, the everyday person. We work towards this goal by
+            building software, products, communities, organizations, governance,
+            and coalitions. Our current focus is in the Linux desktop and web
+            services space, but we take on endeavors as it furthers our goals.
+          </p>
+          <a
+            href="/about"
+            class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300 mt-3"
+            >Read more <ArrowRightIcon className="h-4 w-4" /></a
+          >
+        </div>
+        <div class="flex-1 flex overflow-x-hidden gap-6 snap-x max-w-full">
+          <div class="hidden md:grid flex-1 gap-4 grid-cols-6">
+            {
+              (team as TeamMember[]).map((member) => (
+                <div class="size-14">
+                  <Image
+                    src={import(`../assets/people/${member.username}.webp`)}
+                    alt=""
+                    class="rounded-full bg-zinc-700 aspect-square"
+                  />
+                </div>
+              ))
+            }
+          </div>
+          <div class="md:hidden relative w-full">
+            <div
+              class="absolute left-0 top-0 bottom-0 w-24 bg-linear-to-r to-transparent from-zinc-50 dark:from-zinc-900 z-10"
+            >
+            </div>
+            <div
+              class="absolute right-0 top-0 bottom-0 w-24 bg-linear-to-l to-transparent from-zinc-50 dark:from-zinc-900 z-10"
+            >
+            </div>
+
+            <Marquee className="flex-1 grid gap-4 grid-flow-col relative">
+              {
+                (team as TeamMember[]).map((member) => (
+                  <div class="size-14">
+                    <Image
+                      src={import(`../assets/people/${member.username}.webp`)}
+                      alt=""
+                      class="rounded-full bg-zinc-700 aspect-square"
+                    />
+                  </div>
+                ))
+              }
+            </Marquee>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-wrap flex-col md:flex-row gap-6 md:gap-12 items-center"
+      >
+        <div class="flex-1">
+          <p class="text-xl md:text-3xl font-bold font-mono text-white/50 mb-3">
+            01
+          </p>
+          <h1 class="font-bold text-3xl md:text-5xl dark:opacity-[92%]">
+            What do we do?
+          </h1>
+          <p class="mt-6 text-gray-800 dark:text-gray-300">
+            We build products that innovate past the status quo. Everything we
+            build is open source and developed with the community.
+          </p>
+          <a
+            href="/projects"
+            class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300 mt-3"
+            >View all projects <ArrowRightIcon className="h-4 w-4" /></a
+          >
+        </div>
+        <div class="flex-1 grid grid-cols-6 grid-flow-row-dense gap-4">
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-6"
+            style={{
+              backgroundImage: `url(${umPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">
+                Ultramarine Linux
+              </h1>
+              <h2 class="dark:opacity-92">
+                The modern operating system for what you love.
+              </h2>
+            </div>
+          </div>
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-2 not-md:row-start-4 not-md:col-span-3"
+            style={{
+              backgroundImage: `url(${suzyqboardPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">SuzyQ Board</h1>
+            </div>
+          </div>
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-4 not-md:col-span-6"
+            style={{
+              backgroundImage: `url(${terraPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">Terra</h1>
+              <h2 class="dark:opacity-92">
+                The missing community repository for Fedora.
+              </h2>
+            </div>
+          </div>
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-4 not-md:col-span-6"
+            style={{
+              backgroundImage: `url(${chiselOperatorPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">
+                Chisel Operator
+              </h1>
+              <h2 class="dark:opacity-92">
+                The easy way to expose Kubernetes services to the internet.
+              </h2>
+            </div>
+          </div>
+          <div
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-2 not-md:col-span-3"
+            style={{
+              backgroundImage: `url(${submarinePattern.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div class="mt-auto z-10">
+              <h1 class="text-2xl font-bold dark:opacity-92">Submarine</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-center">
+        <div class="flex-1">
+          <p class="text-xl md:text-3xl font-bold font-mono text-white/50 mb-3">
+            02
+          </p>
+          <h1 class="font-bold text-3xl md:text-5xl dark:opacity-[92%]">
+            Questions?
+          </h1>
+          <p class="mt-6 text-gray-800 dark:text-gray-300">
+            Need support, want to ask questions, want to contribute, or want to
+            hire us to help you? Join our Discord or send us an email!
+          </p>
+          <a
+            href="https://fyralabs.com/discord"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300 mt-3"
+            >Join Discord <ArrowRightIcon className="h-4 w-4" /></a
+          >
+        </div>
+        <div class="flex-1 w-full"><ContactForm /></div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @reference '../styles/global.css';
+  </style>
+
+  <script src="../util/background.ts"></script>
 </Layout>
-
-<style>
-  @reference '../styles/global.css';
-
-  html {
-    @apply bg-black text-gray-50;
-  }
-</style>
-
-<script src="../util/background.ts"></script>
