@@ -157,6 +157,22 @@
     ]
   },
   {
+    "name": "Gilver",
+    "username": "roachy",
+    "title": "DevOps Engineer",
+    "discordID": "385363283542278144",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/GildedRoach"
+      },
+      {
+        "type": "mastodon",
+        "link": "https://floss.social/@RockGrub"
+      }
+    ]
+  },
+  {
     "name": "Riley",
     "username": "riley",
     "title": "Software Engineer",
