@@ -41,6 +41,16 @@ const pins = [
     lng: 14.5501,
     svgOptions: { color: "#a855f7", radius: 0.6 },
   },
+  {
+    lat: 42.4963,
+    lng: -96.4049,
+    svgOptions: { color: "#a855f7", radius: 0.6 },
+  },
+  {
+    lat: 37.7749,
+    lng: -122.4194,
+    svgOptions: { color: "#a855f7", radius: 0.6 },
+  },
 ];
 
 const map = new DottedMap({
