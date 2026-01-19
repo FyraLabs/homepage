@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
-    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/sitemap": "^3.7.0",
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
     "@iconify-json/fa-brands": "^1.2.2",
