@@ -34,7 +34,7 @@
     "use-lanyard": "^1.7.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20251128.0",
+    "@cloudflare/workers-types": "^4.20260118.0",
     "@lleyton/dotted-map": "^2.3.1",
     "prettier": "^3.7.3",
     "prettier-plugin-astro": "^0.14.1",

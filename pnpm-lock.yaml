@@ -73,8 +73,8 @@ importers:
         version: 1.7.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^4.20251128.0
-        version: 4.20251213.0
+        specifier: ^4.20260118.0
+        version: 4.20260118.0
       '@lleyton/dotted-map':
         specifier: ^2.3.1
         version: 2.3.1
@@ -212,8 +212,8 @@ packages:
     resolution: {integrity: sha512-VERIM64vtTP1C4mxQ5thVT9fK0apjPFobqybMtA1UdUujWka24ERHbRHFGmpbbhp73MhV+KSsHQH9C6uOTdEQA==}
     engines: {node: '>=18'}
 
-  '@cloudflare/workers-types@4.20251213.0':
-    resolution: {integrity: sha512-PJAGdKfU7hs39C2YOFNLTdrfdqG6rbaVj5UuI306zS+TPokiskRLEgUXKqS6avN9Uu9Nyuf2a0hqoumLQCnJlQ==}
+  '@cloudflare/workers-types@4.20260118.0':
+    resolution: {integrity: sha512-t+2Q421kAQqwBzMUDvgg2flp8zFVxOpiAyZPbyNcnPxMDHf0z3B7LqBIVQawwI6ntZinbk9f4oUmaA5bGeYwlg==}
 
   '@emnapi/runtime@1.7.1':
     resolution: {integrity: sha512-PVtJr5CmLwYAU9PZDMITZoR5iAOShYREoR45EyyLrbntV50mdePTgUn4AmOw90Ifcj+x2kRjdzr1HP3RrNiHGA==}
@@ -2847,7 +2847,7 @@ snapshots:
     dependencies:
       fontkitten: 1.0.2
 
-  '@cloudflare/workers-types@4.20251213.0': {}
+  '@cloudflare/workers-types@4.20260118.0': {}
 
   '@emnapi/runtime@1.7.1':
     dependencies:
