@@ -28,7 +28,7 @@
         "use-lanyard": "^1.7.0",
       },
       "devDependencies": {
-        "@cloudflare/workers-types": "^4.20260118.0",
+        "@cloudflare/workers-types": "^4.20260131.0",
         "@lleyton/dotted-map": "^2.3.1",
         "prettier": "^3.8.1",
         "prettier-plugin-astro": "^0.14.1",
@@ -95,7 +95,7 @@
 
     "@capsizecss/unpack": ["@capsizecss/unpack@4.0.0", "", { "dependencies": { "fontkitten": "^1.0.0" } }, "sha512-VERIM64vtTP1C4mxQ5thVT9fK0apjPFobqybMtA1UdUujWka24ERHbRHFGmpbbhp73MhV+KSsHQH9C6uOTdEQA=="],
 
-    "@cloudflare/workers-types": ["@cloudflare/workers-types@4.20260124.0", "", {}, "sha512-h6TJlew6AtGuEXFc+k5ifalk+tg3fkg0lla6XbMAb2AKKfJGwlFNTwW2xyT/Ha92KY631CIJ+Ace08DPdFohdA=="],
+    "@cloudflare/workers-types": ["@cloudflare/workers-types@4.20260131.0", "", {}, "sha512-ELgvb2mp68Al50p+FmpgCO2hgU5o4tmz8pi7kShN+cRXc0UZoEdxpDIikR0CeT7b3tV7wlnEnsUzd0UoJLS0oQ=="],
 
     "@emnapi/runtime": ["@emnapi/runtime@1.7.1", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-PVtJr5CmLwYAU9PZDMITZoR5iAOShYREoR45EyyLrbntV50mdePTgUn4AmOw90Ifcj+x2kRjdzr1HP3RrNiHGA=="],
 
