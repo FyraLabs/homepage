@@ -74,6 +74,10 @@
       {
         "type": "mastodon",
         "link": "https://ordinary.cafe/@owen"
+      },
+      {
+        "type": "bsky",
+        "link": "https://bsky.app/profile/owensz.bsky.social"
       }
     ]
   },
