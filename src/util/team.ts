@@ -1,9 +1,10 @@
-export type SocialType = "github" | "mastodon" | "twitter" | "website";
+export type SocialType = "github" | "mastodon" | "twitter" | "bsky" | "website";
 
 export const socialToName: Record<SocialType, string> = {
   github: "GitHub",
   mastodon: "Mastodon",
   twitter: "Twitter",
+  bsky: "Bluesky",
   website: "Website",
 };
 
@@ -11,6 +12,7 @@ export const socialToIcon: Record<SocialType, string> = {
   github: "fa-brands:github",
   mastodon: "fa-brands:mastodon",
   twitter: "fa-brands:twitter",
+  bsky: "fa6-brands:bluesky",
   website: "fa-solid:globe",
 };
 
