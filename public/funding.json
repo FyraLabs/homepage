@@ -75,32 +75,6 @@
       "tags": ["cloud", "devops", "networking", "server", "k8s"]
     },
     {
-      "guid": "tauos",
-      "name": "tauOS",
-      "description": "tauOS is your next-generation operating system. Treating all your devices as one, being resilient to breakage, and providing a development platform that prioritizes DX, tauOS lets you do your thing, better.",
-      "webpageUrl": {
-        "url": "https://tauos.co",
-        "wellKnown": "https://tauos.co/.well-known/funding-manifest-urls"
-      },
-      "repositoryUrl": {
-        "url": "https://github.com/tau-OS/triage",
-        "wellKnown": "https://github.com/tau-OS/triage/blob/main/.well-known/funding-manifest-urls"
-      },
-      "licenses": ["spdx:GPL-3.0-or-later"],
-      "tags": [
-        "development",
-        "linux",
-        "operating-systems",
-        "kernel",
-        "user-experience",
-        "productivity",
-        "hardware",
-        "computers",
-        "design",
-        "fedora"
-      ]
-    },
-    {
       "guid": "stardust",
       "name": "Stardust XR",
       "description": "Stardust XR is an open platform for extended and virtual reality, allowing developers to build XR applications that play nicely with each other.",
