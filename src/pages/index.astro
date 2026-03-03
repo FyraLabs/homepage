@@ -10,6 +10,7 @@ import terraPattern from "../assets/terra-pattern.svg";
 import chiselOperatorPattern from "../assets/chisel-operator-pattern.svg";
 import suzyqboardPattern from "../assets/suzyqboard-pattern.svg";
 import submarinePattern from "../assets/submarine-pattern.svg";
+import StackPattern from "../assets/stack-pattern.svg";
 
 import { Image } from "astro:assets";
 import ContactForm from "../components/ContactForm.astro";
@@ -220,7 +221,7 @@ const seo = {
       </div>
       <div class="flex-1 grid grid-cols-6 grid-flow-row-dense gap-4">
         <div
-          class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-6"
+          class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-4 not-md:col-span-6"
           style={{
             backgroundImage: `url(${umPattern.src})`,
             backgroundSize: "cover",
@@ -233,6 +234,27 @@ const seo = {
             <h2 class="dark:opacity-92">
               The modern operating system for what you love.
             </h2>
+          </div>
+        </div>
+        <div
+          class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl col-span-2 not-md:col-span-6 overflow-hidden"
+          style={{
+            backgroundImage: `url(${StackPattern.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-neutral-100 dark:from-neutral-800 to-transparent"
+          >
+          </div>
+          <div class="mt-auto z-10">
+            <h1
+              class="text-2xl font-bold dark:opacity-92 flex items-center gap-2"
+            >
+              <img src="/logo.svg" alt="Fyra" class="h-6 w-auto" />
+              Stack
+            </h1>
           </div>
         </div>
         <div
