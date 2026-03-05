@@ -7,6 +7,7 @@ import umPattern from "../assets/um-pattern.svg";
 import terraPattern from "../assets/terra-pattern.svg";
 import chiselOperatorPattern from "../assets/chisel-operator-pattern.svg";
 import suzyqboardPattern from "../assets/suzyqboard-pattern.svg";
+import StackPattern from "../assets/stack-pattern.svg";
 import submarinePattern from "../assets/submarine-pattern.svg";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import SEOFragment from "../components/SEOFragment.astro";
@@ -74,7 +75,7 @@ const seo = {
         >
           <Image
             src={terraPattern}
-            alt="tauOS"
+            alt="Terra"
             class="object-cover w-1/2 hidden md:block rounded-l-2xl"
           />
           <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
@@ -91,6 +92,47 @@ const seo = {
               href="https://terra.fyralabs.com/"
               target="_blank"
               rel="noopener"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Explore <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </article>
+
+        <article
+          class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64 flex-row-reverse"
+        >
+          <div
+            class="w-1/2 hidden md:block rounded-r-2xl overflow-hidden relative"
+          >
+            <Image
+              src={StackPattern}
+              alt="Fyra Stack"
+              class="object-cover h-full w-full"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-neutral-100 dark:from-neutral-800 to-transparent"
+            >
+            </div>
+          </div>
+          <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
+            <h1
+              class="font-bold text-3xl dark:opacity-92 flex items-center gap-2"
+            >
+              <img src="/logo.svg" alt="Fyra" class="h-7 w-auto" />
+              Stack
+            </h1>
+
+            <p class="dark:opacity-92">
+              Infrastructure without breaking the bank, or your mind.
+            </p>
+
+            <p class="dark:opacity-92">
+              We're an infrastructure provider offering VPS and server
+              colocation with straightforward pricing, simple provisioning,
+              starting at just $5/month.
+            </p>
+            <a
+              href="https://fyrastack.com"
               class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
               >Explore <ArrowRightIcon className="h-4 w-4" /></a
             >
@@ -186,10 +228,9 @@ const seo = {
             >
           </div>
         </article>
-
         <!-- https://bgjar.com/ -->
 
-        <article
+        <!-- <article
           class="flex bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl min-h-64"
         >
           <Image
@@ -216,7 +257,7 @@ const seo = {
               >Explore <ArrowRightIcon className="h-4 w-4" /></a
             >
           </div>
-        </article>
+        </article> -->
       </div>
     </div>
   </div>

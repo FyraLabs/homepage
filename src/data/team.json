@@ -46,6 +46,10 @@
       {
         "type": "mastodon",
         "link": "https://ordinary.cafe/@jaiden"
+      },
+      {
+        "type": "bsky",
+        "link": "https://bsky.app/profile/jaiden.sh"
       }
     ]
   },
@@ -70,6 +74,10 @@
       {
         "type": "mastodon",
         "link": "https://ordinary.cafe/@owen"
+      },
+      {
+        "type": "bsky",
+        "link": "https://bsky.app/profile/owensz.bsky.social"
       }
     ]
   },
@@ -157,7 +165,7 @@
     ]
   },
   {
-    "name": "Gilver",
+      "name": "Gilver",
     "username": "roachy",
     "title": "DevOps Engineer",
     "discordID": "385363283542278144",
@@ -169,6 +177,31 @@
       {
         "type": "mastodon",
         "link": "https://floss.social/@RockGrub"
+      }
+    ]
+  },
+  {
+    "name": "Katherine Cole",
+    "username": "kat",
+    "title": "VP of Infrastructure",
+    "dndIsOnline": true,
+    "discordID": "911864885862883379",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/fieldofdisarray"
+      },
+      {
+        "type": "website",
+        "link": "https://disarray.sh"
+      },
+      {
+        "type": "bsky",
+        "link": "https://bsky.app/profile/disarray.sh"
+      },
+      {
+        "type": "mastodon",
+        "link": "https://dis.sociat.ing/@disarray"
       }
     ]
   },
