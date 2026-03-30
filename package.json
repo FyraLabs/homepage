@@ -20,7 +20,7 @@
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/simple-icons": "^1.2.75",
     "@spissvinkel/simplex-noise": "^1.0.1",
-    "@tailwindcss/vite": "^4.2.1",
+    "@tailwindcss/vite": "^4.2.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "astro": "^6.0.8",
