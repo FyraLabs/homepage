@@ -105,26 +105,6 @@
     ]
   },
   {
-    "name": "Paulo \"Lains\" Galardi",
-    "username": "lains",
-    "title": "Chief Experience Officer",
-    "discordID": "191064062153457665",
-    "socials": [
-      {
-        "type": "github",
-        "link": "https://github.com/lainsce"
-      },
-      {
-        "type": "website",
-        "link": "https://lainsce.us"
-      },
-      {
-        "type": "mastodon",
-        "link": "https://fosstodon.org/@lainsdev"
-      }
-    ]
-  },
-  {
     "name": "Pornpipat \"Cappy\" Popum",
     "username": "cappy",
     "title": "Chief Information Officer",
