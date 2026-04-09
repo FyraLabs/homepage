@@ -222,6 +222,18 @@
     ]
   },
   {
+    "name": "Jonah",
+    "username": "jonah",
+    "title": "Operations Advisor",
+    "discordID": "736985705905127494",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/Its-J"
+      }
+    ]
+  },
+  {
     "name": "Trobo",
     "username": "trobo",
     "title": "Web Developer",
