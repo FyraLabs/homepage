@@ -11,8 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^5.0.5",
-    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/react": "^5.0.7",
+    "@astrojs/sitemap": "^3.7.3",
     "@headlessui/react": "^2.2.10",
     "@heroicons/react": "^2.2.0",
     "@iconify-json/fa-brands": "^1.2.2",
@@ -23,7 +23,7 @@
     "@tailwindcss/vite": "^4.3.0",
     "@types/react": "^19.2.16",
     "@types/react-dom": "^19.2.3",
-    "astro": "^6.3.7",
+    "astro": "^6.4.3",
     "astro-compress": "^2.4.1",
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
