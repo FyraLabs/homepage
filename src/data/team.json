@@ -161,31 +161,6 @@
     ]
   },
   {
-    "name": "Katherine Cole",
-    "username": "kat",
-    "title": "VP of Infrastructure",
-    "dndIsOnline": true,
-    "discordID": "911864885862883379",
-    "socials": [
-      {
-        "type": "github",
-        "link": "https://github.com/fieldofdisarray"
-      },
-      {
-        "type": "website",
-        "link": "https://disarray.sh"
-      },
-      {
-        "type": "bsky",
-        "link": "https://bsky.app/profile/disarray.sh"
-      },
-      {
-        "type": "mastodon",
-        "link": "https://dis.sociat.ing/@disarray"
-      }
-    ]
-  },
-  {
     "name": "Riley",
     "username": "riley",
     "title": "Software Engineer",
