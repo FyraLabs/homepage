@@ -6,6 +6,13 @@
 
 html {
   @apply bg-zinc-50 dark:bg-zinc-900 dark:text-gray-50 w-screen overflow-x-hidden;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -15,6 +22,7 @@ body {
 @theme inline {
   --animate-marquee: marquee var(--duration) infinite linear;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  --animate-bounce-gentle: bounce-gentle 2.5s ease-in-out infinite;
 
   @keyframes marquee {
     from {
@@ -31,5 +39,31 @@ body {
     to {
       transform: translateY(calc(-100% - var(--gap)));
     }
+  }
+  @keyframes bounce-gentle {
+    0%,
+    100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(-6px);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes bounce-gentle {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(0);
+    }
+  }
+  .animate-bounce-gentle {
+    animation: none;
   }
 }

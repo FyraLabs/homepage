@@ -15,7 +15,7 @@ import StackPattern from "../assets/stack-pattern.svg";
 import { Image } from "astro:assets";
 import ContactForm from "../components/ContactForm.astro";
 import { Marquee } from "../components/Marquee";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const mastodonLinks = [
   ...team
@@ -26,9 +26,6 @@ const mastodonLinks = [
     .filter((link) => link),
   "https://fedi.fyralabs.com/@hq",
 ];
-
-const description =
-  "Empowering everyone to change their world, by bringing open source software to the masses";
 
 const seo = {
   title: "Welcome to Fyra Labs",
@@ -78,10 +75,11 @@ const seo = {
       class="m-4 mb-14 md:m-14 flex flex-col absolute bottom-0 bg-black text-gray-50 z-20"
     >
       <h1 class="font-bold md:leading-tight text-3xl md:text-6xl">
-        Welcome to Fyra Labs
+        Open source shouldn't stop where it's easy
       </h1>
-      <h2 class="md:text-lg">
-        {description}
+      <h2 class="md:text-xl">
+        Freedom over your digital life shouldn't be a luxury for the technical
+        few. We do the hard work to extend it to everyone.
       </h2>
       <div class="mt-3 flex gap-5">
         <a
@@ -131,13 +129,24 @@ const seo = {
         </a>
       </div>
     </div>
+
+    <a
+      href="#who-we-are"
+      class="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 text-gray-50 hover:text-violet-300 transition-all"
+      aria-label="Scroll to Who We Are"
+    >
+      <ChevronDownIcon
+        className="w-8 h-8 motion-safe:animate-bounce-gentle"
+        aria-hidden="true"
+      />
+    </a>
   </div>
 </Layout>
 
 <div class="mx-6 mt-10 mb-24">
   <div class="mx-auto max-w-5xl flex flex-col gap-18 md:gap-36">
     <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-center">
-      <div class="flex-1">
+      <div id="who-we-are" class="flex-1">
         <p class="text-xl md:text-3xl font-bold font-mono text-white/50 mb-3">
           00
         </p>
