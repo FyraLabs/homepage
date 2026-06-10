@@ -283,5 +283,33 @@
         "link": "https://twitter.com/_matteodev"
       }
     ]
+  },
+  {
+    "name": "Cypress Reed",
+    "username": "halfcyan",
+    "title": "Software Engineer",
+    "discordID": "138691043024568320",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/halfcyan"
+      },
+      {
+        "type": "website",
+        "link": "https://willowidk.dev"
+      }
+    ]
+  },
+  {
+    "name": "Caleb Jones",
+    "username": "hero",
+    "title": "Software Engineer",
+    "discordID": "169253891739877376",
+    "socials": [
+      {
+        "type": "github",
+        "link": "https://github.com/TheHeroBrine422"
+      }
+    ]
   }
 ]
