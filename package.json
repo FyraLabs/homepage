@@ -11,7 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^5.0.7",
+    "@astrojs/react": "^6.0.1",
     "@astrojs/sitemap": "^3.7.3",
     "@headlessui/react": "^2.2.10",
     "@heroicons/react": "^2.2.0",
@@ -21,7 +21,7 @@
     "@iconify-json/simple-icons": "^1.2.89",
     "@spissvinkel/simplex-noise": "^1.0.1",
     "@tailwindcss/vite": "^4.3.2",
-    "astro": "^6.4.7",
+    "astro": "^7.0.9",
     "astro-compress": "^2.4.1",
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
