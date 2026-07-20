@@ -70,8 +70,8 @@ importers:
         version: 1.7.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: ^5.20260714.1
-        version: 5.20260714.1
+        specifier: ^5.20260719.1
+        version: 5.20260719.1
       '@lleyton/dotted-map':
         specifier: ^2.3.1
         version: 2.3.1
@@ -332,8 +332,8 @@ packages:
     resolution: {integrity: sha512-y7/yvZ2TPAnR9+jnc00klvNNLkJiXFFrQA/hlLCcxA9a2A4zQIOimyFQ9XfwYKiGD1fb5GY8vbKIIgO8d5Tb2A==}
     engines: {node: '>= 20.12.0'}
 
-  '@cloudflare/workers-types@5.20260714.1':
-    resolution: {integrity: sha512-HGCTQVIQwzqAMLrZBCgLDrWKMgOdi6yn+S0Do1rF6z7t8tVvNprQfa53V6EDRRwsVO92uN5gviX2SxASDINZfA==}
+  '@cloudflare/workers-types@5.20260719.1':
+    resolution: {integrity: sha512-DcGasbfUuczQilc80vhL2MPPdWcaxWkx0hN5IW9UdNDBdrRvWcal3akSJ6Ccm7e8+/OGeR+8tYrqkykA3YGSZw==}
 
   '@emnapi/core@1.11.1':
     resolution: {integrity: sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ==}
@@ -2862,7 +2862,7 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@cloudflare/workers-types@5.20260714.1': {}
+  '@cloudflare/workers-types@5.20260719.1': {}
 
   '@emnapi/core@1.11.1':
     dependencies:
