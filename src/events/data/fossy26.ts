@@ -5,7 +5,7 @@ export const fossy26: Event = {
   title: "Find us in Vancouver",
   dates: "August 6–9, 2026",
   description:
-    "We're headed to Rain City for FOSSY 2026! Come hang out with us at the University of British Columbia or check out our talks!",
+    "We're headed to Rain City for FOSSY 2026! Come hang out with us at the University of British Columbia, or check out our talks!",
   links: [
     {
       label: "Learn more about FOSSY",
