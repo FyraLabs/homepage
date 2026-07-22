@@ -19,7 +19,7 @@ export const tcAugust26: Event = {
     },
     {
       mode: "bus",
-      line: "Route 67",
+      line: "Route 67, 63, 87",
       stop: "University Ave & Vandalia St",
     },
   ],
