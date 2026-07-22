@@ -15,7 +15,9 @@ export default defineConfig({
     icon(),
     react(),
     sitemap({ filter: (page) => page !== "https://fyralabs.com/thanks/" }),
-    compress(),
+    compress({
+      CSS: false // fixes navbar breakpoints: https://github.com/PlayForm/Compress/issues/640
+    }),
     robotsTxt(),
   ],
 
