@@ -1,0 +1,224 @@
+---
+import Navbar from "../components/Navbar";
+import Layout from "../layouts/Layout.astro";
+import SEOFragment from "../components/SEOFragment.astro";
+import TalkCard from "./TalkCard.astro";
+import type { Event } from "./types";
+import { Icon } from "astro-icon/components";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+
+type Props = Event;
+
+const {
+  name,
+  pageTitle: pageTitleOverride,
+  title,
+  dates,
+  location,
+  map,
+  transit,
+  transitPlanner,
+  venues,
+  description,
+  tagline,
+  links,
+  talks,
+} = Astro.props;
+
+const pageTitle = pageTitleOverride ?? `Fyra Labs at ${name}`;
+
+// Build the OpenStreetMap embed + "view larger" links from the coordinates.
+const mapPad = { lat: 0.005, lon: 0.009 };
+const osmEmbedSrc = map
+  ? `https://www.openstreetmap.org/export/embed.html?bbox=${map.lon - mapPad.lon}%2C${map.lat - mapPad.lat}%2C${map.lon + mapPad.lon}%2C${map.lat + mapPad.lat}&layer=mapnik&marker=${map.lat}%2C${map.lon}`
+  : null;
+const osmLink = map
+  ? `https://www.openstreetmap.org/?mlat=${map.lat}&mlon=${map.lon}#map=16/${map.lat}/${map.lon}`
+  : null;
+
+const seo = {
+  title: pageTitle,
+  description,
+  url: Astro.url.pathname,
+};
+---
+
+<Layout title={pageTitle}>
+  <SEOFragment {...seo} slot="head" />
+
+  <Navbar pathname={Astro.url.pathname} client:load />
+
+  <div class="mx-6 mb-12">
+    <div class="mx-auto max-w-4xl">
+      <section class="my-14">
+        <p
+          class="text-lg font-semibold tracking-wide text-violet-700 dark:text-violet-300 mb-2"
+        >
+          {name}
+        </p>
+        <h1 class="text-5xl font-bold mb-2 dark:opacity-92">
+          {title}
+        </h1>
+        <div class="mb-4">
+          <p class="text-xl font-medium text-gray-800 dark:text-gray-200">
+            {dates}
+          </p>
+          {
+            location && (
+              <p class="flex items-center gap-2 mt-1 text-gray-600 dark:text-gray-300">
+                <Icon
+                  name="fa-solid:map-marker-alt"
+                  class="text-violet-700 dark:text-violet-300"
+                />
+                {location}
+              </p>
+            )
+          }
+        </div>
+        {
+          tagline && (
+            <p class="text-2xl font-bold mb-4 dark:opacity-92">{tagline}</p>
+          )
+        }
+        <h2 class="text-gray-800 dark:text-gray-300 text-lg">
+          {description}
+        </h2>
+
+        {
+          links && links.length > 0 && (
+            <div class="mt-6 flex flex-wrap gap-4">
+              {links.map((link) => (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+                >
+                  {link.label}
+                  <ArrowRightIcon className="h-4 w-4" />
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </section>
+
+      {
+        map && (
+          <section class="mb-14">
+            <h1 class="font-bold text-3xl mb-8 dark:opacity-92">Getting There</h1>
+
+            <div class="flex flex-col md:flex-row gap-6">
+              <div class="md:flex-[2] rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-700">
+                <iframe
+                  title={`Map to ${location ?? name}`}
+                  src={osmEmbedSrc}
+                  loading="lazy"
+                  class="w-full h-72 md:h-full min-h-72"
+                />
+              </div>
+
+              <div class="md:flex-1 flex flex-col">
+                {transit && transit.length > 0 && (
+                  <>
+                    <h2 class="font-semibold text-lg mb-3 dark:opacity-92">
+                      Nearby transit
+                    </h2>
+                    <div class="flex flex-col gap-3 text-gray-800 dark:text-gray-300">
+                      {transit.map((t) => (
+                        <div class="flex items-start gap-3">
+                          <span
+                            class="text-xl leading-none mt-0.5 text-gray-500 dark:text-gray-400"
+                            style={t.color ? `color: ${t.color}` : undefined}
+                          >
+                            <Icon
+                              name={t.mode === "rail" ? "fa-solid:train" : "fa-solid:bus"}
+                            />
+                          </span>
+                          <div>
+                            <p class="font-semibold dark:opacity-92">{t.line}</p>
+                            <p>{t.stop}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                <div class="flex flex-col gap-2 mt-4">
+                  {transitPlanner && (
+                    <a
+                      href={transitPlanner}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+                    >
+                      Plan your transit
+                      <ArrowRightIcon className="h-4 w-4" />
+                    </a>
+                  )}
+                  <a
+                    href={osmLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+                  >
+                    View larger map
+                    <ArrowRightIcon className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        )
+      }
+
+      {
+        venues && venues.length > 0 && (
+          <section class="mb-14">
+            <h1 class="font-bold text-3xl mb-2 dark:opacity-92">Food &amp; Drink</h1>
+            <p class="text-gray-800 dark:text-gray-300 mb-8">
+              Food and drink make conversation better! Vegetarian food is available, as well as non-alcoholic and THC drinks.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {venues.map((venue) => (
+                <article class="flex flex-col gap-2 p-6 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl">
+                  <h2 class="font-bold text-xl dark:opacity-92">{venue.name}</h2>
+                  {venue.description && (
+                    <p class="text-gray-800 dark:text-gray-300">
+                      {venue.description}
+                    </p>
+                  )}
+                  <a
+                    href={venue.menu}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300 mt-auto pt-2"
+                  >
+                    View menu
+                    <ArrowRightIcon className="h-4 w-4" />
+                  </a>
+                </article>
+              ))}
+            </div>
+          </section>
+        )
+      }
+
+      {
+        talks && talks.length > 0 && (
+          <section class="mb-14">
+            <h1 class="font-bold text-3xl mb-8 dark:opacity-92">Our Talks</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {talks.map((talk) => (
+                <TalkCard {...talk} />
+              ))}
+            </div>
+          </section>
+        )
+      }
+    </div>
+  </div>
+</Layout>
