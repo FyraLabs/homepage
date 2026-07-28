@@ -66,8 +66,8 @@ importers:
         specifier: ^4.3.3
         version: 4.3.3
       use-lanyard:
-        specifier: ^1.7.0
-        version: 1.7.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        specifier: ^2.0.0
+        version: 2.0.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^5.20260719.1
@@ -898,8 +898,8 @@ packages:
   '@playform/pipe@0.1.5':
     resolution: {integrity: sha512-PYf/h1eUZGUoxEy0sagA3NBdcUp7+Bud/7Tvn7uYnulq1vsGtUCIkcrZF7/HjXD0ejJbTWSz3cXpIdqzceiFOw==}
 
-  '@prequist/lanyard@1.1.0':
-    resolution: {integrity: sha512-OBBRIoFQZgDF2t7/MBUw35YYmwOU9WAVvvvLHQHrwOw0JrCuTpsl1OI9kSjGjOfsqhB2cHIGYQg5nYPkOsg9nw==}
+  '@prequist/lanyard@2.0.0':
+    resolution: {integrity: sha512-ghlW/0efsJ2da2KVp8WUpXoARaGmMC4cocMM6HrYfnZ8PABfinSnrW6IBMqSOpYhFEnYES3h3apmWOFtQu5kvQ==}
 
   '@react-aria/focus@3.22.1':
     resolution: {integrity: sha512-CPxtkyrBi/HYY5P3lE/57sQ6qfa0lN8E55TOm89H0kNGv0lKt+/0zP7lWERzBjRr5IxBVrQX4gFEowBN52LPaA==}
@@ -2333,6 +2333,9 @@ packages:
     resolution: {integrity: sha512-aqVvWoyO21L23mb+drl4RmMXbf6N7FdHjAhTRA9ZBL7apWBgfWC16KjrASI+1p9GAroljyMHj6fK67i0UiTNvQ==}
     engines: {node: '>= 18'}
 
+  sockittt@0.0.3:
+    resolution: {integrity: sha512-M31w+VviBSZol3Q6uDLmdLuWpkr1qUEizbzWnqMRY2wtZfKDjTiKMSIHZVfmDegCv132UaN6pl48/yPJZmWWzQ==}
+
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -2529,9 +2532,9 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  use-lanyard@1.7.0:
-    resolution: {integrity: sha512-QtZaNugdA49GTjXJDTKM7E0hJNvbd4JavnKDi4zWelrdZAbypuHSd6B5gM4w14DGSkvr3z5DEJA85t74FAK1lA==}
-    engines: {node: '>=14'}
+  use-lanyard@2.0.0:
+    resolution: {integrity: sha512-neRkEScUN9kRk7/Wb00/lM3focC0WKEL56x0Z/PE9gCziCTxq5yoxXiScF+PhJRdWAm+ibeEGNGXyohGB1cDoA==}
+    engines: {node: '>=18'}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -3450,7 +3453,9 @@ snapshots:
       deepmerge-ts: 7.1.5
       fast-glob: 3.3.3
 
-  '@prequist/lanyard@1.1.0': {}
+  '@prequist/lanyard@2.0.0':
+    dependencies:
+      sockittt: 0.0.3
 
   '@react-aria/focus@3.22.1(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
@@ -5022,6 +5027,8 @@ snapshots:
 
   smol-toml@1.7.0: {}
 
+  sockittt@0.0.3: {}
+
   source-map-js@1.2.1: {}
 
   source-map-support@0.5.21:
@@ -5186,9 +5193,9 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  use-lanyard@1.7.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  use-lanyard@2.0.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
-      '@prequist/lanyard': 1.1.0
+      '@prequist/lanyard': 2.0.0
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
