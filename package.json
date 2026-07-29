@@ -26,8 +26,8 @@
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
     "clsx": "^2.1.1",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.3.3",
     "use-lanyard": "^2.0.0"
