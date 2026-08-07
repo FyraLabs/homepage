@@ -22,7 +22,7 @@ export const fossy26: Event = {
       description:
         "You will learn how to replace ChromeOS with any Linux distribution of your choosing, the different options for keeping or upgrading the firmware, and then a demo of the SuzyQ Board functionality and use cases. On top of the technical side, I will discuss how I have personally reduced Chromebook e-waste at various orgs with these tools; helping kickstart you and your communities in implementing the same strategies.",
       speakers: ["Owen Zimmerman"],
-      time: "Thursday, 3:00–3:45pm",
+      time: "Thursday, 3:00–3:45pm (Past)",
       location: "MCLD 3014",
       link: "https://2026.fossy.ca/schedule/presentation/379/",
     },
