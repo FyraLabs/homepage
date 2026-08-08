@@ -31,7 +31,7 @@ export const fossy26: Event = {
       description:
         "In Ultramarine 43, we switched our recommended Edition to Plasma, retiring Budgie's place as Flagship Edition and killing that brand. Retiring Flagship was the easy part, figuring out what to replace it with is the far more interesting story we're here to tell. In this talk, I'll walk through the technical and UX decisions we made along the way. From hours of tinkering, to finding what truly did work for users, and how Plasma made the case for itself. The switch to Plasma wasn't just the right call, but the only one, let's find out why.",
       speakers: ["Jaiden Riordan"],
-      time: "Satuday, 11:45am–12:30pm",
+      time: "Satuday, 11:45am–12:30pm (Past)",
       location: "MCLD 2002",
       link: "https://2026.fossy.ca/schedule/presentation/394/",
     },
