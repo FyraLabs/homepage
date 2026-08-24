@@ -46,6 +46,33 @@ const perks = [
   "Our eternal love and adoration",
 ];
 
+const spending = [
+  {
+    name: "Infrastructure",
+    icon: "fa-solid:server",
+    description:
+      "Serving 2000+ packages and 26 OS images takes a lot of bandwidth, sponsors have fully covered the cost of operating Terra for two years.",
+  },
+  {
+    name: "Development Time",
+    icon: "fa-solid:code",
+    description:
+      "Sponsorships mean that we can dedicate more of our developer time to open source and free products, rather than grinding to keep the lights on.",
+  },
+  {
+    name: "Hardware",
+    icon: "fa-solid:laptop",
+    description:
+      "To enable hardware, you need to have hardware. We have 17 Surfaces, 23 Raspberry Pis, and 120 Chromebooks across our hubs, funded by sponsors.",
+  },
+  {
+    name: "Keeping the Lights On",
+    icon: "fa-solid:file-invoice",
+    description:
+      "All of the little things you don't see. Domains, legal, marketing, and the various other business functions that support our developers.",
+  },
+];
+
 const contributing = [
   {
     name: "Contribute to Ultramarine",
@@ -84,7 +111,8 @@ const contributing = [
         <p class="dark:opacity-92 mb-6">
           We're a startup that produces open source software for the greater
           good (quite literally— all of our products are open source). We build
-          software (and hardware) like Ultramarine, Terra, Chisel Operator, SuzyQ Board, and more!
+          software (and hardware) like Ultramarine, Terra, Chisel Operator,
+          SuzyQ Board, and more!
         </p>
 
         <p class="dark:opacity-92 mb-6">
@@ -244,6 +272,30 @@ const contributing = [
             ))
           }
         </ul>
+      </section>
+
+      <section class="mb-14">
+        <h1 class="font-bold text-3xl mb-2 dark:opacity-92">
+          Where Your Money Goes
+        </h1>
+        <p class="dark:opacity-92 mb-6">
+          Every dollar helps us keep providing our projects to you.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {
+            spending.map((item) => (
+              <article class="flex flex-col gap-2 bg-neutral-100 dark:bg-neutral-800 rounded-2xl px-8 py-6">
+                <Icon
+                  name={item.icon}
+                  class="text-2xl text-violet-700 dark:text-violet-300"
+                />
+                <h2 class="font-bold text-xl dark:opacity-92">{item.name}</h2>
+                <p class="dark:opacity-92">{item.description}</p>
+              </article>
+            ))
+          }
+        </div>
       </section>
 
       <section class="mb-14">
