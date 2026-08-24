@@ -1,0 +1,355 @@
+---
+import Navbar from "../components/Navbar";
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import SEOFragment from "../components/SEOFragment.astro";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+
+import umPattern from "../assets/um-pattern.svg";
+import terraPattern from "../assets/terra-pattern.svg";
+import chiselOperatorPattern from "../assets/chisel-operator-pattern.svg";
+import suzyqboardPattern from "../assets/suzyqboard-pattern.svg";
+import submarinePattern from "../assets/submarine-pattern.svg";
+
+const description =
+  "Get some sweet perks for supporting the projects you love!";
+const seo = {
+  title: "Sponsor Us",
+  description,
+  url: Astro.url.pathname,
+};
+
+const platforms = [
+  {
+    name: "GitHub Sponsors",
+    icon: "simple-icons:githubsponsors",
+    href: "https://github.com/sponsors/FyraLabs",
+  },
+  {
+    name: "LiberaPay",
+    icon: "simple-icons:liberapay",
+    href: "https://liberapay.com/fyra/",
+  },
+  {
+    name: "Ko-fi",
+    icon: "simple-icons:kofi",
+    href: "https://ko-fi.com/fyralabs",
+  },
+];
+
+const perks = [
+  "Private sponsors chat in our Discord",
+  "“Leaked” material from our staff chats",
+  "Your name in a super secret file in Ultramarine",
+  "A Badge on your GitHub profile (GitHub only)",
+  "A shout-out in the Ultramarine release announcements",
+  "Our eternal love and adoration",
+];
+
+const contributing = [
+  {
+    name: "Contribute to Ultramarine",
+    href: "https://wiki.ultramarine-linux.org/en/contributing/contributorguide/",
+  },
+  {
+    name: "Contribute to Terra",
+    href: "https://docs.terrapkg.com/contributing/getting-started",
+  },
+  {
+    name: "Contribute to our other projects",
+    href: "https://developer.fyralabs.com",
+  },
+];
+---
+
+<Layout title="Sponsor Us">
+  <SEOFragment {...seo} slot="head" />
+
+  <Navbar pathname={Astro.url.pathname} client:load />
+
+  <div class="mx-6 mb-12">
+    <div class="mx-auto max-w-4xl">
+      <section class="my-14">
+        <h1 class="text-5xl font-bold mb-2 dark:opacity-92">Sponsor Us</h1>
+        <h2 class="text-gray-800 dark:text-gray-300 text-lg">
+          {description}
+        </h2>
+      </section>
+
+      <section class="mb-14">
+        <h1 class="font-bold text-3xl mb-4 dark:opacity-92">
+          Hey! We're Fyra Labs!
+        </h1>
+
+        <p class="dark:opacity-92 mb-6">
+          We're a startup that produces open source software for the greater
+          good (quite literally— all of our products are open source). We build
+          software like Ultramarine, Terra, and Fyra Stack.
+        </p>
+
+        <p class="dark:opacity-92 mb-6">
+          Your sponsorship helps us to dedicate more time to our work, allowing
+          us to develop and ship technology that can make a difference for you
+          (and many others.) Now, of course, don't forget there's also some
+          sweet and useful benefits (with even more coming soon) in it for you
+          :3
+        </p>
+
+        <h2 class="font-bold text-2xl mb-4 dark:opacity-92">
+          Sponsorship Supports Projects You Love
+        </h2>
+
+        <div class="grid grid-cols-6 grid-flow-row-dense gap-4">
+          <a
+            href="https://ultramarine-linux.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 outline-2 outline-solid outline-transparent hover:outline-violet-600 dark:hover:outline-violet-400 hover:-translate-y-0.5 transition-all rounded-2xl col-span-4 not-md:col-span-6"
+            style={{
+              backgroundImage: `url(${umPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">
+                Ultramarine Linux
+              </h1>
+              <h2 class="dark:opacity-92">
+                The modern operating system for what you love.
+              </h2>
+            </div>
+          </a>
+          <a
+            href="https://github.com/fyraLabs/suzyqboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 outline-2 outline-solid outline-transparent hover:outline-violet-600 dark:hover:outline-violet-400 hover:-translate-y-0.5 transition-all rounded-2xl col-span-2 not-md:col-span-3"
+            style={{
+              backgroundImage: `url(${suzyqboardPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">SuzyQ Board</h1>
+            </div>
+          </a>
+          <a
+            href="https://terra.fyralabs.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 outline-2 outline-solid outline-transparent hover:outline-violet-600 dark:hover:outline-violet-400 hover:-translate-y-0.5 transition-all rounded-2xl col-span-4 not-md:col-span-6"
+            style={{
+              backgroundImage: `url(${terraPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">Terra</h1>
+              <h2 class="dark:opacity-92">
+                The missing community repository for Fedora.
+              </h2>
+            </div>
+          </a>
+          <a
+            href="https://github.com/fyraLabs/submarine"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 outline-2 outline-solid outline-transparent hover:outline-violet-600 dark:hover:outline-violet-400 hover:-translate-y-0.5 transition-all rounded-2xl col-span-2 not-md:col-span-3"
+            style={{
+              backgroundImage: `url(${submarinePattern.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div class="mt-auto z-10">
+              <h1 class="text-2xl font-bold dark:opacity-92">Submarine</h1>
+            </div>
+          </a>
+          <a
+            href="https://chisel.fyralabs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="relative flex p-4 h-48 bg-neutral-100 dark:bg-neutral-800 outline-2 outline-solid outline-transparent hover:outline-violet-600 dark:hover:outline-violet-400 hover:-translate-y-0.5 transition-all rounded-2xl col-span-6"
+            style={{
+              backgroundImage: `url(${chiselOperatorPattern.src})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div class="mt-auto">
+              <h1 class="text-2xl font-bold dark:opacity-92">
+                Chisel Operator
+              </h1>
+              <h2 class="dark:opacity-92">
+                The easy way to expose Kubernetes services to the internet.
+              </h2>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="mb-14">
+        <h1 class="font-bold text-3xl mb-2 dark:opacity-92">
+          Pick your Platform
+        </h1>
+        <p class="dark:opacity-92 mb-6">
+          We accept sponsorships on these platforms. If you'd like to make a
+          larger sponsorship, or are interested in investment opportunities,
+          please reach out to <a
+            href="mailto:owen@fyralabs.com"
+            class="text-violet-700 dark:text-violet-300">Owen Zimmerman</a
+          >.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {
+            platforms.map((platform) => (
+              <a
+                href={platform.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col gap-2 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl px-8 py-6"
+              >
+                <Icon
+                  name={platform.icon}
+                  class="text-3xl text-violet-700 dark:text-violet-300"
+                />
+                <h2 class="font-bold text-xl dark:opacity-92 grow">
+                  {platform.name}
+                </h2>
+                <span class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300">
+                  Sponsor <ArrowRightIcon className="h-4 w-4" />
+                </span>
+              </a>
+            ))
+          }
+        </div>
+      </section>
+
+      <section class="mb-14">
+        <h1 class="font-bold text-3xl mb-2 dark:opacity-92">What You Get</h1>
+        <p class="dark:opacity-92 mb-6">
+          Sponsorships aren't one-way. Whatever you chip in and wherever you
+          chip it in, you get the lot — and we keep adding to it.
+        </p>
+
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+          {
+            perks.map((perk) => (
+              <li class="flex flex-row gap-2 dark:opacity-92">
+                <Icon
+                  name="fa-solid:check"
+                  class="mt-1.5 shrink-0 text-violet-700 dark:text-violet-300"
+                />
+                <span>{perk}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section class="mb-14">
+        <h1 class="font-bold text-3xl mb-2 dark:opacity-92">
+          Other Ways to Help
+        </h1>
+
+        <div class="flex flex-col gap-4 mt-6">
+          <article
+            class="bg-neutral-100 dark:bg-neutral-800 rounded-2xl px-8 py-6"
+          >
+            <h2 class="font-bold text-xl mb-1 dark:opacity-92">
+              Contribute to Our Projects
+            </h2>
+            <p class="dark:opacity-92 mb-4">
+              Everything we build is open source, meaning you can help build it
+              directly!
+            </p>
+            <ul class="flex flex-col gap-2">
+              {
+                contributing.map((link) => (
+                  <li>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+                    >
+                      {link.name} <ArrowRightIcon className="h-4 w-4" />
+                    </a>
+                    <span class="dark:opacity-92 text-sm block">
+                      {link.description}
+                    </span>
+                  </li>
+                ))
+              }
+            </ul>
+          </article>
+
+          <article
+            class="bg-neutral-100 dark:bg-neutral-800 rounded-2xl px-8 py-6"
+          >
+            <h2 class="font-bold text-xl mb-1 dark:opacity-92">
+              Get a Fyra Stack VPS or Colo
+            </h2>
+            <p class="dark:opacity-92 mb-2">
+              Fyra Stack is our hosting service that doesn't suck. Proceeds
+              support Fyra projects.
+            </p>
+            <a
+              href="https://fyrastack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Get Your Stack <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </article>
+
+          <article
+            class="bg-neutral-100 dark:bg-neutral-800 rounded-2xl px-8 py-6"
+          >
+            <h2 class="font-bold text-xl mb-1 dark:opacity-92">Buy Merch</h2>
+            <p class="dark:opacity-92 mb-2">
+              We sell awesome merch! Every purchase supports our projects, and
+              helps you look super cool.
+            </p>
+            <a
+              href="https://shop.fyralabs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Visit the Shop <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </article>
+
+          <article
+            class="bg-neutral-100 dark:bg-neutral-800 rounded-2xl px-8 py-6"
+          >
+            <h2 class="font-bold text-xl mb-1 dark:opacity-92">
+              Send us Hardware
+            </h2>
+            <p class="dark:opacity-92">
+              Ultramarine focuses heavily on hardware enablement, which requires
+              hardware. If you want to send us some interesting hardware, send
+              an email to <a
+                href="mailto:ihaveachromebookidontwant@fyralabs.com"
+                class="text-violet-700 dark:text-violet-300"
+                >ihaveachromebookidontwant@fyralabs.com</a
+              >.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mb-14">
+        <p class="text-lg text-gray-600 dark:text-gray-400">
+          Fyra Labs is a corporation, not a non-profit or charity. Sponsorships
+          are not investments, and do not grant ownership or control of the
+          corporation. Sponsorships are not tax deductible.
+        </p>
+        <p class="text-sm text-gray-600 dark:text-gray-400">
+          Fyra Labs LLC, Minnesota #1467313900020. Contact legal@fyralabs.com
+          with concerns.
+        </p>
+      </section>
+    </div>
+  </div>
+</Layout>
