@@ -7,6 +7,7 @@ import { Image } from "astro:assets";
 import aboutImage from "../assets/about.webp";
 import SEOFragment from "../components/SEOFragment.astro";
 import type { TeamMember } from "../util/team";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const description =
   "At Fyra Labs, we believe technology can change the world. Our focus is to create technology that respects privacy, is open-source, and user-centric.";
@@ -99,6 +100,25 @@ const seo = {
         <div class="grid grid-cols-[repeat(auto-fit,minmax(14rem,1fr))] gap-6">
           {(team as TeamMember[]).map((member) => <TeamCard {...member} />)}
         </div>
+      </section>
+
+      <section class="mt-6">
+        <a
+          href="/sponsor"
+          class="block p-6 bg-neutral-100 dark:bg-neutral-800 hover:shadow-md transition-all rounded-2xl"
+        >
+          <p class="font-semibold text-2xl mb-3 dark:opacity-[92%]">
+            Support Our Work
+          </p>
+          <p class="dark:opacity-[92%]">
+            Help us ship more software that can make a difference for you, and
+            get some sweet perks for doing so.
+          </p>
+          <span
+            class="mt-3 flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+            >Sponsor Us <ArrowRightIcon className="h-4 w-4" /></span
+          >
+        </a>
       </section>
     </div>
   </div>
