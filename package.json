@@ -21,7 +21,7 @@
     "@iconify-json/simple-icons": "^1.2.93",
     "@spissvinkel/simplex-noise": "^1.0.1",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.2.4",
+    "astro": "^7.2.9",
     "astro-compress": "^2.4.3",
     "astro-icon": "^1.2.0",
     "astro-robots-txt": "^1.0.0",
