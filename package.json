@@ -37,7 +37,7 @@
     "@lleyton/dotted-map": "^2.3.1",
     "@types/node": "^26.2.0",
     "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
+    "@types/react-dom": "^19.2.5",
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
     "sharp": "^0.35.4"
