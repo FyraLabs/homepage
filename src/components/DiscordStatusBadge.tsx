@@ -14,7 +14,7 @@ const DiscordStatusBadge: React.FC<{
       secure: true,
     },
   });
-  const status = data?.data?.discord_status ?? "Unknown";
+  const status = data?.discord_status ?? "Unknown";
 
   return (
     <span
