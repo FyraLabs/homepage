@@ -8,9 +8,11 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^14.3.3",
     "@astrojs/react": "^6.0.6",
     "@astrojs/sitemap": "^3.7.4",
     "@headlessui/react": "^2.2.10",
@@ -33,13 +35,14 @@
     "use-lanyard": "^2.0.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^5.20260918.1",
+    "@cloudflare/workers-types": "^5.20260926.1",
     "@lleyton/dotted-map": "^2.3.1",
     "@types/node": "^26.5.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "prettier": "^3.9.8",
     "prettier-plugin-astro": "^1.0.1",
-    "sharp": "^0.35.4"
+    "sharp": "^0.35.4",
+    "wrangler": "^4.141.0"
   }
 }

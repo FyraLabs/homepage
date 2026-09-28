@@ -1,4 +1,5 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, envField } from "astro/config";
+import cloudflare from "@astrojs/cloudflare";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import compress from "astro-compress";
@@ -10,6 +11,20 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   site: "https://fyralabs.com",
+  adapter: cloudflare({
+    imageService: "compile",
+  }),
+  session: false,
+
+  env: {
+    schema: {
+      DISCORD_WEBHOOK_URL: envField.string({
+        context: "server",
+        access: "secret",
+        optional: true,
+      }),
+    },
+  },
 
   integrations: [
     icon(),

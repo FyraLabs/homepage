@@ -24,3 +24,7 @@ pnpm-debug.log*
 .claude
 AGENTS.md
 CLAUDE.md
+
+# wrangler
+.wrangler/
+.dev.vars*
