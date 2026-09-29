@@ -37,7 +37,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260926.1",
     "@lleyton/dotted-map": "^2.3.1",
-    "@types/node": "^26.5.1",
+    "@types/node": "^26.6.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "prettier": "^3.9.8",
