@@ -7,7 +7,7 @@ import umPattern from "../assets/um-pattern.svg";
 import terraPattern from "../assets/terra-pattern.svg";
 import chiselOperatorPattern from "../assets/chisel-operator-pattern.svg";
 import suzyqboardPattern from "../assets/suzyqboard-pattern.svg";
-import StackPattern from "../assets/stack-pattern.svg";
+import stackHero from "../assets/stack-hero.webp";
 import submarinePattern from "../assets/submarine-pattern.svg";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import SEOFragment from "../components/SEOFragment.astro";
@@ -105,9 +105,9 @@ const seo = {
             class="w-1/2 hidden md:block rounded-r-2xl overflow-hidden relative"
           >
             <Image
-              src={StackPattern}
+              src={stackHero}
               alt="Fyra Stack"
-              class="object-cover h-full w-full"
+              class="absolute inset-0 object-cover h-full w-full"
             />
             <div
               class="absolute inset-0 bg-gradient-to-r from-neutral-100 dark:from-neutral-800 to-transparent"
@@ -115,21 +115,16 @@ const seo = {
             </div>
           </div>
           <div class="px-8 py-6 flex flex-col justify-center gap-2 md:w-1/2">
-            <h1
-              class="font-bold text-3xl dark:opacity-92 flex items-center gap-2"
-            >
-              <img src="/logo.svg" alt="Fyra" class="h-7 w-auto" />
-              Stack
-            </h1>
+            <h1 class="font-bold text-3xl dark:opacity-92">Stack</h1>
 
             <p class="dark:opacity-92">
-              Infrastructure without breaking the bank, or your mind.
+              We run the servers, you run your stack.
             </p>
 
             <p class="dark:opacity-92">
               We're an infrastructure provider offering VPS and server
-              colocation with straightforward pricing, simple provisioning,
-              starting at just $5/month.
+              colocation with straightforward pricing & simple provisioning. 
+              Starting at just $5/month.
             </p>
             <a
               href="https://fyrastack.com"
