@@ -12,9 +12,9 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^14.4.6",
-    "@astrojs/react": "^7.1.4",
-    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/cloudflare": "^14.4.8",
+    "@astrojs/react": "^7.1.9",
+    "@astrojs/sitemap": "^3.7.5",
     "@headlessui/react": "^2.2.10",
     "@heroicons/react": "^2.2.0",
     "@iconify-json/fa-brands": "^1.2.2",
@@ -23,7 +23,7 @@
     "@iconify-json/simple-icons": "^1.2.102",
     "@spissvinkel/simplex-noise": "^1.0.1",
     "@tailwindcss/vite": "^4.3.5",
-    "astro": "^7.4.7",
+    "astro": "^7.4.12",
     "astro-compress": "^2.4.3",
     "astro-icon": "^1.2.0",
     "astro-robots-txt": "^1.0.0",
