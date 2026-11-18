@@ -1,0 +1,3 @@
+[files]
+# satoshi.css has upstream typos lol (controll)
+extend-exclude = ["pnpm-lock.yaml", "public/css/satoshi.css"]
